@@ -12,36 +12,83 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-#
-# Copy files from trunk to named branch and replace all links from
-# trunk with links to the branch
 
-DOCNAME=$1
+REPOSITORY=$1
+USE_DOC=$2
+DOCNAME=$3
 
-if [ -z "$DOCNAME" ] ; then
-    echo "usage $0 DOCNAME"
+if [ $# -lt 3 ] ; then
+    echo "usage $0 REPOSITORY USE_DOC DOCNAME"
     exit 1
 fi
 
-OPTS=""
-# We need to build guides with all tags so that all strings get
-# extracted.
-if [ "$DOCNAME" = "user-guides" ] ; then
-    OPTS="-t user_only -t admin_only"
+DIRECTORY=$DOCNAME
+TOPDIR=""
+if [ "$USE_DOC" = "1" ] ; then
+    DIRECTORY="doc/$DOCNAME"
+    TOPDIR="doc/"
 fi
 
-# Build Glossary
-tools/glossary2rst.py > doc/user-guides/source/glossary.rst
+if [ -x "$(command -v getconf)" ]; then
+    NUMBER_OF_CORES=$(getconf _NPROCESSORS_ONLN)
+else
+    NUMBER_OF_CORES=2
+fi
+
+# common is imported from various RST documents, but what files are
+# used varies across RST documents. Thus we need an index file to include
+# all files under common. To this aim, we create such document called
+# 'common-work' dynamically to generate the POT file of common.
+if [[ "$REPOSITORY" = "openstack-manuals" && "$DOCNAME" = "common" ]] ; then
+    DIRECTORY="doc/common-work"
+    TOPDIR="doc/"
+    mkdir -p $DIRECTORY/source
+    cp doc/common/source/conf.py $DIRECTORY/source/conf.py
+    ln -sf ../../common $DIRECTORY/source/common
+    cat <<EOF > $DIRECTORY/source/index.rst
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   common/*
+EOF
+fi
+
 # First remove the old pot file, otherwise the new file will contain
 # old references
-rm -f doc/$DOCNAME/source/locale/$DOCNAME.pot
-sphinx-build $OPTS -b gettext doc/$DOCNAME/source/ doc/$DOCNAME/source/locale/
 
-# Take care of deleting all temporary files so that git add
-# doc/$DOCNAME/source/locale will only add the single pot file.
-# Remove UUIDs, those are not necessary and change too often
-msgcat --sort-output doc/$DOCNAME/source/locale/*.pot | \
-  awk '$0 !~ /^\# [a-z0-9]+$/' > doc/$DOCNAME/source/$DOCNAME.pot
-rm  doc/$DOCNAME/source/locale/*.pot
-rm -rf doc/$DOCNAME/source/locale/.doctrees/
-mv doc/$DOCNAME/source/$DOCNAME.pot doc/$DOCNAME/source/locale/$DOCNAME.pot
+rm -f ${DIRECTORY}/source/locale/$DOCNAME.pot
+
+# We need to extract all strings, so add all supported tags
+TAG=""
+if [ ${DOCNAME} = "install-guide" ] ; then
+    TAG="-t obs -t rdo -t ubuntu -t debian"
+fi
+if [ ${DOCNAME} = "firstapp" ] ; then
+    TAG="-t libcloud -t dotnet -t fog -t pkgcloud -t shade"
+fi
+sphinx-build -j $NUMBER_OF_CORES -b gettext $TAG ${DIRECTORY}/source/ \
+    ${DIRECTORY}/source/locale/
+
+if [[ "$REPOSITORY" = "openstack-manuals" && "$DOCNAME" = "common" ]] ; then
+    # In case of common, we use the working directory 'common-work'.
+    # Copies the generated POT to common/source/locale
+    # and finally removes the working directory.
+    msgcat ${DIRECTORY}/source/locale/common.pot | \
+        awk '$0 !~ /^\# [a-z0-9]+$/' \
+        > ${TOPDIR}common/source/locale/common.pot
+    rm -rf $DIRECTORY
+else
+    # common is translated as part of openstack-manuals, do not
+    # include the file in the combined tree if it exists.
+    rm -f ${DIRECTORY}/source/locale/common.pot
+    # Take care of deleting all temporary files so that
+    # "git add ${DIRECTORY}/source/locale" will only add the
+    # single pot file.
+    # Remove UUIDs, those are not necessary and change too often
+    msgcat --sort-by-file ${DIRECTORY}/source/locale/*.pot | \
+        awk '$0 !~ /^\# [a-z0-9]+$/' > ${DIRECTORY}/source/$DOCNAME.pot
+    rm  ${DIRECTORY}/source/locale/*.pot
+    rm -rf ${DIRECTORY}/source/locale/.doctrees/
+    mv ${DIRECTORY}/source/$DOCNAME.pot ${DIRECTORY}/source/locale/$DOCNAME.pot
+fi

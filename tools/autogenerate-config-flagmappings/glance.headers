@@ -1,9 +1,9 @@
 elasticsearch Elasticsearch
 filesystem filesystem
-gridfs GridFS
+http HTTP
 imagecache flagmappings
 matchmaker matchmaker
-rbd RBD
+rbd RADOS Block Devices (RBD)
 registry registry
 replicator replicator
 scrubber scrubber

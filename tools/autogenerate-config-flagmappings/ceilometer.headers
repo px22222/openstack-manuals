@@ -1,12 +1,13 @@
-alarm alarm
-alarms alarms
 collector collector
 dispatcher_http HTTP dispatcher
+dispatcher_gnocchi Gnocchi dispatcher
+dispatchers Dispatchers
 events events
 exchange exchange
+hyperv Hyper-V
 inspector inspector
-magnetodb MagnetoDB
 notification notification
-rgw Rados gateway
+rgw RADOS gateway
 service_types service types
-zaqar Zaqar
+storage storage
+zaqar Message service

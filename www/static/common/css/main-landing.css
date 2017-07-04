@@ -1,4 +1,5 @@
 /* @override http://docs.openstack.org/common/css/main.css */
+/* CSS is used by docs.openstack.org/infra and specs.openstack.org. */
 
 #subnav ul li{
   text-align:left;

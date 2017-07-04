@@ -1,140 +1,103 @@
+========================
+Team and repository tags
+========================
+
+.. image:: https://governance.openstack.org/badges/openstack-manuals.svg
+    :target: https://governance.openstack.org/reference/tags/index.html
+
+.. Change things from this point on
+
 OpenStack Manuals
 +++++++++++++++++
 
 This repository contains documentation for the OpenStack project.
 
-For more details, see the `OpenStack Documentation wiki page
-<http://wiki.openstack.org/Documentation>`_.
+For more details, see the `OpenStack Documentation Contributor
+Guide <https://docs.openstack.org/contributor-guide/>`_.
 
 It includes these manuals:
 
- * Admin User Guide
+ * Administrator Guide
  * Architecture Design Guide
- * Cloud Administrator Guide
  * Command-Line Interface Reference
  * Configuration Reference
+ * Documentation Contributor Guide
  * End User Guide
- * Heat Orchestration Template reference
- * HOT Guide
- * Installation Guides
+ * High Availability Guide
+ * Installation Tutorials
+ * Networking Guide
+ * Operations Guide
  * Virtual Machine Image Guide
 
 In addition to the guides, this repository contains:
 
- * docs.openstack.org: ``www``
-
-Prerequisites
-=============
-`Apache Maven <http://maven.apache.org/>`_ must be installed to build the
-documentation.
-
-To install Maven 3 for Ubuntu 12.04 and later, and Debian wheezy and later::
-
-    apt-get install maven
-
-On Fedora 20 and later::
-
-    yum install maven
-
-On openSUSE 13.1 and later::
-
-    zypper ar http://download.opensuse.org/repositories/devel:/tools:/building/openSUSE_13.1/devel:tools:building.repo
-    zypper install maven
+ * docs.openstack.org contents: ``www``
 
 Building
 ========
-The different manuals are in subdirectories of the
-``openstack-manuals/doc/`` directory.
 
-DocBook guides
---------------
-* Normal guides
-For example, the root directory of the *OpenStack Virtual Machine Image Guide*
-is ``openstack-manuals/doc/image-guide``.
+Various manuals are in subdirectories of the ``doc/`` directory.
 
-To build a specific guide, look for a ``pom.xml`` file within a subdirectory,
-then run the ``mvn`` command in that directory. For example::
+Guides
+------
 
-    cd openstack-manuals/doc/image-guide/
-    mvn clean generate-sources
+Some pre-requisites are needed to build the guides. If you are using a Linux
+operating system you can generate a report of missing local requirements with
+the ``bindep`` command::
 
-The generated PDF documentation file is::
+    $ tox -e bindep
 
-    openstack-manuals/doc/image-guide/target/docbkx/webhelp/image-guide/image-guide.pdf
+All guides are in the RST format. You can use ``tox`` to prepare
+virtual environment and build all guides (HTML only):
 
-The root of the generated HTML documentation is::
+    $ tox -e docs
 
-    openstack-manuals/doc/image-guide/target/docbkx/webhelp/image-guide/content/index.html
+You can also build a specific guide.
 
-* Installation guides
-The root directory of the *OpenStack Install Guides*
-is ``openstack-manuals/doc/install-guide``, you can get different operating system's guides::
+For example, to build *OpenStack End User Guide*, use the following command::
 
-    cd openstack-manuals/doc/install-guide/
-    mvn clean generate-sources -Dprofile.os="ubuntu" -Doperating.system="apt"
-    mvn clean generate-sources -Dprofile.os="rhel;centos;fedora" -Doperating.system="yum"
-    mvn clean generate-sources -Dprofile.os="opensuse" -Doperating.system="zypper"
+    $ tox -e build -- user-guide
 
-The generated PDF documentation file is::
+You can find the root of the generated HTML documentation at::
 
-    openstack-manuals/doc/install-guide/target/docbkx/webhelp/local/install-guide/install/${operating.system}/openstack-install-guide-${operating.system}-local.pdf
+    doc/user-guide/build/html/index.html
 
-The root of the generated HTML documentation is::
+To build a specific guide with a PDF file, add a ``-pdf`` option like::
 
-    openstack-manuals/doc/install-guide/target/docbkx/webhelp/local/install-guide/install/${operating.system}/content/index.html
+    $ tox -e build -- user-guide --pdf
 
-RST guides
-----------
-Then, you can see that the openstack-manuals/doc/user-guides is the RST based guide, So we can't use mvn command.
-You can use tox to prepare virtual environment and build it::
+The generated PDF file will be copied to the root directory of the
+generated HTML documentation.
 
-    tox -e docs
-
-The root of the generated *End User Guide* HTML documentation is::
-
-    openstack-manuals/doc/user-guides/build/html/index.html
-
-The root of the generated *Admin User Guide* HTML documentation is::
-
-    openstack-manuals/doc/user-guides/build-admin/html/index.html
+If you get this message `make: xelatex: No such file or directory` it means
+your local environment does not have LaTeX installed. Read `Getting LaTeX
+ <https://www.latex-project.org/get/>`_ for instructions.
 
 Testing of changes and building of the manual
 =============================================
 
-Install the python tox package and run ``tox`` from the top-level
-directory to use the same tests that are done as part of our Jenkins
-gating jobs.
+Install the Python tox package and run ``tox`` from the top-level
+directory to use the same tests that are done as part of the OpenStack
+CI jobs.
 
 If you like to run individual tests, run:
 
- * ``tox -e checklinks`` - to run the tests for working remote URLs
- * ``tox -e checkniceness`` - to run the niceness tests
- * ``tox -e checksyntax`` - to run syntax checks
- * ``tox -e checkdeletions`` - to check that no deleted files are referenced
  * ``tox -e checkbuild`` - to actually build the manual
  * ``tox -e checklang`` - to build translated manuals
+ * ``tox -e checkniceness`` - to run the niceness tests
+ * ``tox -e linkcheck`` - to run the tests for working remote URLs
 
-tox will use the openstack-doc-tools package for execution of these
+The :command:`tox` command uses the openstack-doc-tools package to run the
 tests.
 
 
-Contributing
-============
+Generated files
+---------------
 
-Our community welcomes all people interested in open source cloud
-computing, and encourages you to join the `OpenStack Foundation
-<http://www.openstack.org/join>`_.
-
-The best way to get involved with the community is to talk with others
-online or at a meet up and offer contributions through our processes,
-the `OpenStack wiki <http://wiki.openstack.org>`_, blogs, or on IRC at
-``#openstack`` on ``irc.freenode.net``.
-
-We welcome all types of contributions, from blueprint designs to
-documentation to testing to deployment scripts.
-
-If you would like to contribute to the documents, please see the
-`Documentation HowTo <https://wiki.openstack.org/wiki/Documentation/HowTo>`_.
+Some documentation files are generated using tools. These files include
+a ``do not edit`` header and should not be modified by hand.
+Please see `Generated files
+<https://docs.openstack.org/contributor-guide/doc-tools.html>`_.
 
 
 Bugs
@@ -147,5 +110,6 @@ Bugs should be filed on Launchpad, not GitHub:
 
 Installing
 ==========
-Refer to http://docs.openstack.org to see where these documents are published
-and to learn more about the OpenStack project.
+
+Refer to https://docs.openstack.org to see where these documents are
+published and to learn more about the OpenStack project.

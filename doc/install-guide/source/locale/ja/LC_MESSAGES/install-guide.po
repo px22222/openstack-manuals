@@ -1,0 +1,4941 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, OpenStack contributors
+# This file is distributed under the same license as the Installation Guide package.
+#
+# Translators:
+# Andreas Jaeger <jaegerandi@gmail.com>, 2015
+# yfukuda <fukuda.yuko@jp.fujitsu.com>, 2013
+# Tomoyuki KATO <tomo@dream.daynight.jp>, 2013-2015
+# yfukuda <fukuda.yuko@jp.fujitsu.com>, 2013
+# Akihiro Motoki <amotoki@gmail.com>, 2015. #zanata
+# Akihiro Motoki <amotoki@gmail.com>, 2016. #zanata
+# KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>, 2016. #zanata
+# KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Installation Guide 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-21 14:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-03-22 02:29+0000\n"
+"Last-Translator: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Zanata 3.9.6\n"
+"Language-Team: Japanese\n"
+
+msgid ""
+"(Optional) If you intend to use non-raw image types such as QCOW2 and VMDK, "
+"install the QEMU package:"
+msgstr ""
+"(オプション) QCOW2 や VMDK などの raw 以外のイメージ形式を使用したい場合、"
+"QEMU パッケージをインストールします。"
+
+msgid "**Example**"
+msgstr "**例**"
+
+msgid "**Hardware requirements**"
+msgstr "**ハードウェア要件**"
+
+msgid "**Networking Option 1: Provider networks - Connectivity**"
+msgstr "**ネットワークオプション 1: プロバイダーネットワーク - 接続**"
+
+msgid "**Networking Option 1: Provider networks - Overview**"
+msgstr "**ネットワークオプション 1: プロバイダーネットワーク - 概要**"
+
+msgid "**Networking Option 2: Self-service networks - Connectivity**"
+msgstr "**ネットワークオプション 2: セルフサービスネットワーク - 接続**"
+
+msgid "**Networking Option 2: Self-service networks - Overview**"
+msgstr "**ネットワークオプション 2: セルフサービスネットワーク - 概要**"
+
+msgid "**On SLES:**"
+msgstr "**SLES の場合:**"
+
+msgid "**On openSUSE:**"
+msgstr "**openSUSE の場合:**"
+
+msgid "**Passwords**"
+msgstr "**パスワード**"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"A flavor specifies a virtual resource allocation profile which includes "
+"processor, memory, and storage."
+msgstr ""
+"フレーバーは、プロセッサー、メモリ、ストレージなどの仮想リソースの割り当てプ"
+"ロファイルを指定します。"
+
+msgid ""
+"A single disk partition on each node works for most basic installations. "
+"However, you should consider :term:`Logical Volume Manager (LVM)` for "
+"installations with optional services such as Block Storage."
+msgstr ""
+"最も基本的なインストールとしては、各ノードは単一のディスクパーティションで動"
+"作します。しかしながら、Block Storage のようなオプションサービスをインストー"
+"ルする場合には :term:`Logical Volume Manager (LVM)` を検討すべきです。"
+
+msgid ""
+"A unique ``nova-consoleproxy`` package provides the ``nova-novncproxy``, "
+"``nova-spicehtml5proxy``, and ``nova-xvpvncproxy`` packages. To select "
+"packages, edit the ``/etc/default/nova-consoleproxy`` file or use the "
+"debconf interface. You can also manually edit the ``/etc/default/nova-"
+"consoleproxy`` file, and stop and start the console daemons."
+msgstr ""
+"独自の ``nova-consoleproxy`` パッケージは、 ``nova-novncproxy``, ``nova-"
+"spicehtml5proxy``, ``nova-xvpvncproxy`` パッケージを提供します。パッケージを"
+"選択するには、 ``/etc/default/nova-consoleproxy`` ファイルを編集するか "
+"debconf インターフェースを使用します。また、手動で ``/etc/default/nova-"
+"consoleproxy`` ファイルを編集して、コンソールデーモンの停止、開始をすることも"
+"できます。"
+
+msgid ""
+"ALLOWED_HOSTS can also be ['*'] to accept all hosts. This may be useful for "
+"development work, but is potentially insecure and should not be used in "
+"production. See https://docs.djangoproject.com/en/dev/ref/settings/#allowed-"
+"hosts for further information."
+msgstr ""
+"ALLOWED_HOSTS は、すべてのホストを受け付けるために ['*'] にできます。これは、"
+"開発用途に有用かもしれません。潜在的なセキュリティ問題があるため、本番環境で"
+"は使用すべきではありません。詳細は https://docs.djangoproject.com/en/dev/ref/"
+"settings/#allowed-hosts を参照してください。"
+
+msgid ""
+"Ability to take periodic \"snap shots\" throughout the installation process "
+"and \"roll back\" to a working configuration in the event of a problem."
+msgstr ""
+"インストール中に定期的に「スナップショット」を取得したり、問題発生時に動作す"
+"る設定に「ロールバック」したりできます。"
+
+msgid "Abstract"
+msgstr "概要"
+
+msgid "Access the dashboard using a web browser at ``http://controller/``."
+msgstr "ウェブブラウザーを使用して ``http://controller/`` にアクセスします。"
+
+msgid ""
+"Access the dashboard using a web browser at ``http://controller/dashboard``."
+msgstr ""
+"ウェブブラウザーを使用して ``http://controller/dashboard`` にアクセスします。"
+
+msgid ""
+"Access the dashboard using a web browser at ``http://controller/horizon``."
+msgstr ""
+"ウェブブラウザーを使用して ``http://controller/horizon`` にアクセスします。"
+
+msgid "Access the instance remotely"
+msgstr "インスタンスへのリモートアクセス"
+
+msgid "Access the instance using a virtual console"
+msgstr "インスタンスへの仮想コンソールアクセス"
+
+msgid "Access the instance using the virtual console"
+msgstr "インスタンスの仮想コンソールへのアクセス"
+
+msgid ""
+"Access your instance using SSH and use the ``fdisk`` command to verify "
+"presence of the volume as the ``/dev/vdb`` block storage device:"
+msgstr ""
+"SSH を使用して、インスタンスにアクセスします。``fdisk`` コマンドを使用して、"
+"ボリュームがブロックストレージデバイス ``/dev/vdb`` として存在することを確認"
+"します。"
+
+msgid ""
+"Access your instance using SSH from the controller node or any host on the "
+"provider physical network:"
+msgstr ""
+"コントローラーノードまたはプロバイダー物理ネットワークにあるホストから SSH を"
+"使用して、インスタンスにアクセスします。"
+
+msgid "Actual output may differ slightly from this example."
+msgstr "実際の出力はこの例と少し違う場合があります。"
+
+msgid ""
+"Add a systemd service file for nova-novncproxy in ``/lib/systemd/system/nova-"
+"novncproxy.service``:"
+msgstr ""
+"``/lib/systemd/system/nova-novncproxy.service`` に nova-novncproxy の "
+"systemd サービスファイルを追加します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Add rules to the ``default`` security group:"
+msgstr "ルールをセキュリティグループ ``default`` に追加します。"
+
+msgid "Add security group rules"
+msgstr "セキュリティーグループルールの追加"
+
+msgid "Add the ``admin`` role to the ``cinder`` user:"
+msgstr "``admin`` ロールを ``cinder`` ユーザーに追加します。"
+
+msgid "Add the ``admin`` role to the ``glance`` user and ``service`` project:"
+msgstr ""
+"``admin`` ロールを ``glance`` ユーザーと ``service`` プロジェクトに追加しま"
+"す。"
+
+msgid "Add the ``admin`` role to the ``neutron`` user:"
+msgstr "``admin`` ロールを ``neutron`` ユーザーに追加します。"
+
+msgid "Add the ``admin`` role to the ``nova`` user:"
+msgstr "``admin`` ロールを ``nova`` ユーザーに追加します。"
+
+msgid "Add the ``openstack`` user:"
+msgstr "``openstack`` ユーザーを追加します。"
+
+msgid "Add the ``user`` role to the ``demo`` project and user:"
+msgstr ""
+"``user`` ロールを ``demo`` プロジェクトと ``demo`` ユーザーに追加します。"
+
+msgid "Add the self-service network subnet as an interface on the router:"
+msgstr ""
+"ルーターのインターフェースとして、セルフサービスネットワークのサブネットを追"
+"加します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Additional compute nodes should use 10.0.0.32, 10.0.0.33, and so on."
+msgstr ""
+"追加のコンピュートノードは 10.0.0.32、10.0.0.33 などを使用すべきでしょう。"
+
+msgid "Additional services"
+msgstr "その他のサービス"
+
+msgid ""
+"Additionally, you can allocate IP addresses on external networks to ports on "
+"the internal network. Whenever something is connected to a subnet, that "
+"connection is called a port. You can associate external network IP addresses "
+"with ports to VMs. This way, entities on the outside network can access VMs."
+msgstr ""
+"さらに、内部ネットワーク上のポートに、外部ネットワークの IP アドレスを割り当"
+"てることができます。何かがサブネットに接続されている場合、その接続はポートと"
+"呼ばれます。外部ネットワークの IP アドレスを仮想マシンのポートに関連付けられ"
+"ます。このように、外部ネットワークから仮想マシンにアクセスできます。"
+
+msgid ""
+"After a short time, the volume status should change from ``creating`` to "
+"``available``:"
+msgstr ""
+"しばらくすると、ボリュームの状態が ``作成中 (creating)`` から ``利用可能 "
+"(available)`` に変わるでしょう。"
+
+msgid ""
+"After becoming familiar with basic installation, configuration, operation, "
+"and troubleshooting of these OpenStack services, you should consider the "
+"following steps toward deployment using a production architecture:"
+msgstr ""
+"こららの OpenStack サービスの基本的なインストール、設定、運用、トラブルシュー"
+"ティングができるようになったら、本番のアーキテクチャーを使ったデプロイメント"
+"に向けて以下のような点を検討するとよいでしょう。"
+
+msgid ""
+"After creating the appropriate networks for your environment, you can "
+"continue preparing the environment to launch an instance."
+msgstr ""
+"お使いの環境向けに適切なネットワークを作成した後、インスタンスを起動するため"
+"の環境の準備を続けます。"
+
+msgid ""
+"After installing the operating system on each node for the architecture that "
+"you choose to deploy, you must configure the network interfaces. We "
+"recommend that you disable any automated network management tools and "
+"manually edit the appropriate configuration files for your distribution. For "
+"more information on how to configure networking on your distribution, see "
+"the `documentation <https://access.redhat.com/documentation/en-US/"
+"Red_Hat_Enterprise_Linux/7/html/Networking_Guide/sec-"
+"Using_the_Command_Line_Interface.html>`__ ."
+msgstr ""
+"各ノードにオペレーティングシステムをインストールした後、導入するアーキテク"
+"チャーに合わせて、ネットワークインターフェースを設定する必要があります。すべ"
+"ての自動ネットワーク管理ツールを無効化し、お使いのディストリビューションの適"
+"切な設定ファイルを手動で編集することを推奨します。お使いのディストリビュー"
+"ションのネットワーク設定に関する詳細は、`ドキュメント <https://access.redhat."
+"com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Networking_Guide/sec-"
+"Using_the_Command_Line_Interface.html>`__ を参照してください。"
+
+msgid ""
+"After installing the operating system on each node for the architecture that "
+"you choose to deploy, you must configure the network interfaces. We "
+"recommend that you disable any automated network management tools and "
+"manually edit the appropriate configuration files for your distribution. For "
+"more information on how to configure networking on your distribution, see "
+"the `documentation <https://help.ubuntu.com/lts/serverguide/network-"
+"configuration.html>`_."
+msgstr ""
+"各ノードにオペレーティングシステムをインストールした後、導入するアーキテク"
+"チャーに合わせて、ネットワークインターフェースを設定する必要があります。すべ"
+"ての自動ネットワーク管理ツールを無効化し、お使いのディストリビューションの適"
+"切な設定ファイルを手動で編集することを推奨します。お使いのディストリビュー"
+"ションのネットワーク設定に関する詳細は、`ドキュメント <https://help.ubuntu."
+"com/lts/serverguide/network-configuration.html>`__ を参照してください。"
+
+msgid ""
+"After installing the operating system on each node for the architecture that "
+"you choose to deploy, you must configure the network interfaces. We "
+"recommend that you disable any automated network management tools and "
+"manually edit the appropriate configuration files for your distribution. For "
+"more information on how to configure networking on your distribution, see "
+"the `documentation <https://wiki.debian.org/NetworkConfiguration>`__ ."
+msgstr ""
+"各ノードにオペレーティングシステムをインストールした後、導入するアーキテク"
+"チャーに合わせて、ネットワークインターフェースを設定する必要があります。すべ"
+"ての自動ネットワーク管理ツールを無効化し、お使いのディストリビューションの適"
+"切な設定ファイルを手動で編集することを推奨します。お使いのディストリビュー"
+"ションのネットワーク設定に関する詳細は、`ドキュメント <https://wiki.debian."
+"org/NetworkConfiguration>`__ を参照してください。"
+
+msgid ""
+"After you configure the ML2 plug-in, removing values in the ``type_drivers`` "
+"option can lead to database inconsistency."
+msgstr ""
+"ML2 プラグインの設定後に、``type_drivers`` オプションから値を削除すると、デー"
+"タベース不整合が発生する可能性があります。"
+
+msgid ""
+"After you install and configure the dashboard, you can complete the "
+"following tasks:"
+msgstr ""
+"ダッシュボードをインストールして設定すると、以下の作業が行えるようになりま"
+"す。"
+
+msgid ""
+"All nodes require Internet access for administrative purposes such as "
+"package installation, security updates, :term:`DNS <Domain Name System "
+"(DNS)>`, and :term:`NTP <Network Time Protocol (NTP)>`. In most cases, nodes "
+"should obtain Internet access through the management network interface. To "
+"highlight the importance of network separation, the example architectures "
+"use `private address space <https://tools.ietf.org/html/rfc1918>`__ for the "
+"management network and assume that the physical network infrastructure "
+"provides Internet access via :term:`NAT <Network Address Translation (NAT)>` "
+"or other methods. The example architectures use routable IP address space "
+"for the provider (external) network and assume that the physical network "
+"infrastructure provides direct Internet access."
+msgstr ""
+"すべてのノードで、パッケージインストール、セキュリティー更新、:term:`DNS "
+"<Domain Name System (DNS)>`、:term:`NTP <Network Time Protocol (NTP)>` などの"
+"管理目的でインターネットアクセスが必要です。多くの場合、ノードのインターネッ"
+"トアクセスは管理ネットワークインターフェース経由とすべきです。ネットワーク分"
+"離の重要性を強調するために、サンプルアーキテクチャーは、管理ネットワークに `"
+"プライベートアドレス空間 <https://tools.ietf.org/html/rfc1918>`__ を使用し、"
+"物理ネットワークインフラが :term:`NAT <Network Address Translation (NAT)>` や"
+"他の方法によりインターネットアクセスを提供すると仮定します。また、サンプル"
+"アーキテクチャーは、プロバイダー (外部) ネットワーク用にルーティング可能な "
+"IP アドレス空間を使用し、物理ネットワークインフラはインターネットへの直接アク"
+"セスを提供すると仮定します。"
+
+msgid "Allow your hosts to access the dashboard:"
+msgstr "すべてのホストからのダッシュボードへのアクセスを許可します。"
+
+msgid ""
+"Alternatively, you can skip the ``ssh-keygen`` command and use an existing "
+"public key."
+msgstr ""
+"代わりに、``ssh-keygen`` コマンドをスキップして、既存の公開鍵を使用することも"
+"できます。"
+
+msgid ""
+"Although most environments include Identity, Image service, Compute, at "
+"least one networking service, and the Dashboard, the Object Storage service "
+"can operate independently. If your use case only involves Object Storage, "
+"you can skip to `Object Storage Installation Guide <https://docs.openstack."
+"org/project-install-guide/object-storage/draft/>`_ after configuring the "
+"appropriate nodes for it."
+msgstr ""
+"ほとんどの環境には、Identity service、Image service、Compute、少なくとも 1 つ"
+"のネットワークサービス、ダッシュボードがありますが、Object Storage は他のほと"
+"んどのサービスと独立して動作できます。Object Storage のみを使用するユースケー"
+"スの場合、適切なノードを設定した後に `Object Storage Installation Guide "
+"<https://docs.openstack.org/project-install-guide/object-storage/draft/>`_ に"
+"進んでください。"
+
+msgid ""
+"Any given Networking set up has at least one external network. Unlike the "
+"other networks, the external network is not merely a virtually defined "
+"network. Instead, it represents a view into a slice of the physical, "
+"external network accessible outside the OpenStack installation. IP addresses "
+"on the external network are accessible by anybody physically on the outside "
+"network."
+msgstr ""
+"すべての Networking 環境は少なくとも 1 つの外部ネットワークを持ちます。外部"
+"ネットワークは、他のネットワークと異なり、仮想的に定義されたネットワークでは"
+"ありません。これは、 OpenStack インストール環境の外部からアクセス可能な物理外"
+"部ネットワークの一部を表現したものだということです。外部ネットワークの IP ア"
+"ドレスは外部ネットワークにある物理的なホストからアクセスできます。"
+
+msgid ""
+"As of Ubuntu 16.04, MariaDB was changed to use the \"unix_socket "
+"Authentication Plugin\". Local authentication is now performed using the "
+"user credentials (UID), and password authentication is no longer used by "
+"default. This means that the root user no longer uses a password for local "
+"access to the server."
+msgstr ""
+"Ubuntu 16.04 では、MariaDB が unix_socket 認証プラグインを使用するよう変更さ"
+"れました。ローカル認証はユーザークレデンシャル (UID) を使用して実行されます。"
+"パスワード認証はデフォルトで使用されなくなりました。つまり、root ユーザーは"
+"サーバーへのローカルアクセスのためにパスワードを使用できなくなりました。"
+
+msgid "As the ``admin`` user, request an authentication token:"
+msgstr "``admin`` ユーザーとして、認証トークンを要求します。"
+
+msgid "As the ``demo`` user, request an authentication token:"
+msgstr "``demo`` ユーザーとして、認証トークンを要求します。"
+
+msgid ""
+"As the number of OpenStack services and virtual machines increase, so do the "
+"hardware requirements for the best performance. If performance degrades "
+"after enabling additional services or virtual machines, consider adding "
+"hardware resources to your environment."
+msgstr ""
+"OpenStack サービスや仮想マシンの数が増えると、最適なパフォーマンスを得るため"
+"のハードウェア要件も増えます。追加のサービスを有効にしたり仮想マシンを増やし"
+"たりした後で性能の劣化が見られた場合は、お使いの環境のハードウェアリソースを"
+"増やすことを検討してください。"
+
+msgid "Associate the floating IP address with the instance:"
+msgstr "Floating IP アドレスをインスタンスに関連付けます。"
+
+msgid "Attach a volume to an instance:"
+msgstr "ボリュームをインスタンスに接続します。"
+
+msgid "Attach the ``volume1`` volume to the ``provider-instance`` instance:"
+msgstr ""
+"``volume1`` ボリュームを ``provider-instance`` インスタンスに接続します。"
+
+msgid "Attach the volume to an instance"
+msgstr "ボリュームのインスタンスへの接続"
+
+msgid ""
+"Authenticate using ``admin`` or ``demo`` user and ``default`` domain "
+"credentials."
+msgstr ""
+"``admin`` ユーザーまたは ``demo`` ユーザーと ``default`` ドメインのクレデン"
+"シャルで認証を行います。"
+
+msgid ""
+"Back-end names are arbitrary. As an example, this guide uses the name of the "
+"driver as the name of the back end."
+msgstr ""
+"バックエンドの名前は任意です。このガイドは、例としてバックエンドの名前にドラ"
+"イバー名を使用します。"
+
+msgid "Bare Metal service (ironic)"
+msgstr "Bare Metal サービス (ironic)"
+
+msgid ""
+"Before launching an instance, you must create the necessary virtual network "
+"infrastructure. For networking option 1, an instance uses a provider "
+"(external) network that connects to the physical network infrastructure via "
+"layer-2 (bridging/switching). This network includes a DHCP server that "
+"provides IP addresses to instances."
+msgstr ""
+"インスタンスを起動する前に、必要な仮想ネットワークインフラを作成する必要があ"
+"ります。ネットワークオプション 1 の場合、インスタンスはプロバイダー (外部) "
+"ネットワークを使用します。プロバイダーネットワークは、レイヤー 2 (ブリッジや"
+"スイッチ) 経由で物理ネットワークインフラに接続されます。このネットワークに"
+"は、インスタンスに IP アドレスを提供する DHCP サーバーがあります。"
+
+msgid ""
+"Before you begin, ensure you have the most recent version of ``python-"
+"pyasn1`` `installed <https://pypi.python.org/pypi/pyasn1>`_."
+msgstr ""
+"開始前にきちんと ``python-pyasn1`` `installed <https://pypi.python.org/pypi/"
+"pyasn1>`_ の最新バージョンをインストールしてください。"
+
+msgid ""
+"Before you configure the OpenStack Networking (neutron) service, you must "
+"create a database, service credentials, and API endpoints."
+msgstr ""
+"OpenStack Networking (neutron) サービスを設定する前に、データベース、サービス"
+"クレデンシャル、API エンドポイントを作成する必要があります。"
+
+msgid ""
+"Before you install and configure the Block Storage service on the storage "
+"node, you must prepare the storage device."
+msgstr ""
+"ストレージノードに Block Storage サービスをインストールして設定する前に、スト"
+"レージデバイスを準備する必要があります。"
+
+msgid ""
+"Before you install and configure the Block Storage service, you must create "
+"a database, service credentials, and API endpoints."
+msgstr ""
+"Block Storage サービスをインストールして設定する前に、データベース、サービス"
+"クレデンシャル、API エンドポイントを作成する必要があります。"
+
+msgid ""
+"Before you install and configure the Compute service, you must create "
+"databases, service credentials, and API endpoints."
+msgstr ""
+"Compute サービスをインストールして設定する前に、データベース、サービスクレデ"
+"ンシャル、API エンドポイントを作成する必要があります。"
+
+msgid ""
+"Before you install and configure the Identity service, you must create a "
+"database."
+msgstr ""
+"Identity サービスをインストールして設定する前に、データベースを作成する必要が"
+"あります。"
+
+msgid ""
+"Before you install and configure the Image service, you must create a "
+"database, service credentials, and API endpoints."
+msgstr ""
+"Image service をインストールして設定する前に、データベース、サービスクレデン"
+"シャル、API エンドポイントを作成する必要があります。"
+
+msgid ""
+"Below endpoints list may differ depending on the installation of OpenStack "
+"components."
+msgstr ""
+"以下のエンドポイント一覧は、OpenStack コンポーネントのインストール構成に依存"
+"して異なるかもしれません。"
+
+msgid "Block Storage"
+msgstr "Block Storage"
+
+msgid "Block Storage service"
+msgstr "Block Storage サービス"
+
+msgid "Block storage node (Optional)"
+msgstr "ブロックストレージノード (オプション)"
+
+msgid "Bootstrap the Identity service:"
+msgstr "Identity サービスを初期設定を行います。"
+
+msgid ""
+"By default, Compute uses an internal firewall driver. Since the Networking "
+"service includes a firewall driver, you must disable the Compute firewall "
+"driver by using the ``nova.virt.firewall.NoopFirewallDriver`` firewall "
+"driver."
+msgstr ""
+"デフォルトで、Compute は組み込みのファイアウォールドライバーを使用します。"
+"Networking サービスにファイアウォールドライバーが含まれるため、``nova.virt."
+"firewall.NoopFirewallDriver`` ファイアウォールドライバーを使用して、Compute "
+"のファイアウォールドライバーを無効化する必要があります。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"By default, Compute uses an internal firewall service. Since Networking "
+"includes a firewall service, you must disable the Compute firewall service "
+"by using the ``nova.virt.firewall.NoopFirewallDriver`` firewall driver."
+msgstr ""
+"デフォルトで、Compute は組み込みのファイアウォールサービスを使用します。"
+"Networking サービスがファイアウォールサービスを提供するため、``nova.virt."
+"firewall.NoopFirewallDriver`` ファイアウォールドライバーを使用して、Compute "
+"のファイアウォールサービスを無効化する必要があります。"
+
+msgid ""
+"By default, the ``default`` security group applies to all instances and "
+"includes firewall rules that deny remote access to instances. For Linux "
+"images such as CirrOS, we recommend allowing at least ICMP (ping) and secure "
+"shell (SSH)."
+msgstr ""
+"デフォルトでは、セキュリティーグループ ``default`` がすべてのインスタンスに適"
+"用されます。このセキュリティーグループは、インスタンスへのリモートアクセスを"
+"拒否するファイアウォールルールを持ちます。CirrOS などの Linux イメージの場"
+"合、少なくとも ICMP (ping) と SSH を許可することを推奨します。"
+
+msgid ""
+"By default, the controller node synchronizes the time via a pool of public "
+"servers. However, you can optionally configure alternative servers such as "
+"those provided by your organization."
+msgstr ""
+"コントローラーノードは、デフォルトで、パブリックなサーバープール経由で時刻同"
+"期を行います。しかし、オプションとして、自組織により提供されるサーバーなど別"
+"のサーバーを参照するように設定することもできます。"
+
+msgid "Change the existing line that had ``-l 127.0.0.1``."
+msgstr "既存の ``-l 127.0.0.1`` を含む行を変更します。"
+
+msgid "Check the status of your floating IP address:"
+msgstr "Floating IP アドレスの状態を確認します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Check the status of your instance:"
+msgstr "インスタンスの状態を確認します。"
+
+msgid "Choose one of the following virtual networking options."
+msgstr "以下の仮想ネットワークの選択肢のいずれかを選択します。"
+
+msgid ""
+"Collects event and metering data by monitoring notifications sent from "
+"services."
+msgstr ""
+"サービスから送信される通知を監視して、イベントと計測データを収集します。"
+
+msgid "Comment out any other session storage configuration."
+msgstr "それ以外のすべてのセッションストレージ設定をコメントアウトします。"
+
+msgid ""
+"Comment out or remove any other ``connection`` options in the ``[database]`` "
+"section."
+msgstr ""
+"``[database]`` セクションにある他の ``connection`` オプションは、コメントアウ"
+"トまたは削除します。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Comment out or remove any other options in the ``[keystone_authtoken]`` "
+"section."
+msgstr ""
+"``[keystone_authtoken]`` セクションにある他のオプションは、コメントアウトまた"
+"は削除します。"
+
+msgid "Comment out the ``pool 2.debian.pool.ntp.org offline iburst`` line."
+msgstr ""
+"``pool 2.debian.pool.ntp.org offline iburst`` 行をコメントアウトします。"
+
+msgid "Compute"
+msgstr "Compute"
+
+msgid "Compute Node: 1 processor, 2 GB memory, and 10 GB storage"
+msgstr "コンピュートノード: 1 CPU、2 GB メモリ、10 GB ストレージ"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Compute node"
+msgstr "コンピュートノード"
+
+msgid "Compute service"
+msgstr "Compute サービス"
+
+msgid "Configure API versions:"
+msgstr "API バージョンを設定します。"
+
+msgid "Configure Compute to use Block Storage"
+msgstr "Block Storage を使用するための Compute の設定"
+
+msgid ""
+"Configure ``user`` as the default role for users that you create via the "
+"dashboard:"
+msgstr ""
+"ダッシュボード経由で作成するユーザーのデフォルトロールとして ``user`` を設定"
+"します。"
+
+msgid "Configure name resolution"
+msgstr "名前解決の設定"
+
+msgid "Configure network interfaces"
+msgstr "ネットワークインターフェースの設定"
+
+msgid "Configure networking options"
+msgstr "ネットワークのオプションの設定"
+
+msgid "Configure the Apache HTTP server"
+msgstr "Apache HTTP Server の設定"
+
+msgid "Configure the Compute service to use the Networking service"
+msgstr "Networking サービスを使用するための Compute サービスの設定"
+
+msgid "Configure the DHCP agent"
+msgstr "DHCP エージェントの設定"
+
+msgid "Configure the Linux bridge agent"
+msgstr "Linux ブリッジエージェントの設定"
+
+msgid "Configure the Modular Layer 2 (ML2) plug-in"
+msgstr "ML2 プラグインの設定"
+
+msgid "Configure the Networking components on a *compute* node."
+msgstr ""
+"*コンピュート* ノードにおいて、Networking のコンポーネントを設定します。"
+
+msgid "Configure the ``memcached`` session storage service:"
+msgstr "``memcached`` セッションストレージサービスを設定します。"
+
+msgid "Configure the administrative account"
+msgstr "管理アカウントの設定"
+
+msgid "Configure the common component"
+msgstr "共通コンポーネントの設定"
+
+msgid ""
+"Configure the dashboard to use OpenStack services on the ``controller`` node:"
+msgstr ""
+"``controller`` ノードの OpenStack のサービスを使用するように、ダッシュボード"
+"を設定します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Configure the first interface as the management interface:"
+msgstr "1 番目のインターフェースを管理インターフェースとして設定します。"
+
+msgid "Configure the layer-3 agent"
+msgstr "L3 エージェントの設定"
+
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Configure the management interface:"
+msgstr "管理インターフェースを設定します。"
+
+msgid "Configure the metadata agent"
+msgstr "メタデータエージェントの設定"
+
+msgid "Configure the server component"
+msgstr "サーバーコンポーネントの設定"
+
+msgid "Configure the web server:"
+msgstr "ウェブサーバーを設定します。"
+
+msgid "Confirm upload of the image and validate attributes:"
+msgstr "イメージがアップロードされたことを確認し、属性を検証します。"
+
+msgid "Container Infrastructure Management service (magnum)"
+msgstr "コンテナー基盤管理サービス (magnum)"
+
+msgid "Contents"
+msgstr "内容"
+
+msgid ""
+"Contents in the *Name/IP address* column should indicate the hostname of the "
+"controller node."
+msgstr ""
+"*Name/IP address* 列には、コントローラーノードのホスト名が表示されることで"
+"しょう。"
+
+msgid ""
+"Contents in the *Name/IP address* column should indicate the hostname or IP "
+"address of one or more NTP servers. Contents in the *MS* column should "
+"indicate *\\** for the server to which the NTP service is currently "
+"synchronized."
+msgstr ""
+"*Name/IP address* 列には、1 つ以上の NTP サーバーのホスト名か IP アドレスが表"
+"示されることでしょう。*MS* 列の *\\** は、サーバーが現在 NTP サービスと同期さ"
+"れていることを表します。"
+
+msgid "Controller"
+msgstr "コントローラー"
+
+msgid "Controller Node: 1 processor, 4 GB memory, and 5 GB storage"
+msgstr "コントローラーノード: 1 CPU、4 GB メモリ、5 GB ストレージ"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-ntp.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Controller node"
+msgstr "コントローラーノード"
+
+msgid "Create OpenStack client environment scripts"
+msgstr "OpenStack クライアント環境スクリプトの作成"
+
+msgid "Create a 1 GB volume:"
+msgstr "1 GB ボリュームを作成します。"
+
+msgid "Create a :term:`floating IP address` on the provider virtual network:"
+msgstr ""
+"プロバイダー仮想ネットワークに :term:`Floating IP アドレス <floating IP "
+"address>` を作成します。"
+
+msgid ""
+"Create a ``[mysqld]`` section, and set the ``bind-address`` key to the "
+"management IP address of the controller node to enable access by other nodes "
+"via the management network. Set additional keys to enable useful options and "
+"the UTF-8 character set:"
+msgstr ""
+"``[mysqld]`` セクションを作成して、``bind-address`` にコントローラーノードの"
+"管理 IP アドレスを設定して、管理ネットワーク経由で他のノードによりアクセスで"
+"きるようにします。その他、有用なオプションや UTF-8 文字セットを有効化するため"
+"のキーを設定します。"
+
+msgid "Create a ``cinder`` user:"
+msgstr "``cinder`` ユーザーを作成します。"
+
+msgid "Create a domain, projects, users, and roles"
+msgstr "ドメイン、プロジェクト、ユーザー、ロールの作成"
+
+msgid "Create a link to the ``/usr/share/keystone/wsgi-keystone.conf`` file:"
+msgstr ""
+"``/usr/share/keystone/wsgi-keystone.conf`` ファイルへのリンクを作成します。"
+
+msgid "Create a router"
+msgstr "ルーターの作成"
+
+msgid "Create a subnet on the network:"
+msgstr "ネットワークにサブネットを作成します。"
+
+msgid "Create a volume"
+msgstr "ボリュームの作成"
+
+msgid ""
+"Create and edit the ``/etc/my.cnf.d/openstack.cnf`` file and complete the "
+"following actions:"
+msgstr ""
+"ファイル ``/etc/my.cnf.d/openstack.cnf`` を作成、編集し、以下の作業をすべて行"
+"います。"
+
+msgid ""
+"Create and edit the ``/etc/mysql/conf.d/openstack.cnf`` file and complete "
+"the following actions:"
+msgstr ""
+"ファイル ``/etc/mysql/conf.d/openstack.cnf`` を作成、編集し、以下の作業をすべ"
+"て行います。"
+
+msgid ""
+"Create and edit the ``/etc/mysql/mariadb.conf.d/99-openstack.cnf`` file and "
+"complete the following actions:"
+msgstr ""
+"ファイル ``/etc/mysql/mariadb.conf.d/99-openstack.cnf`` を作成、編集し、以下"
+"の作業をすべて行います。"
+
+msgid ""
+"Create and edit the ``admin-openrc`` file and add the following content:"
+msgstr "``admin-openrc`` ファイルを作成して編集して、以下の内容を追加します。"
+
+msgid "Create and edit the ``demo-openrc`` file and add the following content:"
+msgstr "``demo-openrc`` ファイルを作成して編集して、以下の内容を追加します。"
+
+msgid ""
+"Create client environment scripts for the ``admin`` and ``demo`` projects "
+"and users. Future portions of this guide reference these scripts to load "
+"appropriate credentials for client operations."
+msgstr ""
+"``admin`` と ``demo`` のプロジェクトとユーザー用のクライアント環境スクリプト"
+"を作成します。これ以降は、このガイドでは、これらのスクリプトを参照して、クラ"
+"イアント操作に適切なクレデンシャルを読み込みます。"
+
+msgid "Create m1.nano flavor"
+msgstr "フレーバー m1.nano の作成"
+
+msgid "Create the Block Storage service API endpoints:"
+msgstr "Block Storage サービスの API エンドポイントを作成します。"
+
+msgid "Create the Image service API endpoints:"
+msgstr "Image service の API エンドポイントを作成します。"
+
+msgid "Create the LVM physical volume ``/dev/sdb``:"
+msgstr "LVM 物理ボリューム ``/dev/sdb`` を作成します。"
+
+msgid "Create the LVM volume group ``cinder-volumes``:"
+msgstr "LVM ボリュームグループ ``cinder-volumes`` を作成します。"
+
+msgid "Create the Networking service API endpoints:"
+msgstr "Networking サービス API エンドポイントを作成します。"
+
+msgid ""
+"Create the ``/etc/apache2/conf.d/wsgi-keystone.conf`` file with the "
+"following content:"
+msgstr "``/etc/apache2/conf.d/wsgi-keystone.conf`` を以下の内容で作成します。"
+
+msgid ""
+"Create the ``/etc/tgt/conf.d/cinder.conf`` file with the following data:"
+msgstr "``/etc/tgt/conf.d/cinder.conf`` を以下の内容で作成します。"
+
+msgid "Create the ``demo`` project:"
+msgstr "``demo`` プロジェクトを作成します。"
+
+msgid "Create the ``demo`` user:"
+msgstr "``demo`` ユーザーを作成します。"
+
+msgid "Create the ``glance`` service entity:"
+msgstr "``glance`` サービスエンティティーを作成します。"
+
+msgid "Create the ``glance`` user:"
+msgstr "``glance`` ユーザーを作成します。"
+
+msgid "Create the ``keystone`` database:"
+msgstr "``keystone`` データベースを作成します。"
+
+msgid "Create the ``neutron`` service entity:"
+msgstr "``neutron`` サービスエンティティーを作成します。"
+
+msgid "Create the ``neutron`` user:"
+msgstr "``neutron`` ユーザーを作成します。"
+
+msgid "Create the ``nova`` service entity:"
+msgstr "``nova`` サービスエンティティーを作成します。"
+
+msgid "Create the ``nova`` user:"
+msgstr "``nova`` ユーザーを作成します。"
+
+msgid "Create the ``user`` role:"
+msgstr "``user`` ロールを作成します。"
+
+# #-#-#-#-#  networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-initial-networks.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Create the network:"
+msgstr "ネットワークを作成します。"
+
+msgid "Create the provider network"
+msgstr "プロバイダーネットワークを作成します。"
+
+msgid "Create the router:"
+msgstr "ルーターを作成します。"
+
+msgid "Create the self-service network"
+msgstr "セルフサービスネットワークの作成"
+
+msgid "Create virtual networks"
+msgstr "仮想ネットワークの作成"
+
+msgid ""
+"Create virtual networks for the networking option that you chose in :ref:"
+"`networking`. If you chose option 1, create only the provider network. If "
+"you chose option 2, create the provider and self-service networks."
+msgstr ""
+":ref:`networking` で選択したネットワークオプションに応じた仮想ネットワークを"
+"作成します。オプション 1 を選択した場合は、プロバイダーネットワークのみを作成"
+"します。オプション 2 を選択した場合は、プロバイダーネットワークとセルフサービ"
+"スネットワークを作成します。"
+
+msgid "Creating the scripts"
+msgstr "スクリプトの作成"
+
+msgid ""
+"Customize your dashboard. See section `Customize and configure the Dashboard "
+"<https://docs.openstack.org/admin-guide/dashboard-customize-configure."
+"html>`__."
+msgstr ""
+"ダッシュボードのカスタマイズ。`ダッシュボードのカスタマイズおよび設定"
+"<https://docs.openstack.org/admin-guide/dashboard-customize-configure."
+"html>`__ のセクションを参照してください。"
+
+msgid "DNS service (designate)"
+msgstr "DNS サービス (designate)"
+
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+msgid "Database password (no variable used)"
+msgstr "データベースのパスワード (変数の使用なし)"
+
+msgid "Database password for Compute service"
+msgstr "Compute サービスのデータベースのパスワード"
+
+msgid "Database password for Image service"
+msgstr "Image service のデータベースのパスワード"
+
+msgid "Database password for the Block Storage service"
+msgstr "Block Storage サービスのデータベースのパスワード"
+
+msgid "Database password for the Dashboard"
+msgstr "Dashboard のデータベースのパスワード"
+
+msgid "Database password for the Networking service"
+msgstr "Networking サービスのデータベースのパスワード"
+
+msgid "Database password of Identity service"
+msgstr "Identity サービスのデータベースのパスワード"
+
+msgid ""
+"Database population occurs later for Networking because the script requires "
+"complete server and plug-in configuration files."
+msgstr ""
+"データベースの展開は、スクリプトが設定済みのサーバーとプラグインの設定ファイ"
+"ルを前提としているため、Networking の設定後に行います。"
+
+msgid "Database service (trove)"
+msgstr "Database サービス (trove)"
+
+msgid ""
+"Default configuration files vary by distribution. You might need to add "
+"these sections and options rather than modifying existing sections and "
+"options. Also, an ellipsis (``...``) in the configuration snippets indicates "
+"potential default configuration options that you should retain."
+msgstr ""
+"設定ファイルのデフォルトは、ディストリビューションにより異なります。これらの"
+"既存のセクションとオプションを編集するのではなく、追加する必要があるかもしれ"
+"ません。また、設定のスニペットにある 省略 (``...``) は、保持すべきデフォルト"
+"の設定オプションを意味します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Default gateway: 10.0.0.1"
+msgstr "デフォルトゲートウェイ: 10.0.0.1"
+
+msgid "Default gateway: ``10.0.0.1``"
+msgstr "デフォルトゲートウェイ: ``10.0.0.1``"
+
+# #-#-#-#-#  app_reserved_uids.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basic_environment.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  overview.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Description"
+msgstr "説明"
+
+msgid ""
+"Determine and implement the necessary core and optional services to meet "
+"performance and redundancy requirements."
+msgstr ""
+"パフォーマンス要件と冗長性要件を満たすよう、必要なコアサービスとオプション"
+"サービスを判断して実装します。"
+
+msgid "Determine instance options"
+msgstr "インスタンスのオプションの決定"
+
+msgid ""
+"Determine whether your compute node supports hardware acceleration for "
+"virtual machines:"
+msgstr ""
+"お使いのコンピュートノードが仮想マシンのハードウェア支援機能をサポートするか"
+"どうかを確認します。"
+
+msgid ""
+"Disable or remove any automatic update services because they can impact your "
+"OpenStack environment."
+msgstr ""
+"OpenStack 環境に影響を与える可能性があるため、自動更新サービスを無効化または"
+"削除します。"
+
+msgid ""
+"Distributions release OpenStack packages as part of the distribution or "
+"using other methods because of differing release schedules. Perform these "
+"procedures on all nodes."
+msgstr ""
+"各ディストリビューションは、リリーススケジュールの違いにより、ディストリ"
+"ビューションの一部としてであったり、または他の方法を用いて、OpenStack のパッ"
+"ケージをリリースします。以下の手順をすべてのノードで実行します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Do not change the ``HWADDR`` and ``UUID`` keys."
+msgstr "``HWADDR`` と ``UUID`` の項目は変更してはいけません。"
+
+msgid ""
+"Do not edit the ``ALLOWED_HOSTS`` parameter under the Ubuntu configuration "
+"section."
+msgstr ""
+"Ubuntu 設定セクションの中にある ``ALLOWED_HOSTS`` パラメーターを編集してはい"
+"けません。"
+
+msgid ""
+"Do not repeat this step when creating additional users for this project."
+msgstr ""
+"このプロジェクトに追加のユーザーを作成する際には、上記の手順を行わないでくだ"
+"さい。"
+
+msgid "Download the source image:"
+msgstr "ソースイメージをダウンロードします。"
+
+msgid ""
+"Due to a packaging bug, remove the ``log_dir`` option from the ``[DEFAULT]`` "
+"section."
+msgstr ""
+"パッケージ作成のバグがあるため、 ``[DEFAULT]`` セクションから ``log_dir`` オ"
+"プションを削除します。"
+
+msgid ""
+"Each item in the filter array begins with ``a`` for **accept** or ``r`` for "
+"**reject** and includes a regular expression for the device name. The array "
+"must end with ``r/.*/`` to reject any remaining devices. You can use the :"
+"command:`vgs -vvvv` command to test filters."
+msgstr ""
+"フィルター配列の各項目は、**許可** を意味する ``a`` か **拒否** を意味する "
+"``r`` から始まり、デバイス名にマッチする正規表現を含みます。他のすべてのデバ"
+"イスを拒否させるために、この配列は ``r/.*/`` で終わる必要があります。:"
+"command:`vgs -vvvv` コマンドを使用して、フィルターをテストできます。"
+
+msgid ""
+"Each plug-in that Networking uses has its own concepts. While not vital to "
+"operating the VNI and OpenStack environment, understanding these concepts "
+"can help you set up Networking. All Networking installations use a core plug-"
+"in and a security group plug-in (or just the No-Op security group plug-in). "
+"Additionally, Firewall-as-a-Service (FWaaS) and Load-Balancer-as-a-Service "
+"(LBaaS) plug-ins are available."
+msgstr ""
+"Networking が使用する各プラグインには、それぞれ独自の概念があります。VNI と "
+"OpenStack 環境を運用する上で必須ではありませんが、これらの概念を理解すること"
+"により、Networking を構築する役に立ちます。Networking はすべて、コアプラグイ"
+"ンとセキュリティグループプラグイン (または単なる No-Op セキュリティグループプ"
+"ラグイン) を使用します。加えて、Firewall-as-a-Service (FWaaS) や Load-"
+"Balancer-as-a-Service (LBaaS) プラグインが利用可能です。"
+
+msgid ""
+"Edit the ``/etc/apache2/apache2.conf`` file and configure the ``ServerName`` "
+"option to reference the controller node:"
+msgstr ""
+"``/etc/apache2/apache2.conf`` ファイルを編集し、``ServerName`` オプションがコ"
+"ントローラーノードを参照するように設定します。"
+
+msgid ""
+"Edit the ``/etc/chrony.conf`` file and add, change, or remove these keys as "
+"necessary for your environment:"
+msgstr ""
+"ファイル ``/etc/chrony.conf`` を編集して、お使いの環境の必要に応じて、これら"
+"の項目の追加、変更、削除を行います。"
+
+msgid ""
+"Edit the ``/etc/chrony.conf`` file and comment out or remove all but one "
+"``server`` key. Change it to reference the controller node:"
+msgstr ""
+"ファイル ``/etc/chrony.conf`` を編集して、``server`` 項目を 1 つを除いてすべ"
+"てコメントアウトまたは削除します。残した項目はコントローラーノードを参照する"
+"よう変更します。"
+
+msgid ""
+"Edit the ``/etc/chrony/chrony.conf`` file and add, change, or remove these "
+"keys as necessary for your environment:"
+msgstr ""
+"ファイル ``/etc/chrony/chrony.conf`` を編集して、お使いの環境の必要に応じて、"
+"これらの項目の追加、変更、削除を行います。"
+
+msgid ""
+"Edit the ``/etc/chrony/chrony.conf`` file and comment out or remove all but "
+"one ``server`` key. Change it to reference the controller node:"
+msgstr ""
+"ファイル ``/etc/chrony/chrony.conf`` を編集して、``server`` 項目を 1 つを除い"
+"てすべてコメントアウトまたは削除します。残した項目はコントローラーノードを参"
+"照するよう変更します。"
+
+msgid ""
+"Edit the ``/etc/cinder/cinder.conf`` file and complete the following actions:"
+msgstr ""
+"``/etc/cinder/cinder.conf`` ファイルを編集し、以下の作業をすべて行います。"
+
+msgid ""
+"Edit the ``/etc/glance/glance-api.conf`` file and complete the following "
+"actions:"
+msgstr ""
+"``/etc/glance/glance-api.conf`` ファイルを編集し、以下の作業をすべて行いま"
+"す。"
+
+msgid ""
+"Edit the ``/etc/glance/glance-registry.conf`` file and complete the "
+"following actions:"
+msgstr ""
+"``/etc/glance/glance-registry.conf`` ファイルを編集し、以下の作業をすべて行い"
+"ます。"
+
+msgid "Edit the ``/etc/hosts`` file to contain the following:"
+msgstr "``/etc/hosts`` ファイルを編集し、以下の内容を含めます。"
+
+msgid ""
+"Edit the ``/etc/httpd/conf/httpd.conf`` file and configure the "
+"``ServerName`` option to reference the controller node:"
+msgstr ""
+"``/etc/httpd/conf/httpd.conf`` ファイルを編集し、``ServerName`` オプションが"
+"コントローラーノードを参照するように設定します。"
+
+msgid ""
+"Edit the ``/etc/keystone/keystone-paste.ini`` file and remove "
+"``admin_token_auth`` from the ``[pipeline:public_api]``, ``[pipeline:"
+"admin_api]``, and ``[pipeline:api_v3]`` sections."
+msgstr ""
+"``/etc/keystone/keystone-paste.ini`` ファイルを編集して、``[pipeline:"
+"public_api]``、``[pipeline:admin_api]``、``[pipeline:api_v3]`` セクションか"
+"ら ``admin_token_auth`` を削除します。"
+
+msgid ""
+"Edit the ``/etc/keystone/keystone.conf`` file and complete the following "
+"actions:"
+msgstr ""
+"``/etc/keystone/keystone.conf`` ファイルを編集し、以下の作業をすべて行いま"
+"す。"
+
+msgid ""
+"Edit the ``/etc/memcached.conf`` file and configure the service to use the "
+"management IP address of the controller node. This is to enable access by "
+"other nodes via the management network:"
+msgstr ""
+"``/etc/memcached.conf`` ファイルを編集し、 memcached サービスがコントローラー"
+"ノードの管理用 IP アドレスを使うように設定します。これにより、他のノードが管"
+"理ネットワーク経由でアクセスできるようになります。"
+
+msgid "Edit the ``/etc/network/interfaces`` file to contain the following:"
+msgstr ""
+"ファイル ``/etc/network/interfaces`` を編集し、以下の内容を追加します。"
+
+msgid ""
+"Edit the ``/etc/neutron/dhcp_agent.ini`` file and complete the following "
+"actions:"
+msgstr ""
+"``/etc/neutron/dhcp_agent.ini`` ファイルを編集して、以下の作業をすべて行いま"
+"す。"
+
+msgid ""
+"Edit the ``/etc/neutron/l3_agent.ini`` file and complete the following "
+"actions:"
+msgstr ""
+"``/etc/neutron/l3_agent.ini`` ファイルを編集して、以下の作業をすべて行いま"
+"す。"
+
+msgid ""
+"Edit the ``/etc/neutron/metadata_agent.ini`` file and complete the following "
+"actions:"
+msgstr ""
+"``/etc/neutron/metadata_agent.ini`` ファイルを編集し、以下の作業をすべて行い"
+"ます。"
+
+msgid ""
+"Edit the ``/etc/neutron/neutron.conf`` file and complete the following "
+"actions:"
+msgstr ""
+"``/etc/neutron/neutron.conf`` ファイルを編集し、以下の作業をすべて行います。"
+
+msgid ""
+"Edit the ``/etc/neutron/plugins/ml2/linuxbridge_agent.ini`` file and "
+"complete the following actions:"
+msgstr ""
+"``/etc/neutron/plugins/ml2/linuxbridge_agent.ini`` ファイルを編集し、以下の作"
+"業をすべて行います。"
+
+msgid ""
+"Edit the ``/etc/neutron/plugins/ml2/ml2_conf.ini`` file and complete the "
+"following actions:"
+msgstr ""
+"``/etc/neutron/plugins/ml2/ml2_conf.ini`` ファイルを編集して、以下の作業をす"
+"べて行います。"
+
+msgid "Edit the ``/etc/nova/nova.conf`` file and add the following to it:"
+msgstr "``/etc/nova/nova.conf`` ファイルを編集し、以下を追加します。"
+
+msgid ""
+"Edit the ``/etc/nova/nova.conf`` file and complete the following actions:"
+msgstr "``/etc/nova/nova.conf`` ファイルを編集し、以下の作業をすべて行います。"
+
+msgid ""
+"Edit the ``/etc/nova/nova.conf`` file and perform the following actions:"
+msgstr "``/etc/nova/nova.conf`` ファイルを編集し、以下の作業をすべて行います。"
+
+msgid ""
+"Edit the ``/etc/openstack-dashboard/local_settings.py`` file and complete "
+"the following actions:"
+msgstr ""
+"``/etc/openstack-dashboard/local_settings.py`` ファイルを編集し、以下の作業を"
+"すべて行います。"
+
+msgid ""
+"Edit the ``/etc/openstack-dashboard/local_settings`` file and complete the "
+"following actions:"
+msgstr ""
+"``/etc/openstack-dashboard/local_settings`` ファイルを編集し、以下の作業をす"
+"べて行います。"
+
+msgid ""
+"Edit the ``/etc/sysconfig/apache2`` file and configure the "
+"``APACHE_SERVERNAME`` option to reference the controller node:"
+msgstr ""
+"``/etc/sysconfig/apache2`` ファイルを編集し、``APACHE_SERVERNAME`` オプション"
+"がコントローラーノードを参照するように設定します。"
+
+msgid ""
+"Edit the ``/etc/sysconfig/network-scripts/ifcfg-INTERFACE_NAME`` file to "
+"contain the following:"
+msgstr ""
+"ファイル ``/etc/sysconfig/network-scripts/ifcfg-INTERFACE_NAME`` を編集し、以"
+"下の内容を追加します。"
+
+msgid ""
+"Edit the ``/etc/sysconfig/network/ifcfg-INTERFACE_NAME`` file to contain the "
+"following:"
+msgstr ""
+"ファイル ``/etc/sysconfig/network/ifcfg-INTERFACE_NAME`` を編集し、以下の内容"
+"を追加します。"
+
+msgid ""
+"Edit the ``/srv/www/openstack-dashboard/openstack_dashboard/local/"
+"local_settings.py`` file and complete the following actions:"
+msgstr ""
+"``/srv/www/openstack-dashboard/openstack_dashboard/local/local_settings.py`` "
+"ファイルを編集し、以下の作業をすべて行います。"
+
+msgid ""
+"Edit the ``[libvirt]`` section in the ``/etc/nova/nova-compute.conf`` file "
+"as follows:"
+msgstr ""
+"``/etc/nova/nova-compute.conf`` ファイルの ``[libvirt]`` セクションを以下のよ"
+"うに編集します。"
+
+msgid ""
+"Edit the ``[libvirt]`` section in the ``/etc/nova/nova.conf`` file as "
+"follows:"
+msgstr ""
+"``/etc/nova/nova.conf`` ファイルの ``[libvirt]`` セクションを以下のように編集"
+"します。"
+
+msgid "Efficiently polls metering data related to OpenStack services."
+msgstr "OpenStack サービスに関連する計測データを効率的に取得します。"
+
+msgid "Enable support for domains:"
+msgstr "ドメインのサポートを有効にします。"
+
+msgid "Enable the Identity API version 3:"
+msgstr "Identity API バージョン 3 を有効にします。"
+
+msgid ""
+"Enable the Open Build Service repositories based on your openSUSE or SLES "
+"version:"
+msgstr ""
+"お使いの openSUSE や SLES のバージョンに合わせて、Open Build Service リポジト"
+"リーを有効にします。"
+
+msgid "Enable the OpenStack repository"
+msgstr "OpenStack リポジトリーの有効化"
+
+msgid "Enable the backports repository"
+msgstr "バックポートリポジトリーの有効化"
+
+msgid "Ensure the kernel module ``nbd`` is loaded."
+msgstr "カーネルモジュール ``nbd`` が読み込まれていることを確認します。"
+
+msgid ""
+"Ensure the module loads on every boot by adding ``nbd`` to the ``/etc/"
+"modules-load.d/nbd.conf`` file."
+msgstr ""
+"``/etc/modules-load.d/nbd.conf`` ファイルに ``nbd`` を追加することで、確実"
+"に、モジュールが起動時に毎回読み込まれるようにします。"
+
+msgid "Environment"
+msgstr "環境"
+
+msgid "Example architecture"
+msgstr "サンプルアーキテクチャー"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Exit the database access client."
+msgstr "データベースクライアントを終了します。"
+
+msgid ""
+"Explanations of configuration options and sample configuration files are "
+"included."
+msgstr "設定オプションの説明および設定ファイル例が書かれています。"
+
+msgid "Finalize installation"
+msgstr "インストールの最終作業"
+
+msgid "Finalize the installation"
+msgstr "インストールの最終手順"
+
+msgid ""
+"For OpenStack services, this guide uses ``SERVICE_PASS`` to reference "
+"service account passwords and ``SERVICE_DBPASS`` to reference database "
+"passwords."
+msgstr ""
+"このガイドでは、 各 OpenStack サービスについて、サービスアカウントのパスワー"
+"ドを参照するのに ``SERVICE_PASS`` を使用し、データベースのパスワードを参照す"
+"るのに ``SERVICE_DBPASS`` を使用します。"
+
+msgid ""
+"For best performance, we recommend that your environment meets or exceeds "
+"the hardware requirements in :ref:`figure-hwreqs`."
+msgstr ""
+"最高のパフォーマンスのためには、お使いの環境が :ref:`figure-hwreqs` にある"
+"ハードウェア要件を満たすことを推奨します。"
+
+msgid "For both networking options:"
+msgstr "どちらのネットワークオプションの場合も、以下を行います。"
+
+msgid ""
+"For details about browsers that support noVNC, see `README <https://github."
+"com/kanaka/noVNC/blob/master/README.md>`__ and `browser support <https://"
+"github.com/kanaka/noVNC/wiki/Browser-support>`__."
+msgstr ""
+"noVNC をサポートするブラウザーの詳細は、`README <https://github.com/kanaka/"
+"noVNC/blob/master/README.md>`__ と `ブラウザーサポート <https://github.com/"
+"kanaka/noVNC/wiki/Browser-support>`__ を参照してください。"
+
+msgid ""
+"For first-time installation and testing purposes, many users select to build "
+"each host as a :term:`virtual machine (VM)`. The primary benefits of VMs "
+"include the following:"
+msgstr ""
+"初めてのインストールやテスト目的の場合、多くのユーザーは各ホストを :term:`仮"
+"想マシン <virtual machine (VM)>` として構築することを選択します。仮想マシンの"
+"おもな目的は次のとおりです。"
+
+msgid ""
+"For information about disk and container formats for images, see `Disk and "
+"container formats for images <https://docs.openstack.org/image-guide/image-"
+"formats.html>`__ in the ``OpenStack Virtual Machine Image Guide``."
+msgstr ""
+"イメージのディスクとコンテナー形式に関する詳細は、``OpenStack 仮想マシンイ"
+"メージガイド`` の `イメージのディスク形式とコンテナー形式 <https://docs."
+"openstack.org/ja/image-guide/image-formats.html>`__ を参照してください。"
+
+msgid ""
+"For information about the :command:`openstack image create` parameters, see "
+"`Create or update an image (glance) <https://docs.openstack.org/user-guide/"
+"common/cli-manage-images.html#create-or-update-an-image-glance>`__ in the "
+"``OpenStack User Guide``."
+msgstr ""
+":command:`openstack image create` のパラメーターの詳細は、OpenStack ユーザー"
+"ガイドの `イメージ (glance) の作成・更新 <https://docs.openstack.org/ja/user-"
+"guide/common/cli-manage-images.html#create-or-update-an-image-glance>`__ を参"
+"照してください。"
+
+msgid ""
+"For more information about how to download and build images, see `OpenStack "
+"Virtual Machine Image Guide <https://docs.openstack.org/image-guide/>`__. "
+"For information about how to manage images, see the `OpenStack End User "
+"Guide <https://docs.openstack.org/user-guide/common/cli-manage-images."
+"html>`__."
+msgstr ""
+"ダウンロードとイメージ作成方法の詳細は `OpenStack 仮想マシンイメージガイド "
+"<https://docs.openstack.org/image-guide/>`__ を参照してください。イメージの管"
+"理方法の詳細は `OpenStack エンドユーザーガイド <https://docs.openstack.org/"
+"user-guide/common/cli-manage-images.html>`__ を参照してください。"
+
+msgid ""
+"For more information about how to manage volumes, see the `Manage volumes "
+"<https://docs.openstack.org/user-guide/common/cli-manage-volumes.html>`__ in "
+"OpenStack End User Guide."
+msgstr ""
+"ボリュームの管理方法の詳細は、 OpenStack エンドユーザーガイドの `ボリュームの"
+"管理 <https://docs.openstack.org/user-guide/common/cli-manage-volumes."
+"html>`__ を参照してください。"
+
+msgid ""
+"For more information about system requirements, see the `OpenStack "
+"Operations Guide <https://docs.openstack.org/ops-guide/>`_."
+msgstr ""
+"システム要件の詳細は `OpenStack Operations Guide <https://docs.openstack.org/"
+"ops-guide/>`_ を参照してください。"
+
+msgid ""
+"For more information about the Networking service including virtual "
+"networking components, layout, and traffic flows, see the `OpenStack "
+"Networking Guide <https://docs.openstack.org/ocata/networking-guide/>`__."
+msgstr ""
+"仮想ネットワークのコンポーネント、 配置、トラフィックの流れなどの Networking "
+"サービスに関する詳細は、 `OpenStack ネットワークガイド <https://docs."
+"openstack.org/ocata/networking-guide/>`__ を参照してください。"
+
+msgid ""
+"For more information on production architectures, see the `Architecture "
+"Design Guide <https://docs.openstack.org/arch-design/>`_, `OpenStack "
+"Operations Guide <https://docs.openstack.org/ops-guide/>`_, and `OpenStack "
+"Networking Guide <https://docs.openstack.org/ocata/networking-guide/>`_."
+msgstr ""
+"本番環境のアーキテクチャーの詳細は、`Architecture Design Guide <https://docs."
+"openstack.org/arch-design/>`_、`OpenStack 運用ガイド <https://docs.openstack."
+"org/ops-guide/>`_、`OpenStack ネットワークガイド <https://docs.openstack.org/"
+"ocata/networking-guide/>`_ を参照してください。"
+
+msgid ""
+"For more information on registering the system, see the `Red Hat Enterprise "
+"Linux 7 System Administrator's Guide <https://access.redhat.com/"
+"documentation/en-US/Red_Hat_Enterprise_Linux/7/html/"
+"System_Administrators_Guide/part-Subscription_and_Support.html>`_."
+msgstr ""
+"システムの登録方法の詳細は `Red Hat Enterprise Linux 7 System "
+"Administrator's Guide <https://access.redhat.com/documentation/en-US/"
+"Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/part-"
+"Subscription_and_Support.html>`_ を参照してください。"
+
+msgid ""
+"For more information, see the `Configuration Reference <https://docs."
+"openstack.org/ocata/config-reference/block-storage/volume-drivers.html>`_."
+msgstr ""
+"詳しい情報は、 `Configuration Reference <https://docs.openstack.org/ocata/"
+"config-reference/block-storage/volume-drivers.html>`__ を参照してください。"
+
+msgid ""
+"For more information, see the `Orchestration installation guide <https://"
+"docs.openstack.org/project-install-guide/orchestration/ocata/launch-instance."
+"html>`_."
+msgstr ""
+"詳細は `Orchestration インストールガイド <https://docs.openstack.org/project-"
+"install-guide/orchestration/ocata/launch-instance.html>`_ を参照してくださ"
+"い。"
+
+msgid ""
+"For more information, see the `Shared File Systems installation guide "
+"<https://docs.openstack.org/project-install-guide/shared-file-systems/"
+"ocata>`_."
+msgstr ""
+"詳しい情報は `Shared File Systems インストールガイド <https://docs.openstack."
+"org/project-install-guide/shared-file-systems/ocata>`_ を参照してください。"
+
+msgid "For networking option 2, also enable and start the layer-3 service:"
+msgstr "ネットワークオプション 2 の場合、L3 サービスも有効にして起動します。"
+
+msgid "For networking option 2, also restart the layer-3 service:"
+msgstr "Networking オプション 2 の場合、L3 サービスも再起動します。"
+
+msgid ""
+"For security reasons, disable the temporary authentication token mechanism:"
+msgstr "セキュリティーのため、一時認証トークンメカニズムを無効化します。"
+
+msgid ""
+"For simplicity, service traffic between compute nodes and this node uses the "
+"management network. Production environments should implement a separate "
+"storage network to increase performance and security."
+msgstr ""
+"簡単のため、コンピュートノードとこのノード間のサービストラフィックは管理ネッ"
+"トワークを使います。本番環境では、性能とセキュリティーを向上させるため別のス"
+"トレージネットワークを用意すべきでしょう。"
+
+msgid ""
+"For the outside network to access VMs, and vice versa, routers between the "
+"networks are needed. Each router has one gateway that is connected to an "
+"external network and one or more interfaces connected to internal networks. "
+"Like a physical router, subnets can access machines on other subnets that "
+"are connected to the same router, and machines can access the outside "
+"network through the gateway for the router."
+msgstr ""
+"外部ネットワークが仮想マシンにアクセスしたり、その逆を行うには、ネットワーク"
+"間のルーターが必要です。各ルーターは、外部ネットワークに接続された 1 つのゲー"
+"トウェイと、内部ネットワークに接続された 1 つ以上のインターフェースを持ちま"
+"す。物理ルーターのように、同じルーターに接続された他のサブネットにあるマシン"
+"にサブネットがアクセスできます。また、マシンはルーターに対するゲートウェイ経"
+"由で外部ネットワークにアクセスできます。"
+
+msgid "From the *compute* node, test access to the Internet:"
+msgstr "*コンピュート* ノードから、インターネットへのアクセスをテストします。"
+
+msgid ""
+"From the *compute* node, test access to the management interface on the "
+"*controller* node:"
+msgstr ""
+"*コンピュート* ノードから、*コントローラー* ノードの管理インターフェースへの"
+"アクセスをテストします。"
+
+msgid "From the *controller* node, test access to the Internet:"
+msgstr ""
+"*コントローラー* ノードから、インターネットへのアクセスをテストします。"
+
+msgid ""
+"From the *controller* node, test access to the management interface on the "
+"*compute* node:"
+msgstr ""
+"*コントローラー* ノードから、*コンピュート* ノードの管理インターフェースへの"
+"アクセスをテストします。"
+
+msgid "Generate a key pair"
+msgstr "キーペアの生成"
+
+msgid "Generate a key pair and add a public key:"
+msgstr "キーペアを生成して、公開鍵を追加します。"
+
+msgid "Grant proper access to the ``keystone`` database:"
+msgstr "``keystone`` データベースに適切なアクセス権を付与します。"
+
+msgid "Host networking"
+msgstr "ホストネットワーク"
+
+msgid ""
+"However, VMs will reduce performance of your instances, particularly if your "
+"hypervisor and/or processor lacks support for hardware acceleration of "
+"nested VMs."
+msgstr ""
+"しかしながら、仮想マシンを使用すると、インスタンスの性能が悪くなります。とく"
+"に、ハイパーバイザーとプロセッサーが nested 仮想マシンのハードウェア支援機能"
+"をサポートしない場合は顕著です。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "IP address: 10.0.0.11"
+msgstr "IP アドレス: 10.0.0.11"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "IP address: 10.0.0.31"
+msgstr "IP アドレス: 10.0.0.31"
+
+msgid "IP address: ``10.0.0.41``"
+msgstr "IP アドレス: ``10.0.0.41``"
+
+msgid "Identity service"
+msgstr "Identity サービス"
+
+msgid ""
+"If necessary, replace ``10.0.0.0/24`` with a description of your subnet."
+msgstr "必要に応じて、``10.0.0.0/24`` をお使いのサブネットに置き換えます。"
+
+msgid ""
+"If the ``nova-compute`` service fails to start, check ``/var/log/nova/nova-"
+"compute.log``. The error message ``AMQP server on controller:5672 is "
+"unreachable`` likely indicates that the firewall on the controller node is "
+"preventing access to port 5672. Configure the firewall to open port 5672 on "
+"the controller node and restart ``nova-compute`` service on the compute node."
+msgstr ""
+"``nova-compute`` サービスが起動しない場合、``/var/log/nova/nova-compute."
+"log`` を確認します。``AMQP server on controller:5672 is unreachable`` という"
+"エラーメッセージは、コントローラーノードにあるファイアウォールが 5672 番ポー"
+"トへのアクセスを遮断していることを意味します。コントローラーノードにおいて "
+"5672 番ポートが開いていることを確認してから、コンピュートノードにおいて "
+"``nova-compute`` サービスを再起動します。"
+
+msgid ""
+"If the web browser to access remote consoles resides on a host that cannot "
+"resolve the ``controller`` hostname, you must replace ``controller`` with "
+"the management interface IP address of the controller node."
+msgstr ""
+"リモートコンソールにアクセスする Web ブラウザーをホスト名 ``controller`` を解"
+"決できないホストで使用している場合、``controller`` をコントローラーノードの管"
+"理インターフェースの IP アドレスに置き換える必要があります。"
+
+msgid ""
+"If this command returns a value of ``one or greater``, your compute node "
+"supports hardware acceleration which typically requires no additional "
+"configuration."
+msgstr ""
+"このコマンドが ``1 以上`` の値を返した場合、お使いのコンピュートノードはハー"
+"ドウェア支援機能をサポートしており、通常は追加の設定は必要ありません。"
+
+msgid ""
+"If this command returns a value of ``zero``, your compute node does not "
+"support hardware acceleration and you must configure ``libvirt`` to use QEMU "
+"instead of KVM."
+msgstr ""
+"このコマンドが ``0`` を返す場合、お使いのコンピュートノードはハードウェア支援"
+"機能をサポートしていません。``libvirt`` が KVM の代わりに QEMU を使用するよう"
+"に設定する必要があります。"
+
+msgid ""
+"If you choose to install on VMs, make sure your hypervisor provides a way to "
+"disable MAC address filtering on the provider network interface."
+msgstr ""
+"仮想マシンにインストールする場合、お使いのハイパーバイザーがプロバイダーネッ"
+"トワークインターフェースに MAC アドレスフィルタリングを無効化する方法を提供し"
+"ていることを確認してください。"
+
+msgid ""
+"If you chose networking option 1, disable support for layer-3 networking "
+"services:"
+msgstr ""
+"ネットワークオプション 1 を選択した場合、レイヤー 3 ネットワークサービスのサ"
+"ポートを無効にします。"
+
+msgid ""
+"If you chose networking option 1, you can only launch an instance on the "
+"provider network. If you chose networking option 2, you can launch an "
+"instance on the provider network and the self-service network."
+msgstr ""
+"ネットワークオプション 1 を選択した場合、プロバイダーネットワークにのみインス"
+"タンスを起動できます。ネットワークオプション 2 を選択した場合、プロバイダー"
+"ネットワークとセルフサービスネットワークにインスタンスを起動できます。"
+
+msgid ""
+"If you chose networking option 2, you can also create a self-service "
+"(private) network that connects to the physical network infrastructure via "
+"NAT. This network includes a DHCP server that provides IP addresses to "
+"instances. An instance on this network can automatically access external "
+"networks such as the Internet. However, access to an instance on this "
+"network from external networks such as the Internet requires a :term:"
+"`floating IP address`."
+msgstr ""
+"ネットワークオプション 2 を選択した場合、セルフサービス (プライベート) ネット"
+"ワークも作成でき、このネットワークは NAT 経由で物理ネットワークインフラに接続"
+"されます。このネットワークには、インスタンスに IP アドレスを提供する DHCP "
+"サーバーがあります。このネットワークにあるインスタンスは、インターネットなど"
+"の外部ネットワークに自動的にアクセスできます。ただし、インターネットなどの外"
+"部ネットワークからこのネットワークにあるインスタンスにアクセスする場合、:"
+"term:`Floating IP アドレス <floating IP address>` が必要です。"
+
+msgid ""
+"If you chose option 1 and your environment contains only one network, you "
+"can omit the ``--nic`` option because OpenStack automatically chooses the "
+"only network available."
+msgstr ""
+"オプション 1 を選択して、環境のネットワークが 1 つだけの場合、OpenStack が自"
+"動的に唯一利用可能なネットワークを選択するため、``--nic`` オプションを省略で"
+"きます。"
+
+msgid ""
+"If you chose option 2, the output should also contain the ``selfservice`` "
+"self-service network."
+msgstr ""
+"オプション 2 を選択した場合、出力にはセルフサービスネットワーク "
+"``selfservice`` も含まれます。"
+
+msgid ""
+"If you prefer to use debconf, refer to the debconf install-guide for Debian."
+msgstr ""
+"debconf の方を使いたい場合は、 debconf 版の Debian インストールガイドを参照し"
+"てください。"
+
+msgid ""
+"If you want to deploy the Block Storage service, configure one additional "
+"storage node."
+msgstr ""
+"Block Storage サービスをデプロイしたい場合、追加のノードを 1 つ設定します。"
+
+msgid ""
+"If your environment includes the Block Storage service, you can create a "
+"volume and attach it to an instance."
+msgstr ""
+"お使いの環境に Block Storage がある場合、ボリュームを作成して、それをインスタ"
+"ンスに接続できます。"
+
+msgid ""
+"If your environment includes the Orchestration service, you can create a "
+"stack that launches an instance."
+msgstr ""
+"お使いの環境に Orchestration サービスがある場合、インスタンスを起動するスタッ"
+"クを作成できます。"
+
+msgid ""
+"If your environment includes the Shared File Systems service, you can create "
+"a share and mount it in an instance."
+msgstr ""
+"お使いの環境に Shared File Systems サービスがある場合、共有を作成し、その共有"
+"をインスタンスからマウントできます。"
+
+msgid ""
+"If your instance does not launch or seem to work as you expect, see the "
+"`Instance Boot Failures <https://docs.openstack.org/ops-guide/ops-"
+"maintenance-compute.html#instances>`__ section in OpenStack Operations Guide "
+"for more information or use one of the :doc:`many other options <common/app-"
+"support>` to seek assistance. We want your first installation to work!"
+msgstr ""
+"インスタンスが起動しない場合や期待通り動作しない場合、詳細は OpenStack "
+"Operations Guide の `Instance Boot Failures <https://docs.openstack.org/ops-"
+"guide/ops-maintenance-compute.html#instances>`__ セクションを参照してくださ"
+"い。または、支援を得るために :doc:`他の多くの方法 <common/app-support>` を利"
+"用してください。はじめてのインストール環境が正しく動作することを期待していま"
+"す。"
+
+msgid ""
+"If your storage nodes use LVM on the operating system disk, you must also "
+"add the associated device to the filter. For example, if the ``/dev/sda`` "
+"device contains the operating system:"
+msgstr ""
+"ストレージノードがオペレーティングシステムのディスクで LVM を使用している場"
+"合、関連するデバイスをフィルターに追加する必要があります。例えば、``/dev/"
+"sda`` デバイスにオペレーティングシステムが含まれる場合、次のようにします。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"If your web browser runs on a host that cannot resolve the ``controller`` "
+"host name, you can replace ``controller`` with the IP address of the "
+"management interface on your controller node."
+msgstr ""
+"ホスト名 ``controller`` を解決できないホストで Web ブラウザーを使用している場"
+"合、 ``controller`` をコントローラーノードの管理インターフェースの IP アドレ"
+"スに置き換えてください。"
+
+msgid "Ignore any deprecation messages in this output."
+msgstr "この出力の廃止予定に関するメッセージはすべて無視してください。"
+
+msgid "Ignore any warnings in this output."
+msgstr "この出力の警告はすべて無視してください。"
+
+msgid "Image service"
+msgstr "Image サービス"
+
+msgid ""
+"Implement a deployment tool such as Ansible, Chef, Puppet, or Salt to "
+"automate deployment and management of the production environment."
+msgstr ""
+"本番環境の配備および管理を自動化するために、Ansible、Chef、Puppet、Salt など"
+"のデプロイツールを導入してください。"
+
+msgid ""
+"In addition to ``rhel-7-server-rpms``, you also need to have the ``rhel-7-"
+"server-optional-rpms``, ``rhel-7-server-extras-rpms``, and ``rhel-7-server-"
+"rh-common-rpms`` repositories enabled:"
+msgstr ""
+"``rhel-7-server-rpms`` に加えて、``rhel-7-server-optional-rpms``、``rhel-7-"
+"server-extras-rpms``、``rhel-7-server-rh-common-rpms`` リポジトリーを有効化す"
+"る必要があります。"
+
+msgid ""
+"In addition to external networks, any Networking set up has one or more "
+"internal networks. These software-defined networks connect directly to the "
+"VMs. Only the VMs on any given internal network, or those on subnets "
+"connected through interfaces to a similar router, can access VMs connected "
+"to that network directly."
+msgstr ""
+"外部ネットワークに加えて、あらゆる Networking のセットアップ環境は 1 つ以上の"
+"内部ネットワークを持ちます。これらの SDN (Software-defined network) は仮想マ"
+"シンに直接接続します。ある内部ネットワークに接続された仮想マシンに直接アクセ"
+"スできるのは、同じネットワークにある仮想マシンか、ルーターのインターフェース"
+"経由で接続されたサブネットにある仮想マシンだけです。"
+
+msgid ""
+"In the Dashboard configuration section, allow your hosts to access Dashboard:"
+msgstr ""
+"Dashboard の設定セクションにおいて、ホストからの Dashboard へのアクセスを許可"
+"します。"
+
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"In the ``[DEFAULT]`` and ``[keystone_authtoken]`` sections, configure "
+"Identity service access:"
+msgstr ""
+"``[DEFAULT]`` セクションと ``[keystone_authtoken]`` セクションに、Identity "
+"サービスへのアクセス方法を設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` and ``[nova]`` sections, configure Networking to notify "
+"Compute of network topology changes:"
+msgstr ""
+"``[DEFAULT]`` セクションと ``[nova]`` セクションで、Networking が Compute に"
+"ネットワークトポロジーの変更を通知するよう設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, check that the ``my_ip`` option is correctly "
+"set (this value is handled by the config and postinst scripts of the ``nova-"
+"common`` package using debconf):"
+msgstr ""
+"``[DEFAULT]`` セクションで、 ``my_ip`` オプションが正しく設定されているか確認"
+"してください (この値は ``nova-common`` パッケージのスクリプト config と "
+"postinst により debconf を使って設定されます)。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, configure ``RabbitMQ`` message queue access:"
+msgstr ""
+"``[DEFAULT]`` セクションに、``RabbitMQ`` メッセージキューのアクセス方法を設定"
+"します。"
+
+msgid "In the ``[DEFAULT]`` section, configure backup options:"
+msgstr "``[DEFAULT]`` セクションで、バックアップオプションを設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, configure the Linux bridge interface driver "
+"and external network bridge:"
+msgstr ""
+"``[DEFAULT]`` セクションで、Linux ブリッジインターフェースドライバー、外部"
+"ネットワークブリッジを設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, configure the Linux bridge interface driver, "
+"Dnsmasq DHCP driver, and enable isolated metadata so instances on provider "
+"networks can access metadata over the network:"
+msgstr ""
+"``[DEFAULT]`` セクションにおいて、Linux ブリッジインターフェースドライバー、"
+"Dnsmasq DHCP ドライバーを設定して、 isolated metadata を有効にします。これに"
+"より、プロバイダーネットワークにあるインスタンスがネットワーク経由でメタデー"
+"タにアクセスできます。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"In the ``[DEFAULT]`` section, configure the ``my_ip`` option to use the "
+"management interface IP address of the controller node:"
+msgstr ""
+"``[DEFAULT]`` セクションで、コントローラーノードの管理インターフェースの IP "
+"アドレスを使用するように``my_ip`` オプションを設定します。"
+
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "In the ``[DEFAULT]`` section, configure the ``my_ip`` option:"
+msgstr "``[DEFAULT]`` セクションに ``my_ip`` オプションを設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, configure the location of the Image service "
+"API:"
+msgstr "``[DEFAULT]`` セクションで、Image サービス API の場所を設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, configure the metadata host and shared secret:"
+msgstr ""
+"``[DEFAULT]`` セクションに、メタデータホストと共有シークレットを設定します。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, enable only the compute and metadata APIs:"
+msgstr ""
+"``[DEFAULT]`` セクションで、 compute API とメタデータ API のみを有効にしま"
+"す。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, enable support for the Networking service:"
+msgstr ""
+"``[DEFAULT]`` セクションで、Networking サービスのサポートを有効にします。"
+
+msgid "In the ``[DEFAULT]`` section, enable the LVM back end:"
+msgstr "``[DEFAULT]`` セクションで LVM バックエンドを有効にします。"
+
+msgid ""
+"In the ``[DEFAULT]`` section, enable the Modular Layer 2 (ML2) plug-in and "
+"disable additional plug-ins:"
+msgstr ""
+"``[DEFAULT]`` セクションで、ML2 プラグインを有効にして、追加プラグインを無効"
+"にします。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"In the ``[DEFAULT]`` section, enable the Modular Layer 2 (ML2) plug-in, "
+"router service, and overlapping IP addresses:"
+msgstr ""
+"``[DEFAULT]`` セクションで、Modular Layer 2 (ML2) プラグイン、ルーターサービ"
+"ス、IP アドレス重複を有効にします。"
+
+msgid "In the ``[DEFAULT]`` section, set the ``compute_driver``:"
+msgstr "``[DEFAULT]`` セクションに ``compute_driver`` を設定します。"
+
+msgid ""
+"In the ``[api]`` and ``[keystone_authtoken]`` sections, configure Identity "
+"service access:"
+msgstr ""
+"``[api]`` と ``[keystone_authtoken]`` セクションに、Identity サービスへのアク"
+"セス方法を設定します。"
+
+msgid ""
+"In the ``[api_database]`` and ``[database]`` sections, configure database "
+"access:"
+msgstr ""
+"セクション ``[api_database]`` と ``[database]`` で、データベースのアクセス方"
+"法を設定します。"
+
+msgid ""
+"In the ``[database]`` section, comment out any ``connection`` options "
+"because compute nodes do not directly access the database."
+msgstr ""
+"コンピュートノードはデータベースに直接アクセスしないため、``[database]`` セク"
+"ションにおいて、すべての ``connection`` オプションをコメントアウトします。"
+
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "In the ``[database]`` section, configure database access:"
+msgstr "``[database]`` セクションで、データベースのアクセス方法を設定します。"
+
+msgid ""
+"In the ``[glance]`` section, configure the location of the Image service API:"
+msgstr "``[glance]`` セクションで、Image サービス API の場所を設定します。"
+
+msgid ""
+"In the ``[glance_store]`` section, configure the local file system store and "
+"location of image files:"
+msgstr ""
+"``[glance_store]`` セクションにおいて、ローカルファイルシステムストアおよびイ"
+"メージファイルの場所を設定します。"
+
+msgid ""
+"In the ``[keystone_authtoken]`` and ``[paste_deploy]`` sections, configure "
+"Identity service access:"
+msgstr ""
+"``[keystone_authtoken]`` セクションと ``[paste_deploy]`` セクションで、"
+"Identity サービスへのアクセス方法を設定します。"
+
+msgid ""
+"In the ``[linux_bridge]`` section, map the provider virtual network to the "
+"provider physical network interface:"
+msgstr ""
+"``[linux_bridge]`` セクションにおいて、プロバイダー仮想ネットワークをプロバイ"
+"ダー物理ネットワークのインターフェースに対応付けます。"
+
+msgid ""
+"In the ``[lvm]`` section, configure the LVM back end with the LVM driver, "
+"``cinder-volumes`` volume group, iSCSI protocol, and appropriate iSCSI "
+"service. If the ``[lvm]`` section does not exist, create it:"
+msgstr ""
+"``[lvm]`` セクションに、LVM ドライバー、``cinder-volumes`` ボリュームグルー"
+"プ、iSCSI プロトコル、適切な iSCSI サービスを指定し、LVM バックエンドを設定し"
+"ます。``[lvm]`` セクションが存在しなければ、作成します。"
+
+msgid ""
+"In the ``[lvm]`` section, configure the LVM back end with the LVM driver, "
+"``cinder-volumes`` volume group, iSCSI protocol, and appropriate iSCSI "
+"service:"
+msgstr ""
+"``[lvm]`` セクションに、LVM ドライバー、``cinder-volumes`` ボリュームグルー"
+"プ、iSCSI プロトコル、適切な iSCSI サービスを指定し、LVM バックエンドを設定し"
+"ます。"
+
+msgid "In the ``[ml2]`` section, disable self-service networks:"
+msgstr "``[ml2]`` セクションで、セルフサービスネットワークを無効にします。"
+
+msgid "In the ``[ml2]`` section, enable VXLAN self-service networks:"
+msgstr ""
+"``[ml2]`` セクションで、VXLAN セルフサービスネットワークを有効にします。"
+
+msgid "In the ``[ml2]`` section, enable flat and VLAN networks:"
+msgstr ""
+"``[ml2]`` セクションで、フラットネットワーク、VLAN ネットワークを有効にしま"
+"す。"
+
+msgid "In the ``[ml2]`` section, enable flat, VLAN, and VXLAN networks:"
+msgstr ""
+"``[ml2]`` セクションで、フラット、VLAN、VXLAN ネットワークを有効にします。"
+
+msgid ""
+"In the ``[ml2]`` section, enable the Linux bridge and layer-2 population "
+"mechanisms:"
+msgstr ""
+"``[ml2]`` セクションで、Linux ブリッジ機構および layer-2 population 機構を有"
+"効にします。"
+
+msgid "In the ``[ml2]`` section, enable the Linux bridge mechanism:"
+msgstr "``[ml2]`` セクションで、Linux ブリッジ機構を有効にします。"
+
+msgid "In the ``[ml2]`` section, enable the port security extension driver:"
+msgstr ""
+"``[ml2]`` セクションで、ポートセキュリティー拡張ドライバーを有効にします。"
+
+msgid ""
+"In the ``[ml2_type_flat]`` section, configure the provider virtual network "
+"as a flat network:"
+msgstr ""
+"``[ml2_type_flat]`` セクションで、プロバイダー仮想ネットワークをフラットネッ"
+"トワークとして設定します。"
+
+msgid ""
+"In the ``[ml2_type_vxlan]`` section, configure the VXLAN network identifier "
+"range for self-service networks:"
+msgstr ""
+"``[ml2_type_vxlan]`` セクションで、セルフサービスネットワーク用の VXLAN ネッ"
+"トワーク ID の範囲を設定します。"
+
+msgid ""
+"In the ``[neutron]`` section, configure access parameters, enable the "
+"metadata proxy, and configure the secret:"
+msgstr ""
+"``[neutron]`` セクションに、アクセス用のパラメーターを設定し、メタデータプロ"
+"キシーを有効にし、シークレットを設定します。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "In the ``[neutron]`` section, configure access parameters:"
+msgstr "``[neutron]`` セクションに、アクセスパラメーターを設定します。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "In the ``[oslo_concurrency]`` section, configure the lock path:"
+msgstr "``[oslo_concurrency]`` セクションにロックパスを設定します。"
+
+msgid ""
+"In the ``[securitygroup]`` section, enable :term:`ipset` to increase "
+"efficiency of security group rules:"
+msgstr ""
+"``[securitygroup]`` セクションで、 :term:`ipset` を有効にし、セキュリティーグ"
+"ループルールの効率性を向上させます。"
+
+msgid ""
+"In the ``[securitygroup]`` section, enable security groups and configure the "
+"Linux bridge :term:`iptables` firewall driver:"
+msgstr ""
+"``[securitygroup]`` セクションで、セキュリティグループを有効にし、 Linux ブ"
+"リッジ :term:`iptables` ファイアウォールドライバーを設定します。"
+
+msgid "In the ``[spice]`` section, disable spice:"
+msgstr "``[spice]`` セクションにおいて SPICE を無効化します。"
+
+msgid "In the ``[token]`` section, configure the Fernet token provider:"
+msgstr "``[token]`` セクションで Fernet トークンプロバイダーを設定します。"
+
+msgid ""
+"In the ``[vnc]`` section, configure the VNC proxy to use the management "
+"interface IP address of the controller node:"
+msgstr ""
+"``[vnc]`` セクションで、コントローラーノードの管理インターフェース IP アドレ"
+"スを使用するように、VNC プロキシーを設定します。"
+
+msgid "In the ``[vnc]`` section, enable and configure remote console access:"
+msgstr ""
+"``[vnc]`` セクションで、リモートコンソールアクセスを有効にし、その設定を行い"
+"ます。"
+
+msgid "In the ``[vxlan]`` section, disable VXLAN overlay networks:"
+msgstr ""
+"``[vxlan]`` セクションにおいて、VXLAN オーバーレイネットワークを無効にしま"
+"す。"
+
+msgid ""
+"In the ``[vxlan]`` section, enable VXLAN overlay networks, configure the IP "
+"address of the physical network interface that handles overlay networks, and "
+"enable layer-2 population:"
+msgstr ""
+"``[vxlan]`` セクションにおいて、VXLAN オーバーレイネットワークを有効にし、"
+"オーバーレイネットワークを処理する物理ネットワークインターフェースの IP アド"
+"レスを設定し、layer-2 population を有効にします。"
+
+msgid ""
+"In the ``devices`` section, add a filter that accepts the ``/dev/sdb`` "
+"device and rejects all other devices:"
+msgstr ""
+"``devices`` セクションに、``/dev/sdb`` デバイスを受け付け、他のデバイスをすべ"
+"て拒否するフィルターを追加します。"
+
+msgid ""
+"In the provider networks architecture, all instances attach directly to the "
+"provider network. In the self-service (private) networks architecture, "
+"instances can attach to a self-service or provider network. Self-service "
+"networks can reside entirely within OpenStack or provide some level of "
+"external network access using :term:`NAT <Network Address Translation "
+"(NAT)>` through the provider network."
+msgstr ""
+"プロバイダーネットワークアーキテクチャーでは、すべてのインスタンスが直接プロ"
+"バイダーネットワークに接続されます。セルフサービス (プライベート) ネットワー"
+"クアーキテクチャーでは、インスタンスをセルフサービスネットワークとプロバイ"
+"ダーネットワークに接続できます。セルフサービスネットワークは、完全に "
+"OpenStack 内に閉じることも、 :term:`NAT <Network Address Translation (NAT)>` "
+"を使ってプロバイダーネットワーク経由で外部ネットワークに一定のレベルでアクセ"
+"スすることもできます。"
+
+msgid ""
+"Increase security using methods such as firewalls, encryption, and service "
+"policies."
+msgstr ""
+"ファイアウォール、暗号化、サービスポリシーなどの方法を使用して、セキュリ"
+"ティーを向上させます。"
+
+msgid "Initialize Fernet key repositories:"
+msgstr "Fernet 鍵リポジトリーを初期化します。"
+
+msgid "Install ``wget`` if your distribution does not include it."
+msgstr ""
+"``wget`` がお使いのディストリビューションでインストールされていない場合はイン"
+"ストールしてください。"
+
+# #-#-#-#-#  dashboard-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Install and configure"
+msgstr "インストールと設定"
+
+msgid "Install and configure a compute node"
+msgstr "コンピュートノードのインストールと設定"
+
+msgid "Install and configure a storage node"
+msgstr "ストレージノードのインストールと設定"
+
+msgid "Install and configure components"
+msgstr "コンポーネントのインストールと設定"
+
+msgid "Install and configure compute node"
+msgstr "コンピュートノードのインストールと設定"
+
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Install and configure controller node"
+msgstr "コントローラーノードのインストールと設定"
+
+msgid ""
+"Install and configure the Networking components on the *controller* node."
+msgstr ""
+"*コントローラー* ノードにおいて、Networking のコンポーネントのインストールと"
+"設定を行います。"
+
+msgid "Install and configure the backup service"
+msgstr "バックアップサービスのインストールと設定"
+
+msgid "Install the LVM packages:"
+msgstr "LVM パッケージをインストールします。"
+
+msgid "Install the OpenStack client:"
+msgstr "OpenStack クライアントのインストール:"
+
+msgid "Install the components"
+msgstr "コンポーネントのインストール"
+
+msgid "Install the package:"
+msgstr "パッケージをインストールします。"
+
+# #-#-#-#-#  basics-packages.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  ceilometer-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Install the packages:"
+msgstr "パッケージをインストールします。"
+
+msgid "Install the supporting utility packages:"
+msgstr "補助ユーティリティーパッケージをインストールします。"
+
+msgid ""
+"Installation and configuration is documented in the `Bare Metal installation "
+"guide <https://docs.openstack.org/project-install-guide/baremetal/draft/>`_."
+msgstr ""
+"インストールと設定は `Bare Metal インストールガイド <https://docs.openstack."
+"org/project-install-guide/baremetal/draft/>`_ に書かれています。"
+
+msgid ""
+"Installation and configuration is documented in the `Container "
+"Infrastructure Management installation guide <https://docs.openstack.org/"
+"project-install-guide/container-infrastructure-management/draft/>`_."
+msgstr ""
+"インストールと設定は `Container Infrastructure Management インストールガイド "
+"<https://docs.openstack.org/project-install-guide/draft/container-"
+"infrastructure-management>`_ に書かれています。"
+
+msgid ""
+"Installation and configuration is documented in the `DNS installation guide "
+"<https://docs.openstack.org/project-install-guide/dns/draft/>`_."
+msgstr ""
+"インストールと設定は `DNS インストールガイド <https://docs.openstack.org/"
+"project-install-guide/dns/draft/>`_ に書かれています。"
+
+msgid ""
+"Installation and configuration is documented in the `Database installation "
+"guide <https://docs.openstack.org/project-install-guide/database/draft/>`_."
+msgstr ""
+"インストールと設定は `Database インストールガイド <http://docs.openstack.org/"
+"project-install-guide/draft/database>`_ に書かれています。"
+
+msgid ""
+"Installation and configuration is documented in the `Key Manager "
+"installation guide <https://docs.openstack.org/project-install-guide/key-"
+"manager/draft/>`_."
+msgstr ""
+"インストールと設定は `Key Manager インストールガイド <https://docs.openstack."
+"org/project-install-guide/key-manager/draft/>`_ に書かれています。"
+
+msgid ""
+"Installation and configuration is documented in the `Messaging installation "
+"guide <https://docs.openstack.org/project-install-guide/messaging/draft/>`_."
+msgstr ""
+"インストールと設定は `Messaging インストールガイド <https://docs.openstack."
+"org/project-install-guide/draft/messaging>`_ に書かれています。"
+
+msgid ""
+"Installation and configuration is documented in the `Object Storage "
+"installation guide <https://docs.openstack.org/project-install-guide/object-"
+"storage/draft/>`_."
+msgstr ""
+"インストールと設定は `Object Storage インストールガイド <https://docs."
+"openstack.org/project-install-guide/object-storage/draft/>`_ に書かれていま"
+"す。"
+
+msgid ""
+"Installation and configuration is documented in the `Orchestration "
+"installation guide <https://docs.openstack.org/project-install-guide/"
+"orchestration/draft/>`_."
+msgstr ""
+"インストールと設定は `Orchestration インストールガイド <https://docs."
+"openstack.org/project-install-guide/orchestration/draft/>`_ に書かれていま"
+"す。"
+
+msgid ""
+"Installation and configuration is documented in the `Shared File Systems "
+"installation guide <https://docs.openstack.org/project-install-guide/shared-"
+"file-systems/draft/>`_."
+msgstr ""
+"インストールと設定は `Shared File Systems インストールガイド <https://docs."
+"openstack.org/project-install-guide/shared-file-systems/draft/>`_ に書かれて"
+"います。"
+
+msgid ""
+"Installation and configuration is documented in the `Telemetry Alarming "
+"installation guide <https://docs.openstack.org/project-install-guide/"
+"telemetry-alarming/draft/>`_."
+msgstr ""
+"インストールと設定は `Telemetry Alarming インストールガイド <https://docs."
+"openstack.org/project-install-guide/telemetry-alarming/draft/>`_ に書かれてい"
+"ます。"
+
+msgid ""
+"Installation and configuration is documented in the `Telemetry Data "
+"Collection installation guide <https://docs.openstack.org/project-install-"
+"guide/telemetry/draft/>`_."
+msgstr ""
+"インストールと設定は `Telemetry Data Collection インストールガイド <https://"
+"docs.openstack.org/project-install-guide/telemetry/draft/>`_ に書かれていま"
+"す。"
+
+msgid ""
+"Installation and configuration of additional OpenStack services is "
+"documented in separate, project-specific installation guides."
+msgstr ""
+"他の OpenStack サービスのインストールと設定は、個別のプロジェクトごとのインス"
+"トールガイドに書かれています。"
+
+msgid "Key Manager service (barbican)"
+msgstr "Key Manager サービス (barbican)"
+
+msgid "Later you can use the following command to install a package:"
+msgstr ""
+"後で、以下のコマンドを使用してパッケージをインストールすることもできます。"
+
+msgid "Launch an instance"
+msgstr "インスタンスの起動"
+
+msgid "Launch an instance on the provider network"
+msgstr "プロバイダーネットワークでのインスタンスの起動"
+
+msgid "Launch an instance on the self-service network"
+msgstr "セルフサービスネットワークでのインスタンスの起動"
+
+msgid "Launch the instance"
+msgstr "インスタンスの起動"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Launch the instance:"
+msgstr "インスタンスを起動します。"
+
+msgid ""
+"List API endpoints in the Identity service to verify connectivity with the "
+"Identity service:"
+msgstr ""
+"Identity サービスの API エンドポイントを一覧表示して、Identity サービスへの接"
+"続性を検証します。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "List agents to verify successful launch of the neutron agents:"
+msgstr ""
+"neutron エージェントが正常に起動したことを確認するために、エージェントを一覧"
+"表示します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "List available flavors:"
+msgstr "利用可能なフレーバーを一覧表示します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "List available images:"
+msgstr "利用可能なイメージを一覧表示します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "List available networks:"
+msgstr "利用可能なネットワークを一覧表示します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "List available security groups:"
+msgstr "利用可能なセキュリティーグループを一覧表示します。"
+
+msgid ""
+"List images in the Image service to verify connectivity with the Image "
+"service:"
+msgstr ""
+"Image サービスにあるイメージを一覧表示して、Image service への接続性を検証し"
+"ます。"
+
+msgid ""
+"List loaded extensions to verify successful launch of the ``neutron-server`` "
+"process:"
+msgstr ""
+"ロード済み拡張機能一覧を表示して、``neutron-server`` プロセスが正しく起動して"
+"いることを確認します。"
+
+msgid ""
+"List network namespaces. You should see one ``qrouter`` namespace and two "
+"``qdhcp`` namespaces."
+msgstr ""
+"ネットワーク名前空間を一覧表示します。1 つの ``qrouter`` 名前空間と 2 つの "
+"``qdhcp`` 名前空間があるでしょう。"
+
+msgid ""
+"List ports on the router to determine the gateway IP address on the provider "
+"network:"
+msgstr ""
+"ルーターのポートを一覧表示して、プロバイダーネットワークのゲートウェイ IP ア"
+"ドレスを確認します。"
+
+msgid ""
+"List service components to verify successful launch and registration of each "
+"process:"
+msgstr ""
+"サービスコンポーネントを一覧表示して、各プロセスの起動と登録が正常であること"
+"を確認します。"
+
+msgid "List service components to verify successful launch of each process:"
+msgstr ""
+"サービスのコンポーネントを一覧表示して、各プロセスが正しく起動していることを"
+"確認します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "List volumes:"
+msgstr "ボリュームの一覧を表示します。"
+
+msgid ""
+"Load the ``admin-openrc`` file to populate environment variables with the "
+"location of the Identity service and the ``admin`` project and user "
+"credentials:"
+msgstr ""
+"``admin-openrc`` ファイルを読み込み、環境変数に Identity サービスの位置、"
+"``admin`` プロジェクトとユーザーのクレデンシャルを設定します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Management on 10.0.0.0/24 with gateway 10.0.0.1"
+msgstr "管理ネットワーク 10.0.0.0/24、ゲートウェイ 10.0.0.1"
+
+msgid "Memcached"
+msgstr "Memcached"
+
+msgid "Message queue"
+msgstr "メッセージキュー"
+
+msgid "Messaging service (zaqar)"
+msgstr "Messaging サービス (zaqar)"
+
+msgid ""
+"Most cloud images support :term:`public key authentication` rather than "
+"conventional password authentication. Before launching an instance, you must "
+"add a public key to the Compute service."
+msgstr ""
+"多くのクラウドイメージは、一般的なパスワードによる認証ではなく、:term:`公開鍵"
+"認証 <public key authentication>` に対応しています。インスタンスの起動前に、"
+"公開鍵を Compute サービスに追加する必要があります。"
+
+msgid "Network Time Protocol (NTP)"
+msgstr "Network Time Protocol (NTP)"
+
+msgid ""
+"Network interface names vary by distribution. Traditionally, interfaces use "
+"``eth`` followed by a sequential number. To cover all variations, this guide "
+"refers to the first interface as the interface with the lowest number and "
+"the second interface as the interface with the highest number."
+msgstr ""
+"ネットワークインターフェースの名前はディストリビューションにより異なります。"
+"伝統的に、インターフェース名は、 ``eth`` から始まり、数字が後ろにつきます。さ"
+"まざまな種類に対応するために、このガイドでは、最小の番号を持つインターフェー"
+"スを 1 番目のインターフェース、最大の番号を持つインターフェースを 2 番目のイ"
+"ンターフェースとして参照します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Network mask: 255.255.255.0 (or /24)"
+msgstr "ネットマスク: 255.255.255.0 (または /24)"
+
+msgid "Network mask: ``255.255.255.0`` (or ``/24``)"
+msgstr "ネットワークマスク: ``255.255.255.0`` (または ``/24``)"
+
+msgid "Networking"
+msgstr "ネットワーク"
+
+msgid "Networking (neutron) concepts"
+msgstr "Networking (neutron) の概念"
+
+msgid "Networking Option 1: Provider networks"
+msgstr "ネットワークオプション 1: プロバイダーネットワーク"
+
+msgid "Networking Option 2: Self-service networks"
+msgstr "ネットワークオプション 2: セルフサービスネットワーク"
+
+msgid ""
+"Networking agents reside on the controller node instead of one or more "
+"dedicated network nodes."
+msgstr ""
+"Networking エージェントは、専用のネットワークノードではなく、コントローラー"
+"ノードで動作します。"
+
+msgid ""
+"Networking also supports *security groups*. Security groups enable "
+"administrators to define firewall rules in groups. A VM can belong to one or "
+"more security groups, and Networking applies the rules in those security "
+"groups to block or unblock ports, port ranges, or traffic types for that VM."
+msgstr ""
+"Networking は *セキュリティーグループ* もサポートします。セキュリティーグルー"
+"プにより、管理者がセキュリティーグループにファイアウォールルールを定義できま"
+"す。仮想マシンは 1 つ以上のセキュリティーグループに属します。Networking は、"
+"これらのセキュリティーグループにあるルールを仮想マシンに対して適用し、その仮"
+"想マシンに対する指定されたポート、ポート範囲、トラフィック種別をブロックした"
+"り許可したりします。"
+
+msgid ""
+"Networking provides networks, subnets, and routers as object abstractions. "
+"Each abstraction has functionality that mimics its physical counterpart: "
+"networks contain subnets, and routers route traffic between different "
+"subnets and networks."
+msgstr ""
+"Networking は、オブジェクトの抽象化としてネットワーク、サブネット、ルーターを"
+"提供します。それぞれの抽象化は、対応する物理的なものの機能と同じです。サブ"
+"ネットはネットワークに属し、ルーターはサブネットやネットワーク間の通信を転送"
+"します。"
+
+msgid "Networking service"
+msgstr "Networking サービス"
+
+# #-#-#-#-#  ceilometer-next-steps.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-next-steps.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  dashboard-next-step.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-next-step.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  networking-next-steps.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-next-steps.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Next steps"
+msgstr "次の手順"
+
+msgid ""
+"Non-privileged users typically cannot supply additional parameters to this "
+"command. The service automatically chooses parameters using information from "
+"the following files:"
+msgstr ""
+"非特権ユーザーは、一般的にこのコマンドに追加パラメーターを指定できません。"
+"サービスは、以下のファイルの情報を使用して、自動的にパラメーターを選択しま"
+"す。"
+
+msgid "Object Storage"
+msgstr "Object Storage"
+
+msgid "Object Storage services (swift)"
+msgstr "Object Storage サービス (swift)"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Obtain a :term:`Virtual Network Computing (VNC)` session URL for your "
+"instance and access it from a web browser:"
+msgstr ""
+"このインスタンス用の :term:`Virtual Network Computing (VNC)` セッション URL "
+"を取得し、Web ブラウザーからアクセスします。"
+
+msgid ""
+"On CentOS, the ``extras`` repository provides the RPM that enables the "
+"OpenStack repository. CentOS includes the ``extras`` repository by default, "
+"so you can simply install the package to enable the OpenStack repository."
+msgstr ""
+"CentOS では、 OpenStack リポジトリーを有効にする RPM は ``extras`` リポジト"
+"リーで提供されています。デフォルトで CentOS に ``extras`` リポジトリーは含ま"
+"れているので、OpenStack リポジトリーを有効にするには、このパッケージをインス"
+"トールするだけです。"
+
+msgid ""
+"On RHEL, download and install the RDO repository RPM to enable the OpenStack "
+"repository."
+msgstr ""
+"RHEL では、 RDO リポジトリーの RPM をダウンロード、インストールして、"
+"OpenStack リポジトリーを有効にします。"
+
+msgid ""
+"On all nodes, adding the Debian 8 (Jessie) backport repository to the source "
+"list:"
+msgstr ""
+"すべてのノードで、Debian 8 (Jessie) バックポートリポジトリをソースリストに追"
+"加します。"
+
+msgid ""
+"On the controller node, source the ``admin`` credentials to gain access to "
+"admin-only CLI commands:"
+msgstr ""
+"コントローラーノードにおいて、``admin`` クレデンシャルを読み込み、管理者専用 "
+"CLI コマンドへのアクセス権を取得します。"
+
+msgid ""
+"On the controller node, source the ``demo`` credentials to gain access to "
+"user-only CLI commands:"
+msgstr ""
+"コントローラーノードにおいて、``demo`` クレデンシャルを読み込み、利用者用の "
+"CLI コマンドへのアクセス権を取得します。"
+
+msgid ""
+"One physical server can support multiple nodes, each with almost any number "
+"of network interfaces."
+msgstr ""
+"1 台の物理サーバーで複数のノードを構築できます。各ノードは複数のネットワーク"
+"インターフェースを持てます。"
+
+msgid ""
+"Only instances can access Block Storage volumes. However, the underlying "
+"operating system manages the devices associated with the volumes. By "
+"default, the LVM volume scanning tool scans the ``/dev`` directory for block "
+"storage devices that contain volumes. If projects use LVM on their volumes, "
+"the scanning tool detects these volumes and attempts to cache them which can "
+"cause a variety of problems with both the underlying operating system and "
+"project volumes. You must reconfigure LVM to scan only the devices that "
+"contain the ``cinder-volumes`` volume group. Edit the ``/etc/lvm/lvm.conf`` "
+"file and complete the following actions:"
+msgstr ""
+"インスタンスのみが Block Storage のボリュームにアクセスできますが、ボリューム"
+"に関連付けられたデバイスを管理するのはベースのオペレーティングシステムです。"
+"デフォルトでは、LVM ボリュームのスキャンツールが、ボリュームを含むブロックス"
+"トレージデバイス用の ``/dev`` ディレクトリーをスキャンします。プロジェクトが"
+"ボリューム上で LVM を使用している場合、スキャンツールがこれらのボリュームを検"
+"知し、それらをキャッシュしようとします。これにより、ベースのオペレーティング"
+"システムとプロジェクトボリュームの両方にさまざまな問題を引き起こす可能性があ"
+"ります。``cinder-volumes`` ボリュームグループを含むデバイスのみをスキャンする"
+"ように、LVM を再設定する必要があります。``/etc/lvm/lvm.conf`` ファイルを編集"
+"し、以下の作業をすべて行います。"
+
+msgid "OpenStack Installation Tutorial for Debian"
+msgstr "OpenStack インストールチュートリアル Debian 版"
+
+msgid "OpenStack Installation Tutorial for Red Hat Enterprise Linux and CentOS"
+msgstr ""
+"OpenStack インストールチュートリアル Red Hat Enterprise Linux、CentOS 版"
+
+msgid "OpenStack Installation Tutorial for Ubuntu"
+msgstr "OpenStack インストールチュートリアル Ubuntu 版"
+
+msgid "OpenStack Installation Tutorial for openSUSE and SUSE Linux Enterprise"
+msgstr ""
+"OpenStack インストールチュートリアル openSUSE、SUSE Linux Enterprise 版"
+
+msgid ""
+"OpenStack Networking (neutron) manages all networking facets for the Virtual "
+"Networking Infrastructure (VNI) and the access layer aspects of the Physical "
+"Networking Infrastructure (PNI) in your OpenStack environment. OpenStack "
+"Networking enables projects to create advanced virtual network topologies "
+"which may include services such as a :term:`firewall`, a :term:`load "
+"balancer`, and a :term:`virtual private network (VPN)`."
+msgstr ""
+"OpenStack Networking (neutron) は、 OpenStack 環境で、仮想ネットワークインフ"
+"ラストラクチャ (VNI) のすべての面と、物理ネットワークインフラストラクチャ "
+"(PNI) のアクセス層の側面を管理します。OpenStack Networking を使うと、プロジェ"
+"クトが :term:`ファイアウォール <firewall>` 、:term:`負荷分散装置 <load "
+"balancer>` 、:term:`VPN <virtual private network (VPN)>`  などの高度な仮想"
+"ネットワークトポロジーを作成できるようになります。"
+
+msgid ""
+"OpenStack and supporting services require administrative privileges during "
+"installation and operation. In some cases, services perform modifications to "
+"the host that can interfere with deployment automation tools such as "
+"Ansible, Chef, and Puppet. For example, some OpenStack services add a root "
+"wrapper to ``sudo`` that can interfere with security policies. See the "
+"`OpenStack Administrator Guide <https://docs.openstack.org/ admin-guide/"
+"compute-root-wrap-reference.html>`__ for more information."
+msgstr ""
+"OpenStack およびサポートサービスは、インストール時、運用時に管理者権限を必要"
+"とします。サービスがホストに変更を行うため、Ansible、Chef、Puppet などの構成"
+"管理ツールと干渉する場合もあります。例えば、いくつかの OpenStack サービスは "
+"``sudo`` に root wrapper を追加しますが、これがセキュリティー・ポリシーと相容"
+"れない場合があります。詳細は `OpenStack Administrator Guide <https://docs."
+"openstack.org/ admin-guide/compute-root-wrap-reference.html>`__ を参照してく"
+"ださい。"
+
+# #-#-#-#-#  glance-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-services.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-users.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"OpenStack generates IDs dynamically, so you will see different values in the "
+"example command output."
+msgstr ""
+"OpenStack は ID を動的に生成します。そのため、このコマンド実行結果例と別の値"
+"になるでしょう。"
+
+msgid "OpenStack packages"
+msgstr "OpenStack パッケージ"
+
+msgid ""
+"OpenStack provides an :term:`Infrastructure-as-a-Service (IaaS)` solution "
+"through a variety of complementary services. Each service offers an :term:"
+"`Application Programming Interface (API)` that facilitates this integration."
+msgstr ""
+"OpenStack は、補完関係にある様々なサービスの組み合わせで :term:"
+"`Infrastructure-as-a-Service (IaaS)` ソリューションを提供します。各サービス"
+"は :term:`Application Programming Interface (API)` を提供しており、簡単に連携"
+"できるようになっています。"
+
+msgid ""
+"OpenStack services support various security methods including password, "
+"policy, and encryption. Additionally, supporting services including the "
+"database server and message broker support password security."
+msgstr ""
+"OpenStack は、パスワード、ポリシー、暗号化など、さまざまなセキュリティー技術"
+"をサポートします。さらに、データベースサーバーやメッセージブローカーなどのサ"
+"ポートサービスは、パスワードによるセキュリティーをサポートしています。"
+
+msgid ""
+"Option 1 deploys the simplest possible architecture that only supports "
+"attaching instances to provider (external) networks. No self-service "
+"(private) networks, routers, or floating IP addresses. Only the ``admin`` or "
+"other privileged user can manage provider networks."
+msgstr ""
+"オプション 1 は、可能な限り最も単純なアーキテクチャーをデプロイします。プロバ"
+"イダー (外部) ネットワークへのインスタンスの接続のみに対応します。セルフサー"
+"ビス (プライベート) ネットワークやルーター、Floating IP アドレスはサポートさ"
+"れません。 ``admin`` や他の特権ユーザーだけがプロバイダーネットワークを管理で"
+"きます。"
+
+msgid "Option 2 also supports attaching instances to provider networks."
+msgstr ""
+"オプション 2 では、プロバイダーネットワークへのインスタンスの接続もサポートさ"
+"れます。"
+
+msgid ""
+"Option 2 augments option 1 with layer-3 services that support attaching "
+"instances to self-service networks. The ``demo`` or other unprivileged user "
+"can manage self-service networks including routers that provide connectivity "
+"between self-service and provider networks. Additionally, floating IP "
+"addresses provide connectivity to instances using self-service networks from "
+"external networks such as the Internet."
+msgstr ""
+"オプション 2 は、オプション 1 にレイヤー 3 サービスを組み合わせたもので、セル"
+"フサービスネットワークへのインスタンスの接続をサポートします。 ``demo`` や他"
+"の非特権ユーザーがセルフサービスネットワークを管理し、それにはセルフサービス"
+"ネットワークやプロバイダーネットワークの間の接続性を提供するルーターも含まれ"
+"ます。また、 Floating IP アドレスにより、セルフサービスネットワークに接続され"
+"たインスタンスへの、インターネットなどの外部ネットワークからの接続性が提供さ"
+"れます。"
+
+msgid "Optionally, configure the time zone:"
+msgstr "必要であれば、タイムゾーンを設定します。"
+
+msgid ""
+"Optionally, the controller node runs portions of the Block Storage, Object "
+"Storage, Orchestration, and Telemetry services."
+msgstr ""
+"オプションとして、コントローラーノードは、Block Storage、Object Storage、"
+"Orchestration、Telemetry サービスの一部も実行します。"
+
+msgid "Orchestration"
+msgstr "Orchestration"
+
+msgid "Orchestration service (heat)"
+msgstr "Orchestration サービス (heat)"
+
+msgid "Other nodes"
+msgstr "その他のノード"
+
+msgid ""
+"Other nodes reference the controller node for clock synchronization. Perform "
+"these steps on all other nodes."
+msgstr ""
+"他のノードはコントローラーノードを参照して時刻同期を行ないます。他のすべての"
+"ノードでこれらの手順を実行します。"
+
+msgid ""
+"Overlay (tunnel) traffic for self-service networks traverses the management "
+"network instead of a dedicated network."
+msgstr ""
+"セルフサービスネットワークのオーバーレイ (トンネル) 通信は、専用ネットワーク"
+"ではなく管理ネットワークを通過します。"
+
+msgid "Overview"
+msgstr "概要"
+
+msgid "Password name"
+msgstr "パスワード名"
+
+msgid "Password of Block Storage service user ``cinder``"
+msgstr "Block Storage サービスのユーザー ``cinder`` のパスワード"
+
+msgid "Password of Compute service user ``nova``"
+msgstr "Compute サービスのユーザー ``nova`` のパスワード"
+
+msgid "Password of Image service user ``glance``"
+msgstr "Image service のユーザー ``glance`` のパスワード"
+
+msgid "Password of Networking service user ``neutron``"
+msgstr "Networking サービスのユーザー ``neutron`` のパスワード"
+
+msgid "Password of user ``admin``"
+msgstr "``admin`` ユーザーのパスワード"
+
+msgid "Password of user ``demo``"
+msgstr "``demo`` ユーザーのパスワード"
+
+# #-#-#-#-#  cinder-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Perform these commands on the controller node."
+msgstr "これらのコマンドをコントローラーノードで実行します。"
+
+msgid "Perform these steps on the Block Storage node."
+msgstr "Block Storage ノードにおいて以下の手順を実行します。"
+
+# #-#-#-#-#  ceilometer-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Perform these steps on the controller node."
+msgstr "コントローラーノードにおいて、これらの手順を実行します。"
+
+msgid "Perform these steps on the storage node."
+msgstr "ストレージノードにおいて以下の手順を実行します。"
+
+msgid "Permit :term:`ICMP <Internet Control Message Protocol (ICMP)>` (ping):"
+msgstr ""
+":term:`ICMP <Internet Control Message Protocol (ICMP)>` (ping) を許可します。"
+
+msgid ""
+"Permit configuration, write, and read access for the ``openstack`` user:"
+msgstr ""
+"``openstack`` ユーザーに対して、設定、書き込み、読み出しアクセスを許可しま"
+"す。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Permit secure shell (SSH) access:"
+msgstr "secure shell (SSH) アクセスを許可します。"
+
+msgid ""
+"Ping this IP address from the controller node or any host on the physical "
+"provider network:"
+msgstr ""
+"コントローラーノードまたは物理プロバイダーネットワークにあるホストから、この "
+"IP アドレスに ping します。"
+
+msgid "Populate the Block Storage database:"
+msgstr "Block Storage データベースを展開します。"
+
+msgid "Populate the Identity service database:"
+msgstr "Identity サービスデータベースを展開します。"
+
+msgid "Populate the Image service database:"
+msgstr "Image サービスデータベースを展開します。"
+
+msgid "Populate the database:"
+msgstr "データベースを展開します。"
+
+msgid "Prerequisites"
+msgstr "前提条件"
+
+msgid ""
+"Provide users with a public IP address, a username, and a password so they "
+"can access the dashboard through a web browser. In case of any SSL "
+"certificate connection problems, point the server IP address to a domain "
+"name, and give users access."
+msgstr ""
+"ユーザーがウェブブラウザー経由でダッシュボードにアクセスするためのパブリック "
+"IP アドレス、ユーザー名、パスワードのユーザーへの通知。接続で SSL 証明書に関"
+"する問題がある場合、サーバーの IP アドレスがドメイン名を指すようにして、ユー"
+"ザーがドメイン名にアクセスするようにします。"
+
+msgid "Provider network"
+msgstr "プロバイダーネットワーク"
+
+msgid "Provider on 203.0.113.0/24 with gateway 203.0.113.1"
+msgstr "プロバイダーネットワーク 203.0.113.0/24、ゲートウェイ 203.0.113.1"
+
+msgid ""
+"Publishes collected data to various targets including data stores and "
+"message queues."
+msgstr ""
+"収集したデータを、データストアやメッセージキューなどの様々な宛先に発行しま"
+"す。"
+
+msgid ""
+"RHEL and CentOS enable :term:`SELinux` by default. Install the ``openstack-"
+"selinux`` package to automatically manage security policies for OpenStack "
+"services:"
+msgstr ""
+"RHEL と CentOS はデフォルトで :term:`SELinux` を有効にします。``openstack-"
+"selinux`` パッケージをインストールして、OpenStack サービスのセキュリティーポ"
+"リシーを自動的に管理します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Reboot the system to activate the changes."
+msgstr "変更を反映するために、システムを再起動します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Reconfiguring network interfaces will interrupt network connectivity. We "
+"recommend using a local terminal session for these procedures."
+msgstr ""
+"ネットワークインターフェースを再設定すると、ネットワーク接続性が中断されま"
+"す。これらの手順はローカルの端末セッションを使用することを推奨します。"
+
+msgid "Recursively change the ownership of the ``/etc/keystone`` directory:"
+msgstr "``/etc/keystone`` ディレクトリーの所有権を再帰的に変更します。"
+
+msgid ""
+"Regular (non-admin) tasks should use an unprivileged project and user. As an "
+"example, this guide creates the ``demo`` project and user."
+msgstr ""
+"通常の (非管理) 作業では、非特権プロジェクトとユーザーを使用すべきです。例と"
+"して、このガイドでは ``demo`` プロジェクトとユーザーを作成します。"
+
+msgid "Reload the web server configuration:"
+msgstr "ウェブサーバーの設定を再読み込みします。"
+
+msgid ""
+"Replace ``ADMIN_PASS`` with a suitable password for an administrative user."
+msgstr "``ADMIN_PASS`` は管理ユーザーの適切なパスワードに置き換えます。"
+
+msgid ""
+"Replace ``ADMIN_PASS`` with the password you chose for the ``admin`` user in "
+"the Identity service."
+msgstr ""
+"``ADMIN_PASS`` は Identity サービスで ``admin`` ユーザー用に選択したパスワー"
+"ドに置き換えます。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Replace ``CINDER_DBPASS`` with the password you chose for the Block Storage "
+"database."
+msgstr ""
+"``CINDER_DBPASS`` を Block Storage データベース用に選択したパスワードで置き換"
+"えます。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Replace ``CINDER_PASS`` with the password you chose for the ``cinder`` user "
+"in the Identity service."
+msgstr ""
+"``CINDER_PASS`` を Identity サービスで ``cinder`` ユーザー用に選択したパス"
+"ワードで置き換えます。"
+
+msgid ""
+"Replace ``DEMO_PASS`` with the password you chose for the ``demo`` user in "
+"the Identity service."
+msgstr ""
+"``DEMO_PASS`` は Identity サービスで ``demo`` ユーザー用に選択したパスワード"
+"に置き換えます。"
+
+msgid ""
+"Replace ``DNS_RESOLVER`` with the IP address of a DNS resolver. In most "
+"cases, you can use one from the ``/etc/resolv.conf`` file on the host."
+msgstr ""
+"``DNS_RESOLVER`` は DNS リソルバーの IP アドレスで置き換えます。ほとんどの場"
+"合、ホストの ``/etc/resolv.conf`` に書かれているアドレスのいずれかが使用でき"
+"るでしょう。"
+
+msgid ""
+"Replace ``GLANCE_DBPASS`` with the password you chose for the Image service "
+"database."
+msgstr ""
+"``GLANCE_DBPASS`` を Image service データベース用に選んだパスワードで置き換え"
+"ます。"
+
+msgid ""
+"Replace ``GLANCE_PASS`` with the password you chose for the ``glance`` user "
+"in the Identity service."
+msgstr ""
+"``GLANCE_PASS`` を Identity において ``glance`` ユーザー用に選択したパスワー"
+"ドで置き換えます。"
+
+msgid ""
+"Replace ``INSTANCE_NAME`` with the name of the instance and ``VOLUME_NAME`` "
+"with the name of the volume you want to attach to it."
+msgstr ""
+"``INSTANCE_NAME`` をインスタンス名に、``VOLUME_NAME`` を接続したいボリューム"
+"名に置き換えます。"
+
+msgid ""
+"Replace ``INTERFACE_NAME`` with the actual interface name. For example, "
+"*eth1* or *ens224*."
+msgstr ""
+"``INTERFACE_NAME`` は実際のインターフェース名で置き換えます。例えば、*eth1* "
+"や *ens224* です。"
+
+msgid "Replace ``KEYSTONE_DBPASS`` with a suitable password."
+msgstr "``KEYSTONE_DBPASS`` を適切なパスワードに置き換えます。"
+
+msgid ""
+"Replace ``KEYSTONE_DBPASS`` with the password you chose for the database."
+msgstr ""
+"``KEYSTONE_DBPASS`` をデータベース用に選択したパスワードで置き換えます。"
+
+msgid ""
+"Replace ``MANAGEMENT_INTERFACE_IP_ADDRESS`` with the IP address of the "
+"management network interface on your compute node, typically 10.0.0.31 for "
+"the first node in the :ref:`example architecture <overview-example-"
+"architectures>`."
+msgstr ""
+"``MANAGEMENT_INTERFACE_IP_ADDRESS`` はコンピュートノードの管理ネットワークイ"
+"ンターフェースの IP アドレスに置き換えます。一般的に、:ref:`サンプルアーキテ"
+"クチャー <overview-example-architectures>` にある 1 番目のノードは "
+"10.0.0.31  です。"
+
+msgid ""
+"Replace ``MANAGEMENT_INTERFACE_IP_ADDRESS`` with the IP address of the "
+"management network interface on your storage node, typically 10.0.0.41 for "
+"the first node in the :ref:`example architecture <overview-example-"
+"architectures>`."
+msgstr ""
+"``MANAGEMENT_INTERFACE_IP_ADDRESS`` をストレージノードの管理ネットワークイン"
+"ターフェースの IP アドレスに置き換えます。通常は、:ref:`アーキテクチャー例 "
+"<overview-example-architectures>` にある 1 番目のノードは 10.0.0.41  です。"
+
+msgid ""
+"Replace ``METADATA_SECRET`` with a suitable secret for the metadata proxy."
+msgstr ""
+"``METADATA_SECRET`` はメタデータプロキシー用に適切なシークレットで置き換えま"
+"す。"
+
+msgid ""
+"Replace ``METADATA_SECRET`` with the secret you chose for the metadata proxy."
+msgstr ""
+"``METADATA_SECRET`` はメタデータプロキシ用に選択した適切なシークレットで置き"
+"換えます。"
+
+msgid ""
+"Replace ``NEUTRON_DBPASS`` with the password you chose for the database."
+msgstr ""
+"``NEUTRON_DBPASS`` はデータベース用に選択したパスワードで置き換えます。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Replace ``NEUTRON_PASS`` with the password you chose for the ``neutron`` "
+"user in the Identity service."
+msgstr ""
+"``NEUTRON_PASS`` を Identity サービスにおいて ``neutron`` ユーザー用に選択し"
+"たパスワードで置き換えます。"
+
+msgid ""
+"Replace ``NOVA_DBPASS`` with the password you chose for the Compute "
+"databases."
+msgstr ""
+"``NOVA_DBPASS`` は Compute のデータベース用に選択したパスワードで置き換えま"
+"す。"
+
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Replace ``NOVA_PASS`` with the password you chose for the ``nova`` user in "
+"the Identity service."
+msgstr ""
+"``NOVA_PASS`` は Identity サービスで ``nova`` ユーザー用に選択したパスワード"
+"で置き換えます。"
+
+msgid ""
+"Replace ``NTP_SERVER`` with the hostname or IP address of a suitable more "
+"accurate (lower stratum) NTP server. The configuration supports multiple "
+"``server`` keys."
+msgstr ""
+"``NTP_SERVER`` を適切なより正確な（ストラタムが小さい値の）NTP サーバーのホス"
+"ト名か IP アドレスに置き換えます。複数の ``server`` キーを設定することもでき"
+"ます。"
+
+msgid ""
+"Replace ``OVERLAY_INTERFACE_IP_ADDRESS`` with the IP address of the "
+"underlying physical network interface that handles overlay networks. The "
+"example architecture uses the management interface to tunnel traffic to the "
+"other nodes. Therefore, replace ``OVERLAY_INTERFACE_IP_ADDRESS`` with the "
+"management IP address of the compute node. See :ref:`environment-networking` "
+"for more information."
+msgstr ""
+"``OVERLAY_INTERFACE_IP_ADDRESS`` を、オーバーレイネットワークを処理するベース"
+"の物理ネットワークインターフェースの IP アドレスで置き換えます。サンプルアー"
+"キテクチャーでは、他のノードへのトラフィックをトンネリングするのに管理イン"
+"ターフェースを使用します。したがって、 ``OVERLAY_INTERFACE_IP_ADDRESS`` をコ"
+"ンピュートノードの管理用の IP アドレスで置き換えます。詳細は  :ref:"
+"`environment-networking` を参照してください。"
+
+msgid ""
+"Replace ``OVERLAY_INTERFACE_IP_ADDRESS`` with the IP address of the "
+"underlying physical network interface that handles overlay networks. The "
+"example architecture uses the management interface to tunnel traffic to the "
+"other nodes. Therefore, replace ``OVERLAY_INTERFACE_IP_ADDRESS`` with the "
+"management IP address of the controller node. See :ref:`environment-"
+"networking` for more information."
+msgstr ""
+"``OVERLAY_INTERFACE_IP_ADDRESS`` を、オーバーレイネットワークを処理するベース"
+"の物理ネットワークインターフェースの IP アドレスで置き換えます。サンプルアー"
+"キテクチャーでは、他のノードへのトラフィックをトンネリングするのに管理イン"
+"ターフェースを使用します。したがって、 ``OVERLAY_INTERFACE_IP_ADDRESS`` をコ"
+"ントローラーノードの管理用の IP アドレスで置き換えます。詳細は  :ref:"
+"`environment-networking` を参照してください。"
+
+msgid ""
+"Replace ``PROVIDER_INTERFACE_NAME`` with the name of the underlying provider "
+"physical network interface. See :ref:`environment-networking` for more "
+"information."
+msgstr ""
+"``PROVIDER_INTERFACE_NAME`` をプロバイダー物理ネットワークのインターフェース"
+"名で置き換えます。詳細は :ref:`environment-networking` を参照してください。"
+
+msgid ""
+"Replace ``PROVIDER_NETWORK_CIDR`` with the subnet on the provider physical "
+"network in CIDR notation."
+msgstr ""
+"``PROVIDER_NETWORK_CIDR`` をプロバイダー物理ネットワークの CIDR 表記のサブ"
+"ネットに置き換えます。"
+
+msgid ""
+"Replace ``PROVIDER_NETWORK_GATEWAY`` with the gateway IP address on the "
+"provider network, typically the \".1\" IP address."
+msgstr ""
+" ``PROVIDER_NETWORK_GATEWAY`` をプロバイダーネットワークのゲートウェイの IP "
+"アドレスで置き換えます。一般的には「.1」の IP アドレスです。"
+
+msgid ""
+"Replace ``PROVIDER_NET_ID`` with the ID of the ``provider`` provider network."
+msgstr ""
+"``PROVIDER_NET_ID`` はプロバイダーネットワーク ``provider`` の ID に置き換え"
+"ます。"
+
+msgid "Replace ``RABBIT_PASS`` with a suitable password."
+msgstr "``RABBIT_PASS`` を適切なパスワードに置き換えます。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Replace ``RABBIT_PASS`` with the password you chose for the ``openstack`` "
+"account in RabbitMQ."
+msgstr ""
+"``RABBIT_PASS`` を RabbitMQ の ``openstack`` アカウント用に選択したパスワード"
+"で置き換えます。"
+
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  ceilometer-glance.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  ceilometer-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  ceilometer-swift.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-storage-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Replace ``RABBIT_PASS`` with the password you chose for the ``openstack`` "
+"account in ``RabbitMQ``."
+msgstr ""
+"``RABBIT_PASS`` を ``RabbitMQ`` の ``openstack`` アカウント用に選択したパス"
+"ワードで置き換えます。"
+
+msgid ""
+"Replace ``SELFSERVICE_NETWORK_CIDR`` with the subnet you want to use on the "
+"self-service network. You can use any arbitrary value, although we recommend "
+"a network from `RFC 1918 <https://tools.ietf.org/html/rfc1918>`_."
+msgstr ""
+"``SELFSERVICE_NETWORK_CIDR`` をセルフサービスネットワークに使用したいサブネッ"
+"トに置き換えます。`RFC 1918 <https://tools.ietf.org/html/rfc1918>`_ にある"
+"ネットワークを使用することを推奨しますが、任意の値を使用できます。"
+
+msgid ""
+"Replace ``SELFSERVICE_NETWORK_GATEWAY`` with the gateway you want to use on "
+"the self-service network, typically the \".1\" IP address."
+msgstr ""
+"``SELFSERVICE_NETWORK_GATEWAY`` をセルフサービスネットワークにおいて使用した"
+"いゲートウェイに置き換えます。通常は「.1」の IP アドレスです。"
+
+msgid ""
+"Replace ``SELFSERVICE_NET_ID`` with the ID of the ``selfservice`` network."
+msgstr ""
+"``SELFSERVICE_NET_ID`` はネットワーク ``selfservice`` の ID に置き換えます。"
+
+msgid ""
+"Replace ``START_IP_ADDRESS`` and ``END_IP_ADDRESS`` with the first and last "
+"IP address of the range within the subnet that you want to allocate for "
+"instances. This range must not include any existing active IP addresses."
+msgstr ""
+"``START_IP_ADDRESS`` と ``END_IP_ADDRESS`` を、インスタンスに割り当てたいサブ"
+"ネットの最初と最後の IP アドレスに置き換えます。この範囲は、すでに使用中の "
+"IP アドレスを含んではいけません。"
+
+msgid ""
+"Replace ``SWIFT_URL`` with the URL of the Object Storage service. The URL "
+"can be found by showing the object-store API endpoints:"
+msgstr ""
+"``SWIFT_URL`` を Object Storage サービスの URL に置き換えます。URL は、"
+"object-store API エンドポイントを表示することにより、見つけられます。"
+
+msgid ""
+"Replace ``TIME_ZONE`` with an appropriate time zone identifier. For more "
+"information, see the `list of time zones <https://en.wikipedia.org/wiki/"
+"List_of_tz_database_time_zones>`__."
+msgstr ""
+"``TIME_ZONE`` を適切なタイムゾーン識別子に置き換えてください。詳細は `タイム"
+"ゾーン一覧 <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__ "
+"を参照してください。"
+
+msgid ""
+"Replace the ``nova-compute-kvm`` package with ``nova-compute-qemu`` which "
+"automatically changes the ``/etc/nova/nova-compute.conf`` file and installs "
+"the necessary dependencies:"
+msgstr ""
+"``nova-compute-kvm`` パッケージを ``nova-compute-qemu`` に置き換えてくださ"
+"い。 ``nova-compute-qemu`` パッケージは、自動的に ``/etc/nova/nova-compute."
+"conf`` ファイルを変更し、必要な依存パッケージをインストールします。"
+
+msgid "Request an authentication token:"
+msgstr "認証トークンを要求します。"
+
+msgid "Respond to prompts for debconf."
+msgstr "debconf のプロンプトに答えます。"
+
+msgid "Respond to prompts for web server configuration."
+msgstr "ウェブサーバー設定のプロンプトに答えます。"
+
+msgid "Restart the Block Storage backup service:"
+msgstr "Block Storage のバックアップサービスを再起動します。"
+
+msgid "Restart the Block Storage services:"
+msgstr "Block Storage サービスを再起動します。"
+
+msgid "Restart the Block Storage volume service including its dependencies:"
+msgstr "Block Storage ボリュームサービスと関連サービスを再起動します。"
+
+msgid "Restart the Compute API service:"
+msgstr "Compute API サービスを再起動します。"
+
+# #-#-#-#-#  ceilometer-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-compute-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Restart the Compute service:"
+msgstr "Compute Service を再起動します。"
+
+# #-#-#-#-#  networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Restart the Compute services:"
+msgstr "Compute サービスを再起動します。"
+
+msgid "Restart the Image services:"
+msgstr "Image サービスのサービスを再起動します。"
+
+msgid "Restart the Linux bridge agent:"
+msgstr "Linux ブリッジエージェントを再起動します。"
+
+msgid "Restart the Memcached service:"
+msgstr "memcached サービスを再起動します。"
+
+msgid "Restart the NTP service:"
+msgstr "NTP サービスを再起動します。"
+
+msgid "Restart the Networking services."
+msgstr "Networking サービスを再起動します。"
+
+msgid "Restart the database service:"
+msgstr "データベースサービスを再起動します。"
+
+msgid "Restart the other Compute services:"
+msgstr "他の Compute サービスを再起動します。"
+
+msgid "Restart the web server and session storage service:"
+msgstr "ウェブサーバーとセッションストレージサービスを再起動します。"
+
+msgid ""
+"Return to :ref:`Launch an instance - Create virtual networks <launch-"
+"instance-networks>`."
+msgstr ""
+":ref:`インスタンスの起動 - 仮想ネットワークの作成 <launch-instance-"
+"networks>` に戻ります。"
+
+msgid "Return to :ref:`Launch an instance <launch-instance-complete>`."
+msgstr ":ref:`インスタンスの起動 <launch-instance-complete>` に戻ります。"
+
+msgid "Return to :ref:`launch-instance`."
+msgstr ":ref:`launch-instance` に戻ります。"
+
+msgid "Root password for the database"
+msgstr "データベースのルートパスワード"
+
+msgid "Run the following command to install the packages:"
+msgstr "以下のコマンドを実行して、パッケージをインストールします。"
+
+msgid "Run the same command on *all other* nodes:"
+msgstr "同じコマンドを *すべてのノード* において実行します。"
+
+msgid "Run this command on the *controller* node:"
+msgstr "このコマンドを *コントローラー* ノードで実行します。"
+
+msgid ""
+"SLES enables apparmor by default and restricts dnsmasq. You need to either "
+"completely disable apparmor or disable only the dnsmasq profile:"
+msgstr ""
+"SLES は、デフォルトで apparmor が有効化されていて、dnsmasq を制限しています。"
+"apparmor を完全に無効化するか、dnsmasq プロファイルを無効化する必要がありま"
+"す。"
+
+msgid "SQL database"
+msgstr "SQL データベース"
+
+msgid "Secret for the metadata proxy"
+msgstr "メタデータプロキシー用のシークレット"
+
+msgid ""
+"Secure the database service by running the ``mysql_secure_installation`` "
+"script. In particular, choose a suitable password for the database ``root`` "
+"account:"
+msgstr ""
+"``mysql_secure_installation`` スクリプトを実行して、データベースサービスの安"
+"全性を向上します。特に、データベースの ``root`` アカウントに適切なパスワード"
+"を選択します。"
+
+msgid "Security"
+msgstr "セキュリティー"
+
+msgid "Select novnc startup in ``/etc/default/nova-consoleproxy``:"
+msgstr "``/etc/default/nova-consoleproxy`` において novnc の起動を選択します。"
+
+msgid "Self-service network"
+msgstr "セルフサービスネットワーク"
+
+msgid ""
+"Self-service networks connect to provider networks using a virtual router "
+"that typically performs bidirectional NAT. Each router contains an interface "
+"on at least one self-service network and a gateway on a provider network."
+msgstr ""
+"セルフサービスネットワークは、仮想ルーターを使ってプロバイダーネットワークと"
+"接続され、通常仮想ルーターでは双方向 NAT が行われます。各ルーターは、少なくと"
+"も 1 つのセルフサービスネットワークに接続されるインターフェースと、プロバイ"
+"ダーネットワークに接続されるゲートウェイを持ちます。"
+
+msgid ""
+"Self-service networks typically use overlay networks. Overlay network "
+"protocols such as VXLAN include additional headers that increase overhead "
+"and decrease space available for the payload or user data. Without knowledge "
+"of the virtual network infrastructure, instances attempt to send packets "
+"using the default Ethernet :term:`maximum transmission unit (MTU)` of 1500 "
+"bytes. The Networking service automatically provides the correct MTU value "
+"to instances via DHCP. However, some cloud images do not use DHCP or ignore "
+"the DHCP MTU option and require configuration using metadata or a script."
+msgstr ""
+"セルフサービスネットワークでは一般にはオーバーレイネットワークが使用されま"
+"す。 VXLAN などのオーバーレイネットワークプロトコルは追加のヘッダーが必要で、"
+"このため、オーバーヘッドが増え、ペイロードやユーザーデータで利用可能な空間が"
+"減ります。仮想ネットワーク基盤に関する情報がないと、インスタンスが、デフォル"
+"トの Ethernet :term:`最大転送単位 (MTU) <maximum transmission unit (MTU)>`  "
+"1500 バイトを使用して、パケットを送信しようとします。 Networking サービスは、"
+"正しい MTU 値を DHCP 経由でインスタンスに自動的に提供します。ただし、クラウド"
+"イメージによっては DHCP が使用されなかったり DHCP MTU オプションは無視された"
+"りします。この場合には、メタデータやスクリプトを使って MTU を設定する必要があ"
+"ります。"
+
+msgid "Set a gateway on the provider network on the router:"
+msgstr "ルーターにおいて、ゲートウェイをプロバイダーネットワークに設定します。"
+
+msgid "Set the hostname of the node to ``block1``."
+msgstr "このノードのホスト名を ``block1`` に設定します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Set the hostname of the node to ``compute1``."
+msgstr "このノードのホスト名を ``compute1`` に設定します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Set the hostname of the node to ``controller``."
+msgstr "このノードのホスト名を ``controller`` に設定します。"
+
+msgid ""
+"Set up session storage. See `Set up session storage for the dashboard "
+"<https://docs.openstack.org/admin-guide/dashboard-sessions.html>`__."
+msgstr ""
+"セッションストレージの設定。`ダッシュボードのセッションストレージの設定 "
+"<https://docs.openstack.org/admin-guide/dashboard-sessions.html>`__ を参照し"
+"てください。"
+
+msgid "Shared File Systems"
+msgstr "Shared File Systems"
+
+msgid "Shared File Systems service (manila)"
+msgstr "Shared File Systems サービス (manila)"
+
+msgid "Shutdown ``nova-spicehtml5proxy``:"
+msgstr "``nova-spicehtml5proxy`` をシャットダウンします。"
+
+msgid ""
+"Similarly, if your compute nodes use LVM on the operating system disk, you "
+"must also modify the filter in the ``/etc/lvm/lvm.conf`` file on those nodes "
+"to include only the operating system disk. For example, if the ``/dev/sda`` "
+"device contains the operating system:"
+msgstr ""
+"同様に、コンピュートノードがオペレーティングシステムのディスクで LVM を使用し"
+"ている場合、それらのノードにおいて ``/etc/lvm/lvm.conf`` ファイルにあるフィル"
+"ターも変更して、オペレーティングシステムのディスクのみが含まれるようにする必"
+"要があります。例えば、``/dev/sda`` デバイスにオペレーティングシステムが含まれ"
+"る場合、次のようにします。"
+
+msgid ""
+"Some distributions add an extraneous entry in the ``/etc/hosts`` file that "
+"resolves the actual hostname to another loopback IP address such as "
+"``127.0.1.1``. You must comment out or remove this entry to prevent name "
+"resolution problems. **Do not remove the 127.0.0.1 entry.**"
+msgstr ""
+"いくつかのディストリビューションでは、実際のホスト名を ``127.0.1.1`` といった"
+"別のループバックアドレスに名前解決する、本質的でない項目がファイル ``/etc/"
+"hosts`` に追加されます。名前解決の問題を防ぐために、この項目をコメントアウト"
+"するか削除してください。ただし *127.0.0.1 の項目は削除しないこと。*"
+
+msgid "Some distributions include LVM by default."
+msgstr ""
+"いくつかのディストリビューションは、デフォルトで LVM が含まれています。"
+
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  ceilometer-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Source the ``admin`` credentials to gain access to admin-only CLI commands:"
+msgstr ""
+"``admin`` クレデンシャルを読み込み、管理者専用 CLI コマンドへのアクセス権を取"
+"得します。"
+
+msgid ""
+"Source the ``demo`` credentials to gain access to user-only CLI commands:"
+msgstr ""
+"``demo`` クレデンシャルを読み込み、利用者用 CLI コマンドへのアクセス権を取得"
+"します。"
+
+msgid ""
+"Source the ``demo`` credentials to perform the following steps as a non-"
+"administrative project:"
+msgstr ""
+"``demo`` クレデンシャルを読み込み、非管理プロジェクトとして以下の手順を実行し"
+"ます。"
+
+msgid "Source the ``demo`` project credentials:"
+msgstr "``demo`` プロジェクトのクレデンシャルを読み込みます。"
+
+msgid ""
+"Start the Apache HTTP service and configure it to start when the system "
+"boots:"
+msgstr "Apache HTTP サービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid ""
+"Start the Block Storage backup service and configure it to start when the "
+"system boots:"
+msgstr ""
+"Block Storage のバックアップサービスを起動し、システム起動時に自動的に起動す"
+"るよう設定します。"
+
+msgid ""
+"Start the Block Storage services and configure them to start when the system "
+"boots:"
+msgstr ""
+"Block Storage サービスを起動し、システム起動時に自動的に起動するよう設定しま"
+"す。"
+
+msgid ""
+"Start the Block Storage volume service including its dependencies and "
+"configure them to start when the system boots:"
+msgstr ""
+"Block Storage ボリュームサービスと関連サービスを起動し、システム起動時に自動"
+"的に起動するよう設定します。"
+
+msgid ""
+"Start the Compute service including its dependencies and configure them to "
+"start automatically when the system boots:"
+msgstr ""
+"Compute サービスおよび関連するサービスを起動します。また、それらのサービスが"
+"システム起動時に自動的に起動するよう設定します。"
+
+msgid ""
+"Start the Compute services and configure them to start when the system boots:"
+msgstr "Compute サービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid ""
+"Start the Image services and configure them to start when the system boots:"
+msgstr ""
+"Image サービスのサービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid ""
+"Start the LVM metadata service and configure it to start when the system "
+"boots:"
+msgstr ""
+"LVM メタデータサービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid ""
+"Start the Linux Bridge agent and configure it to start when the system boots:"
+msgstr ""
+"Linux ブリッジエージェントを起動し、システム起動時に自動的に起動するよう設定"
+"します。"
+
+msgid ""
+"Start the Linux bridge agent and configure it to start when the system boots:"
+msgstr ""
+"Linux ブリッジエージェントを起動し、システム起動時に自動的に起動するよう設定"
+"します。"
+
+msgid ""
+"Start the Memcached service and configure it to start when the system boots:"
+msgstr "memcached サービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid "Start the NTP service and configure it to start when the system boots:"
+msgstr "NTP サービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid ""
+"Start the Networking services and configure them to start when the system "
+"boots."
+msgstr "Networking サービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid ""
+"Start the database service and configure it to start when the system boots:"
+msgstr ""
+"データベースサービスを起動し、システム起動時に自動的に起動するよう設定しま"
+"す。"
+
+msgid ""
+"Start the message queue service and configure it to start when the system "
+"boots:"
+msgstr ""
+"メッセージキューサービスを起動し、システム起動時に起動するよう設定します。"
+
+msgid "Start the noVNC proxy:"
+msgstr "noVNC プロキシーを起動します。"
+
+msgid ""
+"Starting with the Newton release, SUSE OpenStack packages are shipping with "
+"the upstream default configuration files. For example ``/etc/glance/glance-"
+"api.conf`` or ``/etc/glance/glance-registry.conf``, with customizations in "
+"``/etc/glance/glance-api.conf.d/`` or ``/etc/glance/glance-registry.conf.d/"
+"``. While the following instructions modify the default configuration files, "
+"adding new files in ``/etc/glance/glance-api.conf.d`` or ``/etc/glance/"
+"glance-registry.conf.d`` achieves the same result."
+msgstr ""
+"Newton リリース以降、SUSE OpenStack パッケージは、アップストリームのデフォル"
+"ト設定ファイルを同梱しています。例えば、``/etc/glance/glance-api.conf`` や "
+"``/etc/glance/glance-registry.conf`` およびカスタマイズした ``/etc/glance/"
+"glance-api.conf.d/`` や ``/etc/glance/glance-registry.conf.d/`` です。以下の"
+"説明は、デフォルトの設定ファイルを変更しますが、``/etc/glance/glance-api."
+"conf.d/`` や ``/etc/glance/glance-registry.conf.d/`` に新しいファイルを追加す"
+"ることにより、同じ結果を得られます。"
+
+msgid ""
+"Starting with the Newton release, SUSE OpenStack packages are shipping with "
+"the upstream default configuration files. For example ``/etc/keystone/"
+"keystone.conf``, with customizations in ``/etc/keystone/keystone.conf.d/010-"
+"keystone.conf``. While the following instructions modify the default "
+"configuration file, adding a new file in ``/etc/keystone/keystone.conf.d`` "
+"achieves the same result."
+msgstr ""
+"Newton リリース以降、SUSE OpenStack パッケージは、アップストリームのデフォル"
+"ト設定ファイルを同梱しています。例えば、``/etc/keystone/keystone.conf`` およ"
+"びカスタマイズした ``/etc/keystone/keystone.conf.d/010-keystone.conf`` です。"
+"以下の説明は、デフォルトの設定ファイルを変更しますが、``/etc/keystone/"
+"keystone.conf.d`` に新しいファイルを追加することにより、同じ結果を得られま"
+"す。"
+
+msgid "Telemetry Alarming services (aodh)"
+msgstr "Telemetry Alarming サービス (aodh)"
+
+msgid "Telemetry Data Collection service (ceilometer)"
+msgstr "Telemetry Data Collection サービス (ceilometer)"
+
+msgid ""
+"The :command:`systemctl enable` call on openSUSE outputs a warning message "
+"when the service uses SysV Init scripts instead of native systemd files. "
+"This warning can be ignored."
+msgstr ""
+"openSUSE において :command:`systemctl enable` を実行すると、サービスがネイ"
+"ティブの systemd ではなく SysV Init スクリプトを使用する場合、警告メッセージ"
+"が表示されます。この警告は無視できます。"
+
+msgid "The :term:`DHCP agent` provides DHCP services for virtual networks."
+msgstr ""
+":term:`DHCP エージェント <DHCP agent>` は、仮想ネットワーク向けに DHCP サービ"
+"スを提供します。"
+
+msgid ""
+"The :term:`Layer-3 (L3) agent` provides routing and NAT services for self-"
+"service virtual networks."
+msgstr ""
+":term:`L3 エージェント <Layer-3 (L3) agent>` は、セルフサービスの仮想ネット"
+"ワーク用のルーティングおよび NAT サービスを提供します。"
+
+msgid ""
+"The :term:`OpenStack` project is an open source cloud computing platform "
+"that supports all types of cloud environments. The project aims for simple "
+"implementation, massive scalability, and a rich set of features. Cloud "
+"computing experts from around the world contribute to the project."
+msgstr ""
+":term:`OpenStack` プロジェクトは、あらゆる種類のクラウド環境をサポートする、"
+"オープンソースのクラウドコンピューティングプラットフォームです。シンプルな実"
+"装、大規模なスケーラビリティ、豊富な機能を目指しています。世界中のクラウドコ"
+"ンピューティング技術者がプロジェクトに貢献しています。"
+
+msgid ""
+"The :term:`metadata agent <Metadata agent>` provides configuration "
+"information such as credentials to instances."
+msgstr ""
+":term:`メタデータエージェント <Metadata agent>` は、クレデンシャルなどの設定"
+"情報をインスタンスに提供します。"
+
+msgid ""
+"The Bare Metal service is a collection of components that provides support "
+"to manage and provision physical machines."
+msgstr ""
+"Bare Metal サービスは、物理マシンの管理、設定を行うコンポーネントの集合体で"
+"す。"
+
+msgid ""
+"The Block Storage API and scheduler services typically run on the controller "
+"nodes. Depending upon the drivers used, the volume service can run on "
+"controller nodes, compute nodes, or standalone storage nodes."
+msgstr ""
+"Block Storage API およびスケジューラーサービスは、一般的にコントローラーノー"
+"ドで実行します。使用するドライバーによりボリュームサービスをどのノードで実行"
+"するかは変わり、コントローラーノード、コンピュートノード、スタンドアロンのス"
+"トレージノードの場合があります。"
+
+msgid ""
+"The Block Storage service (cinder) provides block storage devices to guest "
+"instances. The method in which the storage is provisioned and consumed is "
+"determined by the Block Storage driver, or drivers in the case of a multi-"
+"backend configuration. There are a variety of drivers that are available: "
+"NAS/SAN, NFS, iSCSI, Ceph, and more."
+msgstr ""
+"Block Storage サービス (cinder) は、ブロックストレージデバイスを仮想マシンイ"
+"ンスタンスに提供します。ストレージを設定して利用する方法は、Block Storage ド"
+"ライバーにより決まります。複数のバックエンドを設定することもできます。 NAS/"
+"SAN、NFS、iSCSI、Ceph などのさまざまなドライバーがあります。"
+
+msgid "The Block Storage service creates logical volumes in this volume group."
+msgstr ""
+"Block Storage のサービスが、このボリュームグループ内に論理ボリュームを作成し"
+"ます。"
+
+msgid "The Block Storage services require endpoints for each service entity."
+msgstr ""
+"Block Storage サービスは、それぞれのサービスエンティティーのエンドポイントを"
+"必要とします。"
+
+msgid "The Block Storage services require two service entities."
+msgstr "Block Storage サービスは 2 つのサービスエンティティーを必要とします。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"The CirrOS image includes conventional user name/password authentication and "
+"provides these credentials at the login prompt. After logging into CirrOS, "
+"we recommend that you verify network connectivity using ``ping``."
+msgstr ""
+"CirrOS イメージは、一般的なユーザー名とパスワードによる認証に対応しており、こ"
+"れらのクレデンシャルがログインプロンプトに表示されています。CirrOS にログイン"
+"後、``ping`` を使用してネットワーク接続性を検証することを推奨します。"
+
+msgid ""
+"The Container Infrastructure Management service (magnum) is an OpenStack API "
+"service making container orchestration engines (COE) such as Docker Swarm, "
+"Kubernetes and Mesos available as first class resources in OpenStack."
+msgstr ""
+"コンテナー基盤管理サービス (magnum) は、 Docker Swarm、 Kubernetes、Mesos な"
+"どのコンテナーオーケストレーションエンジン (COE) を、 OpenStack のリソースと"
+"して直接扱えるようにしてくれる OpenStack API サービスです。"
+
+msgid ""
+"The DNS service (designate) provides cloud provisioning functionality for "
+"DNS Zones and Recordsets."
+msgstr ""
+"DNS サービス (designate) は、DNS ゾーンとレコードセットをクラウドに展開する機"
+"能を提供します。"
+
+msgid ""
+"The Dashboard (horizon) is a web interface that enables cloud administrators "
+"and users to manage various OpenStack resources and services."
+msgstr ""
+"Dashboard (horizon) は、クラウド管理者やユーザーがさまざまな OpenStack のリ"
+"ソースとサービスを管理できるようになるウェブインターフェースです。"
+
+msgid ""
+"The Database service (trove) provides cloud provisioning functionality for "
+"database engines."
+msgstr ""
+"Database サービス (trove) は、データベースエンジンをクラウドに展開する機能を"
+"提供します。"
+
+msgid "The Debian package will perform the below operations for you:"
+msgstr "Debian パッケージにより、以下の処理が実行されます。"
+
+msgid ""
+"The Identity service authentication mechanism for services uses Memcached to "
+"cache tokens. The memcached service typically runs on the controller node. "
+"For production deployments, we recommend enabling a combination of "
+"firewalling, authentication, and encryption to secure it."
+msgstr ""
+"Identity サービスのサービス用の認証機構は、トークンをキャッシュするために "
+"memcached を使用します。 memcached サービスは通常コントローラーノードで実行し"
+"ます。本番環境では、安全性のため、ファイアウォール、認証、暗号化を組み合わせ"
+"て利用することを推奨します。"
+
+msgid ""
+"The Identity service provides authentication services for each OpenStack "
+"service. The authentication service uses a combination of :term:`domains "
+"<domain>`, :term:`projects<project>`, :term:`users<user>`, and :term:"
+"`roles<role>`."
+msgstr ""
+"Identity サービスは OpenStack の各サービスに認証サービスを提供します。認証"
+"サービスは、:term:`ドメイン <domain>`、:term:`プロジェクト <project>` 、:"
+"term:`ユーザー <user>` 、:term:`ロール <role>` を使用します。"
+
+msgid ""
+"The Key Manager service provides a RESTful API for the storage and "
+"provisioning of secret data such as passphrases, encryption keys, and X.509 "
+"certificates."
+msgstr ""
+"Key Manager サービスは、秘密データ (パスフレーズ、暗号鍵、 X.509 証明書など) "
+"の保管とプロビジョニングを行うための RESTful API を提供します。"
+
+msgid ""
+"The Linux bridge agent builds layer-2 (bridging and switching) virtual "
+"networking infrastructure for instances and handles security groups."
+msgstr ""
+"Linux ブリッジエージェントは、インスタンス用の L2 (ブリッジおよびスイッチ) 仮"
+"想ネットワークインフラを構築して、セキュリティーグループを処理します。"
+
+msgid "The Linux bridge agent only supports VXLAN overlay networks."
+msgstr ""
+"Linux ブリッジエージェントは、VXLAN オーバーレイネットワークのみをサポートし"
+"ます。"
+
+msgid ""
+"The ML2 plug-in uses the Linux bridge mechanism to build layer-2 (bridging "
+"and switching) virtual networking infrastructure for instances."
+msgstr ""
+"ML2 プラグインは、Linux ブリッジ機構を使用して、インスタンス用の L2 (ブリッジ"
+"とスイッチ) 仮想ネットワークインフラを構築します。"
+
+msgid ""
+"The Messaging service allows developers to share data between distributed "
+"application components performing different tasks, without losing messages "
+"or requiring each component to be always available."
+msgstr ""
+"Messaging サービスを使うと、開発者は、分散アプリケーションの異なるタスクを実"
+"行するコンポーネント間でデータを共有できます。その際、メッセージを失うことも"
+"ありませんし、各コンポーネントを常に利用可能な状態に保っておく必要もありませ"
+"ん。"
+
+# #-#-#-#-#  neutron-compute-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-network-node.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"The Networking common component configuration includes the authentication "
+"mechanism, message queue, and plug-in."
+msgstr ""
+"Networking の共通コンポーネントの設定は、認証メカニズム、メッセージキュー、プ"
+"ラグインがあります。"
+
+msgid ""
+"The Networking server component configuration includes the database, "
+"authentication mechanism, message queue, topology change notifications, and "
+"plug-in."
+msgstr ""
+"Networking のサーバーコンポーネントの設定は、データベース、認証メカニズム、"
+"メッセージキュー、トポロジー変更通知、プラグインがあります。"
+
+msgid ""
+"The Networking service assumes default values for kernel network parameters "
+"and modifies firewall rules. To avoid most issues during your initial "
+"installation, we recommend using a stock deployment of a supported "
+"distribution on your hosts. However, if you choose to automate deployment of "
+"your hosts, review the configuration and policies applied to them before "
+"proceeding further."
+msgstr ""
+"また、Networking サービスは、カーネルのネットワークパラメーターを前提にしてお"
+"り、ファイアウォールルールを変更します。初期インストール中に多くの問題を避け"
+"るために、サポートされるディストリビューションをインストールしたそのままの環"
+"境を使用することを推奨します。ホストの構築を自動化することにした場合、先に進"
+"む前に、適用された設定やポリシーを確認してください。"
+
+msgid ""
+"The Networking service initialization scripts expect a symbolic link ``/etc/"
+"neutron/plugin.ini`` pointing to the ML2 plug-in configuration file, ``/etc/"
+"neutron/plugins/ml2/ml2_conf.ini``. If this symbolic link does not exist, "
+"create it using the following command:"
+msgstr ""
+"Networking のサービス初期化スクリプトは、シンボリックリンク ``/etc/neutron/"
+"plugin.ini`` が ML2 プラグイン設定ファイル ``/etc/neutron/plugins/ml2/"
+"ml2_conf.ini`` を指していることを期待します。このシンボリックリンクが存在しな"
+"ければ、以下のコマンドを使用して作成します。"
+
+msgid ""
+"The Networking service initialization scripts expect the variable "
+"``NEUTRON_PLUGIN_CONF`` in the ``/etc/sysconfig/neutron`` file to reference "
+"the ML2 plug-in configuration file. Ensure that the ``/etc/sysconfig/"
+"neutron`` file contains the following:"
+msgstr ""
+"Networking のサービス初期化スクリプトは、``/etc/sysconfig/neutron`` ファイル"
+"の ``NEUTRON_PLUGIN_CONF`` 変数が ML2 プラグイン設定ファイルを参照しているこ"
+"とを期待します。 ``/etc/sysconfig/neutron`` ファイルに以下が確実に含まれるよ"
+"うにしてください。"
+
+msgid ""
+"The Object Storage services (swift) work together to provide object storage "
+"and retrieval through a REST API."
+msgstr ""
+"OpenStack Object Storage サービス (swift) は、協調動作してオブジェクトスト"
+"レージを提供します。 REST API 経由でオブジェクト取得をサポートします。"
+
+msgid ""
+"The OpenStack client also supports using a ``clouds.yaml`` file. For more "
+"information, see the `os-client-config <http://docs.openstack.org/developer/"
+"os-client-config/>`_."
+msgstr ""
+"OpenStack クライアントは、``clouds.yaml`` ファイルの利用もサポートします。詳"
+"細は `os-client-config <http://docs.openstack.org/developer/os-client-config/"
+">`_ を参照ください。"
+
+msgid ""
+"The OpenStack system consists of several key services that are separately "
+"installed. These services work together depending on your cloud needs and "
+"include the Compute, Identity, Networking, Image, Block Storage, Object "
+"Storage, Telemetry, Orchestration, and Database services. You can install "
+"any of these projects separately and configure them stand-alone or as "
+"connected entities."
+msgstr ""
+"OpenStack システムは、別々にインストールできる複数の主要なサービスから構成さ"
+"れます。クラウドの要件に応じて、これらのサービスを組み合わあせて動作させま"
+"す。Compute、Identity、Networking、Image、Block Storage、Object Storage、"
+"Telemetry、Orchestration、Database などのサービスがあります。これらのプロジェ"
+"クトを別々にインストールして、設定により単独で動かしたり組み合わせて動かした"
+"りできます。"
+
+msgid ""
+"The Orchestration service (heat) uses a `Heat Orchestration Template (HOT) "
+"<https://docs.openstack.org/developer/heat/template_guide/hot_guide.html>`_ "
+"to create and manage cloud resources."
+msgstr ""
+"Orchestration サービス (heat) は、 `Heat オーケストレーションテンプレート "
+"(HOT) <https://docs.openstack.org/developer/heat/template_guide/hot_guide."
+"html>`_ を使って、クラウドリソースの作成と管理を行います。"
+
+msgid ""
+"The Shared File Systems service (manila) provides coordinated access to "
+"shared or distributed file systems."
+msgstr ""
+"Shared File Systems サービス (manila) は、共有ファイルシステムや分散ファイル"
+"システムへのアクセスを提供します。"
+
+msgid ""
+"The Telemetry Alarming services trigger alarms when the collected metering "
+"or event data break the defined rules."
+msgstr ""
+"Telemetry Alarming サービスは、収集したメーターやイベントデータが定義済みルー"
+"ルを満たさない場合、アラームを生成します。"
+
+msgid "The Telemetry Data Collection services provide the following functions:"
+msgstr "Telemetry Data Collection サービスは、以下の機能を持ちます。"
+
+msgid ""
+"The ``--provider-physical-network provider`` and ``--provider-network-type "
+"flat`` options connect the flat virtual network to the flat (native/"
+"untagged) physical network on the ``eth1`` interface on the host using "
+"information from the following files:"
+msgstr ""
+"``--provider-physical-network provider`` と ``--provider-network-type flat`` "
+"オプションにより、以下の行にある情報を使用して、仮想フラットネットワークを、"
+"ホストの ``eth1`` インターフェースのフラット (ネイティブ、タグなし) プロバイ"
+"ダー物理ネットワークに接続します。"
+
+msgid "The ``--share`` option allows all projects to use the virtual network."
+msgstr ""
+"``--share`` オプションを指定することで、すべてのプロジェクトがこの仮想ネット"
+"ワークを使用できるようにします。"
+
+msgid ""
+"The ``admin`` or other privileged user must create this network because it "
+"connects directly to the physical network infrastructure."
+msgstr ""
+"これは物理ネットワークインフラに直接接続されるため、``admin`` や他の特権ユー"
+"ザーがこのネットワークを作成する必要があります。"
+
+msgid ""
+"The ``demo`` or other unprivileged user can create this network because it "
+"provides connectivity to instances within the ``demo`` project only."
+msgstr ""
+"``demo`` ユーザーや他の非特権ユーザーはこのネットワークを作成できます。なぜな"
+"ら、このネットワークは ``demo`` プロジェクト内のインスタンスに対する接続性の"
+"みを提供するからです。"
+
+msgid ""
+"The ``systemctl restart`` command starts each service if not currently "
+"running."
+msgstr ""
+"``systemctl restart`` コマンドは、動作していない場合、各サービスを開始しま"
+"す。"
+
+msgid ""
+"The automatic configuration process generates a self-signed SSL certificate. "
+"Consider obtaining an official certificate for production environments."
+msgstr ""
+"自動設定プロセスにより、自己署名 SSL 証明書が生成されます。本番環境向けに公式"
+"な証明書を取得することを検討してください。"
+
+msgid ""
+"The compute node handles connectivity and :term:`security groups <security "
+"group>` for instances."
+msgstr ""
+"コンピュートノードは、インスタンスの接続性と :term:`セキュリティーグループ "
+"<security group>` を処理します。"
+
+msgid ""
+"The compute node runs the :term:`hypervisor` portion of Compute that "
+"operates instances. By default, Compute uses the :term:`KVM <kernel-based VM "
+"(KVM)>` hypervisor. The compute node also runs a Networking service agent "
+"that connects instances to virtual networks and provides firewalling "
+"services to instances via :term:`security groups <security group>`."
+msgstr ""
+"コンピュートノードでは、インスタンスの操作を行う Compute の :term:`ハイパーバ"
+"イザー <hypervisor>` 部分を実行します。デフォルトでは、Compute  は :term:"
+"`KVM <kernel-based VM (KVM)>` ハイパーバイザーを使用します。コンピュートノー"
+"ドでは、 Networking サービスのエージェントも実行されます。このエージェント"
+"は、インスタンスを仮想ネットワークに接続し、:term:`セキュリティーグループ "
+"<security group>` としてインスタンスに対するファイアウォールサービスを提供し"
+"ます。"
+
+msgid "The controller node requires a minimum of two network interfaces."
+msgstr ""
+"コントローラーノードは、少なくとも 2 つのネットワークインターフェースが必要で"
+"す。"
+
+msgid ""
+"The controller node runs the Identity service, Image service, management "
+"portions of Compute, management portion of Networking, various Networking "
+"agents, and the Dashboard. It also includes supporting services such as an "
+"SQL database, :term:`message queue`, and :term:`NTP <Network Time Protocol "
+"(NTP)>`."
+msgstr ""
+"コントローラーノードでは、Identity サービス、Image サービス、Compute の管理コ"
+"ンポーネント、Networking の管理コンポーネント、さまざまな Networking エージェ"
+"ント、ダッシュボードが実行されます。SQL データベース、:term:`メッセージ"
+"キュー <message queue>`、:term:`NTP <Network Time Protocol (NTP)>` のようなサ"
+"ポートサービスも含まれます。"
+
+msgid ""
+"The example architecture requires at least two nodes (hosts) to launch a "
+"basic :term:`virtual machine <virtual machine (VM)>` or instance. Optional "
+"services such as Block Storage and Object Storage require additional nodes."
+msgstr ""
+"サンプルアーキテクチャーでは、:term:`仮想マシン <virtual machine (VM)>` すな"
+"わちインスタンスを起動するために、少なくとも 2 つのノード (ホスト) を必要とし"
+"ます。Block Storage や Object Storage などのオプションサービスを使う場合に"
+"は、追加のノードが必要です。"
+
+msgid ""
+"The example architecture used in this guide is a minimum configuration, and "
+"is not intended for production system installations. It is designed to "
+"provide a minimum proof-of-concept for the purpose of learning about "
+"OpenStack. For information on creating architectures for specific use cases, "
+"or how to determine which architecture is required, see the `Architecture "
+"Design Guide <https://docs.openstack.org/arch-design/>`_."
+msgstr ""
+"このガイドにおいて使用されているアーキテクチャー例は、最小限の設定であり、本"
+"番環境のインストールを意図していません。OpenStack の学習を目的として、最小限"
+"の検証のために設計されています。特定のユースケース向けのアーキテクチャーを作"
+"成する際の情報、どのアーキテクチャーが必要になるのかを判断する方法は、"
+"`Architecture Design Guide <https://docs.openstack.org/arch-design/>`_ を参照"
+"してください。"
+
+msgid "The example architectures assume use of the following networks:"
+msgstr ""
+"サンプルアーキテクチャーでは、以下のネットワークを使用することを仮定していま"
+"す。"
+
+msgid ""
+"The following instructions and diagrams use example IP address ranges. You "
+"must adjust them for your particular environment."
+msgstr ""
+"以下の説明と図は、サンプルの IP アドレス範囲を使用します。お使いの環境に合わ"
+"せて調整する必要があります。"
+
+msgid ""
+"The following minimum requirements should support a proof-of-concept "
+"environment with core services and several :term:`CirrOS` instances:"
+msgstr ""
+"以下の最小要件で、コアなサービスと :term:`CirrOS` のインスタンスをいくつか動"
+"かす検証 (POC) 環境には対応できることでしょう。"
+
+msgid ""
+"The following steps apply to RHEL only. CentOS does not require these steps."
+msgstr ""
+"以下の手順は RHEL のみに適用されます。CentOS の場合、これらの手順は必要ありま"
+"せん。"
+
+msgid ""
+"The following table provides a list of services that require passwords and "
+"their associated references in the guide."
+msgstr ""
+"以下の表は、パスワードを必要とするサービスと、このガイドにおける参照先をまと"
+"めたものです。"
+
+msgid "The message queue runs on the controller node."
+msgstr "メッセージキューはコントローラーノードで動作します。"
+
+msgid ""
+"The only core service required by the dashboard is the Identity service. You "
+"can use the dashboard in combination with other services, such as Image "
+"service, Compute, and Networking. You can also use the dashboard in "
+"environments with stand-alone services such as Object Storage."
+msgstr ""
+"ダッシュボードにより必要となるコアサービスは、Identity サービスのみです。"
+"Image サービス、Compute サービス、Networking サービスなどの他のサービスと組み"
+"合わせて、ダッシュボードを使用できます。また、Object Storage サービスのような"
+"単独のサービスを持つ環境でダッシュボードを使用することもできます。"
+
+msgid ""
+"The openSUSE distribution uses the concept of patterns to represent "
+"collections of packages. If you selected 'Minimal Server Selection (Text "
+"Mode)' during the initial installation, you may be presented with a "
+"dependency conflict when you attempt to install the OpenStack packages. To "
+"avoid this, remove the minimal\\_base-conflicts package:"
+msgstr ""
+"openSUSE ディストリビューションは、パッケージ群を表現するために、パターンとい"
+"う概念が使用します。初期インストール中に 'Minimal Server Selection (Text "
+"Mode)' を選択した場合、OpenStack パッケージをインストールしようとした際に、依"
+"存関係の競合が発生するかもしれません。これを避けるために、minimal\\_base-"
+"conflicts パッケージを削除します。"
+
+msgid ""
+"The optional Block Storage node contains the disks that the Block Storage "
+"and Shared File System services provision for instances."
+msgstr ""
+"オプションの Block Storage ノードは、Block Storage サービスや Shared File "
+"System サービスがインスタンス用に用意するディスクを保持します。"
+
+msgid ""
+"The optional Object Storage node contain the disks that the Object Storage "
+"service uses for storing accounts, containers, and objects."
+msgstr ""
+"オプションの Object Storage ノードは、Object Storage がアカウント、コンテ"
+"ナー、オブジェクトを保存するディスクを持ちます。"
+
+msgid ""
+"The output should indicate four agents on the controller node and one agent "
+"on each compute node."
+msgstr ""
+"この出力は、コントローラーノードに 4 つのエージェント、各コンピュートノード"
+"に 1 つのエージェントがあることを意味します。"
+
+msgid ""
+"The output should indicate three agents on the controller node and one agent "
+"on each compute node."
+msgstr ""
+"この出力は、コントローラーノードに 3 つのエージェント、各コンピュートノード"
+"に 1 つのエージェントがあることを意味します。"
+
+msgid ""
+"The packages are signed by GPG key ``D85F9316``. You should verify the "
+"fingerprint of the imported GPG key before using it."
+msgstr ""
+"パッケージは GPG キー ``D85F9316`` を用いて署名されています。使用する前にイン"
+"ポートした GPG キーのフィンガープリントを検証すべきです。"
+
+msgid ""
+"The previous section used a combination of environment variables and command "
+"options to interact with the Identity service via the ``openstack`` client. "
+"To increase efficiency of client operations, OpenStack supports simple "
+"client environment scripts also known as OpenRC files. These scripts "
+"typically contain common options for all clients, but also support unique "
+"options. For more information, see the `OpenStack End User Guide <https://"
+"docs.openstack.org/user-guide/common/ "
+"cli_set_environment_variables_using_openstack_rc.html>`_."
+msgstr ""
+"前のセクションでは、環境変数とコマンドオプションを組み合わせて、"
+"``openstack`` クライアント経由で Identity サービスと通信しました。クライアン"
+"ト操作の効率を上げるために、OpenStack は、OpenRC ファイルとも呼ばれる、シンプ"
+"ルなクライアント環境スクリプトをサポートしています。これらのスクリプトには、"
+"通常すべてのクライアントに共通のオプションを記載しますが、独自のオプションも"
+"サポートしています。詳細は `OpenStack エンドユーザーガイド <https://docs."
+"openstack.org/ja/user-guide/common/"
+"cli_set_environment_variables_using_openstack_rc.html>`_ を参照してください。"
+
+msgid ""
+"The provider interface uses a special configuration without an IP address "
+"assigned to it. Configure the second interface as the provider interface:"
+msgstr ""
+"プロバイダーインターフェースは、IP アドレスを割り当てない特別な設定を使用しま"
+"す。2 番目のインターフェースをプロバイダーインターフェースとして設定します。"
+
+msgid ""
+"The provider network uses 203.0.113.0/24 with a gateway on 203.0.113.1. A "
+"DHCP server assigns each instance an IP address from 203.0.113.101 to "
+"203.0.113.250. All instances use 8.8.4.4 as a DNS resolver."
+msgstr ""
+"プロバイダーネットワークは 203.0.113.0/24 を使用し、ゲートウェイは "
+"203.0.113.1 です。 DHCP サーバーは、各インスタンスに 203.0.113.101 から "
+"203.0.113.250 までの範囲の IP アドレスを割り当てます。すべてのインスタンスは "
+"DNS リゾルバーとして 8.8.4.4 を使用します。"
+
+msgid ""
+"The provider networks option deploys the OpenStack Networking service in the "
+"simplest way possible with primarily layer-2 (bridging/switching) services "
+"and VLAN segmentation of networks. Essentially, it bridges virtual networks "
+"to physical networks and relies on physical network infrastructure for "
+"layer-3 (routing) services. Additionally, a :term:`DHCP<Dynamic Host "
+"Configuration Protocol (DHCP)>` service provides IP address information to "
+"instances."
+msgstr ""
+"プロバイダーネットワーク構成では、可能な限り最も簡単な方法で OpenStack "
+"Networking サービスをデプロイします。主として、レイヤー 2 (ブリッジング/ス"
+"イッチング) サービスと VLAN によるネットワーク分離が利用できます。本質的に"
+"は、仮想ネットワークは物理ネットワークにレイヤー 2 でブリッジングされ、レイ"
+"ヤー 3 (ルーティング) サービスは物理ネットワークインフラのものが利用されま"
+"す。また、 :term:`DHCP <Dynamic Host Configuration Protocol (DHCP)>` サービス"
+"により IP アドレス情報がインスタンスに提供されます。"
+
+msgid ""
+"The self-service network uses 172.16.1.0/24 with a gateway on 172.16.1.1. A "
+"DHCP server assigns each instance an IP address from 172.16.1.2 to "
+"172.16.1.254. All instances use 8.8.4.4 as a DNS resolver."
+msgstr ""
+"セルフサービスネットワークは 172.16.1.0/24 を使用し、ゲートウェイは "
+"172.16.1.1 です。 DHCP サーバーは、各インスタンスに 172.16.1.2 から "
+"172.16.1.254 までの範囲の IP アドレスを割り当てます。すべてのインスタンスは "
+"DNS リゾルバーとして 8.8.4.4 を使用します。"
+
+msgid ""
+"The self-service networks option augments the provider networks option with "
+"layer-3 (routing) services that enable :term:`self-service` networks using "
+"overlay segmentation methods such as :term:`VXLAN <Virtual Extensible LAN "
+"(VXLAN)>`. Essentially, it routes virtual networks to physical networks "
+"using :term:`NAT<Network Address Translation (NAT)>`. Additionally, this "
+"option provides the foundation for advanced services such as LBaaS and FWaaS."
+msgstr ""
+"セルフサービスネットワーク構成は、プロバイダーネットワーク構成にレイヤー 3 "
+"(ルーティング) サービスを加えたもので、  :term:`VXLAN <Virtual Extensible "
+"LAN (VXLAN)>` などのネットワーク分離手法を用いて :term:`セルフサービス <self-"
+"service>` ネットワークを実現します。 本質的には、この構成では、仮想ネットワー"
+"クのトラフィックは :term:`NAT <Network Address Translation (NAT)>` を利用して"
+"物理ネットワークにルーティングされます。また、 LBaaS や FWaaS などの高度な"
+"ネットワークサービスが動作するための基盤となります。"
+
+msgid ""
+"The server component listens on all IP addresses and the proxy component "
+"only listens on the management interface IP address of the compute node. The "
+"base URL indicates the location where you can use a web browser to access "
+"remote consoles of instances on this compute node."
+msgstr ""
+"サーバーコンポーネントは、すべての IP アドレスをリッスンします。プロキシーコ"
+"ンポーネントはコンピュートノードの管理インターフェースの IP アドレスのみを"
+"リッスンします。ベース URL は、Web ブラウザーがこのコンピュートノードにあるイ"
+"ンスタンスのリモートコンソールにアクセスするための場所を示します。"
+
+msgid ""
+"The service provisions logical volumes on this device using the :term:`LVM "
+"<Logical Volume Manager (LVM)>` driver and provides them to instances via :"
+"term:`iSCSI <iSCSI Qualified Name (IQN)>` transport. You can follow these "
+"instructions with minor modifications to horizontally scale your environment "
+"with additional storage nodes."
+msgstr ""
+"Block Storage サービスは、 :term:`LVM <Logical Volume Manager (LVM)>` ドライ"
+"バーを使用して、このデバイス上に論理ボリュームを構成し、 :term:`iSCSI <iSCSI "
+"Qualified Name (IQN)>` 経由でこれらをインスタンスに提供します。これらの手順を"
+"少し変更するだけで、お使いの環境に追加のストレージノードを追加し、水平にス"
+"ケールさせることができます。"
+
+msgid ""
+"The set up of OpenStack packages described here needs to be done on all "
+"nodes: controller, compute, and Block Storage nodes."
+msgstr ""
+"ここで説明されている OpenStack パッケージのセットアップは、コントローラーノー"
+"ド、コンピュートノード、ブロックストレージノードすべてで実行する必要がありま"
+"す。"
+
+msgid ""
+"The smallest default flavor consumes 512 MB memory per instance. For "
+"environments with compute nodes containing less than 4 GB memory, we "
+"recommend creating the ``m1.nano`` flavor that only requires 64 MB per "
+"instance. Only use this flavor with the CirrOS image for testing purposes."
+msgstr ""
+"デフォルトの最小のフレーバーはインスタンスあたり 512MB のメモリーを消費しま"
+"す。メモリーが 4 GB 未満のコンピュートノードがある環境では、インスタンスあた"
+"り 64 MB しか必要としない ``m1.nano`` フレーバーを作成することをお薦めしま"
+"す。テスト用途の CirrOS イメージではこのフレーバーだけを使用してください。"
+
+msgid ""
+"The status changes from ``BUILD`` to ``ACTIVE`` when the build process "
+"successfully completes."
+msgstr ""
+"ビルド処理が正常に終了すると、状態が ``BUILD`` から ``ACTIVE`` に変わります。"
+
+msgid ""
+"There are two modes of installation. One using ``/horizon`` as the URL, "
+"keeping your default vhost and only adding an Alias directive: this is the "
+"default. The other mode will remove the default Apache vhost and install the "
+"dashboard on the webroot. It was the only available option before the "
+"Liberty release. If you prefer to set the Apache configuration manually,  "
+"install the ``openstack-dashboard`` package instead of ``openstack-dashboard-"
+"apache``."
+msgstr ""
+"2 種類のインストール方法があります。 1 つは、ダッシュボードの URL として ``/"
+"horizon`` を使用する方法で、デフォルトの vhost はそのままにして、Alias ディレ"
+"クティブを追加するだけです。これがデフォルトのインストール方法です。もう 1 つ"
+"の方法は、デフォルトの Apache vhost を削除し、ダッシュボードをトップ階層にイ"
+"ンストールします。 Liberty リリースより前では、この方法しかありませんでし"
+"た。 Apache の設定を手動で行いたい場合は、 ``openstack-dashboard-apache`` の"
+"代わりに ``openstack-dashboard`` パッケージをインストールしてください。"
+
+msgid ""
+"This chapter explains how to install and configure the Networking service "
+"(neutron) using the :ref:`provider networks <network1>` or :ref:`self-"
+"service networks <network2>` option."
+msgstr ""
+"本章では、 Networking サービス (neutron) をインストールして設定する方法を説明"
+"します。 :ref:`プロバイダーネットワーク <network1>` または :ref:`セルフサービ"
+"スネットワーク <network2>` の構成に対応しています。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-initial-rings.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "This command provides no output."
+msgstr "このコマンドは何も出力しません。"
+
+msgid "This command uses the password for the ``admin`` user."
+msgstr "このコマンドでは ``admin`` ユーザーのパスワードを使用します。"
+
+msgid ""
+"This command uses the password for the ``demo`` user and API port 5000 which "
+"only allows regular (non-admin) access to the Identity service API."
+msgstr ""
+"このコマンドは、``demo`` ユーザーのパスワードと API ポート 5000 番を使用しま"
+"す。このポートは、Identity サービスの通常の (非管理) API のみにアクセスできま"
+"す。"
+
+msgid ""
+"This example architecture differs from a minimal production architecture as "
+"follows:"
+msgstr ""
+"このサンプルアーキテクチャーは、以下の点が最小限の本番アーキテクチャーと異な"
+"ります。"
+
+msgid "This example deployment uses an Apache web server."
+msgstr "このデプロイメント例では、Apache HTTP Server を使用します。"
+
+msgid ""
+"This guide covers step-by-step deployment of the major OpenStack services "
+"using a functional example architecture suitable for new users of OpenStack "
+"with sufficient Linux experience. This guide is not intended to be used for "
+"production system installations, but to create a minimum proof-of-concept "
+"for the purpose of learning about OpenStack."
+msgstr ""
+"このガイドでは、主要な OpenStack サービスのデプロイメントを、実用的なサンプル"
+"アーキテクチャーを使って、順を追って説明します。内容は、Linux の経験は十分に"
+"あるが、OpenStack は初めてというユーザーを対象にして書かれています。このガイ"
+"ドは、本番環境構築のために使用することを意図していませんが、OpenStack 学習の"
+"ために最小限の検証に使用できます。"
+
+msgid "This guide documents the OpenStack Ocata release."
+msgstr "このガイドは OpenStack Ocata リリースについて記載しています。"
+
+msgid ""
+"This guide includes host entries for optional services in order to reduce "
+"complexity should you choose to deploy them."
+msgstr ""
+"このガイドは、複雑性を減らすために、オプションサービスを配備するために選択す"
+"べきホストのエントリーを含みます。"
+
+msgid ""
+"This guide is a work-in-progress and is subject to updates frequently. Pre-"
+"release packages have been used for testing, and some instructions may not "
+"work with final versions. Please help us make this guide better by reporting "
+"any errors you encounter."
+msgstr ""
+"このガイドは作成中であり、頻繁に更新されています。テストにはリリース前のパッ"
+"ケージが使用されており、最終版では説明されている手順は動かない可能性がありま"
+"す。間違いを見つけた場合は是非報告して、このガイドの改善にご協力ください。"
+
+msgid ""
+"This guide uses a service project that contains a unique user for each "
+"service that you add to your environment. Create the ``service`` project:"
+msgstr ""
+"このガイドでは、サービスプロジェクトを使用し、お使いの環境に追加するサービス"
+"毎に専用のユーザーはこのプロジェクトに所属させます。``service`` プロジェクト"
+"を作成します。"
+
+msgid ""
+"This guide uses installation with debconf set to non-interactive mode. That "
+"is, there will be no debconf prompt. To configure a computer to use this "
+"mode, run the following command:"
+msgstr ""
+"このガイドでは、非対話モードに設定した debconf でのインストールを行います。つ"
+"まり、 debconf のプロンプトは表示されません。お使いのコンピューターをこのモー"
+"ドに設定するには、以下のコマンドを実行します。"
+
+msgid ""
+"This guide uses the Apache HTTP server with ``mod_wsgi`` to serve Identity "
+"service requests on ports 5000 and 35357. By default, the keystone service "
+"still listens on these ports. The package handles all of the Apache "
+"configuration for you (including the activation of the ``mod_wsgi`` apache2 "
+"module and keystone configuration in Apache)."
+msgstr ""
+"このガイドは、Apache HTTP server の ``mod_wsgi`` を使用して、5000 番と 35357 "
+"番のポートで Identity サービスのリクエストを処理します。デフォルトでは、 "
+"keystone サービスがこれらのポートをリッスンする点は変わりません。 "
+"``mod_wsgi`` apache2 モジュールの有効化や Apache での keystone 設定など、必要"
+"な Apache の設定はすべてパッケージが行ってくれます。"
+
+msgid ""
+"This guide uses the Apache HTTP server with ``mod_wsgi`` to serve Identity "
+"service requests on ports 5000 and 35357. By default, the keystone service "
+"still listens on these ports. Therefore, this guide manually disables the "
+"keystone service."
+msgstr ""
+"このガイドは、Apache HTTP server の ``mod_wsgi`` を使用して、5000 番と 35357 "
+"番のポートで Identity サービスのリクエストを処理します。デフォルトでは、今も "
+"keystone サービスがこれらのポートをリッスンします。そのため、このガイドでは手"
+"動で keystone サービスを無効化します。"
+
+msgid ""
+"This guide walks through an installation by using packages available through "
+"Debian 8 (code name: Jessie)."
+msgstr ""
+"このガイドは、Debian 8 (コード名: Jessie) で利用可能なパッケージを使用したイ"
+"ンストールについて詳細に説明します。"
+
+msgid ""
+"This guide will show you how to install OpenStack by using packages "
+"available on Red Hat Enterprise Linux 7 and its derivatives through the RDO "
+"repository."
+msgstr ""
+"このガイドは、RDO リポジトリー経由で Red Hat Enterprise Linux 7 および派生"
+"ディストリビューションにおいて利用可能なパッケージを使用して、OpenStack をイ"
+"ンストールする方法について説明します。"
+
+msgid ""
+"This guide will show you how to install OpenStack by using packages on "
+"openSUSE Leap 42.2 and SUSE Linux Enterprise Server 12 - for both SP1 and "
+"SP2 - through the Open Build Service Cloud repository."
+msgstr ""
+"このガイドは、Open Build Service Cloud リポジトリー経由で openSUSE Leap 42.2 "
+"や SUSE Linux Enterprise Server 12 (SP1 と SP2) で利用可能なパッケージを使用"
+"して、OpenStack をインストールする方法について説明します。"
+
+msgid ""
+"This guide will walk through an installation by using packages available "
+"through Canonical's Ubuntu Cloud archive repository for Ubuntu 16.04 (LTS)."
+msgstr ""
+"このガイドは、Ubuntu 16.04 (LTS) 向けの Canonical Ubuntu Cloud アーカイブリポ"
+"ジトリー で利用可能なパッケージを使用したインストールについて詳細に説明しま"
+"す。"
+
+msgid "This instance uses the ``cirros`` image."
+msgstr "このインスタンスは ``cirros`` イメージを使用します。"
+
+msgid "This instance uses the ``default`` security group."
+msgstr "このインスタンスはセキュリティーグループ ``default`` を使用します。"
+
+msgid ""
+"This instance uses the ``provider`` provider network. However, you must "
+"reference this network using the ID instead of the name."
+msgstr ""
+"このインスタンスはプロバイダーネットワーク ``provider`` を使用します。ただ"
+"し、名前の代わりに ID を用いて、このネットワークを参照する必要があります。"
+
+msgid ""
+"This instance uses the ``selfservice`` self-service network. However, you "
+"must reference this network using the ID instead of the name."
+msgstr ""
+"このインスタンスはセルフサービスネットワーク ``selfservice`` を使用します。た"
+"だし、このネットワークの参照には、名前の代わりに ID を用いる必要があります。"
+
+msgid ""
+"This network requires a gateway to provide Internet access to all nodes for "
+"administrative purposes such as package installation, security updates, :"
+"term:`DNS <Domain Name System (DNS)>`, and :term:`NTP <Network Time Protocol "
+"(NTP)>`."
+msgstr ""
+"このネットワークでは、パッケージのインストール、セキュリティー更新、:term:"
+"`DNS <Domain Name System (DNS)>` 、:term:`NTP <Network Time Protocol (NTP)>` "
+"などの管理目的でのインターネットアクセスをすべてのノードに対して提供するゲー"
+"トウェイが必要です。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"This network requires a gateway to provide Internet access to instances in "
+"your OpenStack environment."
+msgstr ""
+"このネットワークは、OpenStack 環境のインスタンスにインターネットアクセスを提"
+"供するためにゲートウェイを必要とします。"
+
+msgid ""
+"This option lacks support for self-service (private) networks, layer-3 "
+"(routing) services, and advanced services such as :term:`LBaaS <Load-"
+"Balancer-as-a-Service (LBaaS)>` and :term:`FWaaS<FireWall-as-a-Service "
+"(FWaaS)>`. Consider the self-service networks option below if you desire "
+"these features."
+msgstr ""
+"この構成では、セルフサービス  (プライベート) ネットワーク、 レイヤー 3 (ルー"
+"ティング) サービス、 :term:`LBaaS <Load-Balancer-as-a-Service (LBaaS)>` や  :"
+"term:`FWaaS <FireWall-as-a-Service (FWaaS)>` などの高度なネットワークサービ"
+"ス はサポートされません。これらの機能を使いたい場合は、セルフサービスネット"
+"ワーク構成を検討してください。"
+
+msgid ""
+"This output should indicate three service components enabled on the "
+"controller node and one service component enabled on the compute node."
+msgstr ""
+"この出力は、コントローラーノードに 3 つ、コンピュートノードに 1 つのサービス"
+"コンポーネントが有効になっていることを意味します。"
+
+msgid ""
+"This section assumes proper installation, configuration, and operation of "
+"the Identity service using the Apache HTTP server and Memcached service as "
+"described in the :ref:`Install and configure the Identity service <keystone-"
+"install>` section."
+msgstr ""
+"このセクションは、 :doc:`Identity service のインストールと設定 <keystone-"
+"install>` セクションの説明通りに、 Identity サービスが Apache HTTP server と "
+"Memcached を使用して適切にインストール、設定、運用されていることを前提にして"
+"います。"
+
+msgid ""
+"This section assumes that you are following the instructions in this guide "
+"step-by-step to configure the first compute node. If you want to configure "
+"additional compute nodes, prepare them in a similar fashion to the first "
+"compute node in the :ref:`example architectures <overview-example-"
+"architectures>` section. Each additional compute node requires a unique IP "
+"address."
+msgstr ""
+"このセクションは、このガイドにあるステップバイステップの手順に従い、最初のコ"
+"ンピュートノードを設定して来ていることを前提にしています。追加のコンピュート"
+"ノードを設定したい場合、:ref:`サンプルアーキテクチャー <overview-example-"
+"architectures>` セクションの最初のコンピュートノードと同じ方法で準備します。"
+"追加のコンピュートノードは、それぞれ一意な IP アドレスを必要とします。"
+
+msgid ""
+"This section creates the necessary virtual networks to support launching "
+"instances. Networking option 1 includes one provider (external) network with "
+"one instance that uses it. Networking option 2 includes one provider network "
+"with one instance that uses it and one self-service (private) network with "
+"one instance that uses it. The instructions in this section use command-line "
+"interface (CLI) tools on the controller node. However, you can follow the "
+"instructions on any host that the tools are installed. For more information "
+"on the CLI tools, see the `OpenStack End User Guide <https://docs.openstack."
+"org/user-guide/cli-launch-instances.html>`__. To use the dashboard, see the "
+"`OpenStack End User Guide <https://docs.openstack.org/user-guide/dashboard."
+"html>`__."
+msgstr ""
+"このセクションでは、インスタンスを起動するために必要な仮想ネットワークを作成"
+"します。ネットワークオプション 1 では、1 つのプロバイダー (外部) ネットワー"
+"ク、それを使用する 1 つのインスタンスがあります。ネットワークオプション 2 で"
+"は、1 つのプロバイダーネットワークとそれを使用するインスタンス 1 つ、1 つのセ"
+"ルフサービス (プライベート) ネットワークとそれを使用するインスタンス 1 つがあ"
+"ります。このセクションの説明では、コントローラーノードにおいて CLI を使用しま"
+"す。しかしながら、ツールをインストールしたどのホストでも実行することができま"
+"す。CLI ツールの詳細は `OpenStack エンドユーザーガイド <https://docs."
+"openstack.org/ja/user-guide/cli-launch-instances.html>`__ を参照してくださ"
+"い。ダッシュボードの使用方法は `OpenStack エンドユーザーガイド <https://docs."
+"openstack.org/ja/user-guide/dashboard.html>`__ を参照してください。"
+
+msgid ""
+"This section describes how to install and configure storage nodes for the "
+"Block Storage service. For simplicity, this configuration references one "
+"storage node with an empty local block storage device. The instructions use "
+"``/dev/sdb``, but you can substitute a different value for your particular "
+"node."
+msgstr ""
+"このセクションでは、Block Storage サービスのストレージノードをインストールし"
+"て設定する方法について説明します。簡単のため、この設定では例として未使用の"
+"ローカルブロックストレージデバイスがある 1 台のストレージノードを使用します。"
+"この説明では ``/dev/sdb`` を使用しますが、お使いのノードに合わせて別の値に置"
+"き換えることができます。"
+
+msgid ""
+"This section describes how to install and configure the Block Storage "
+"service, code-named cinder, on the controller node. This service requires at "
+"least one additional storage node that provides volumes to instances."
+msgstr ""
+"このセクションは、Block Storage サービスをコントローラーノードにインストール"
+"して設定する方法を説明します。このサービスでは、ボリュームをインスタンスに提"
+"供するストレージノードが少なくとも 1 つ必要です。"
+
+msgid ""
+"This section describes how to install and configure the Compute service on a "
+"compute node. The service supports several :term:`hypervisors <hypervisor>` "
+"to deploy :term:`instances <instance>` or :term:`VMs <virtual machine "
+"(VM)>`. For simplicity, this configuration uses the :term:`QEMU <Quick "
+"EMUlator (QEMU)>` hypervisor with the :term:`KVM <kernel-based VM (KVM)>` "
+"extension on compute nodes that support hardware acceleration for virtual "
+"machines. On legacy hardware, this configuration uses the generic QEMU "
+"hypervisor. You can follow these instructions with minor modifications to "
+"horizontally scale your environment with additional compute nodes."
+msgstr ""
+"このセクションでは、コンピュートノードに Compute サービスをインストールして設"
+"定する方法を説明します。 Compute サービスでは、:term:`インスタンス "
+"<instance>` すなわち :term:`仮想マシン <virtual machine (VM)>` を配備する :"
+"term:`ハイパーバイザー <hypervisor>` が数種類サポートされています。簡単のた"
+"め、この設定では、仮想マシン向けにハードウェア支援機能をサポートするコン"
+"ピュートノードにおいて、:term:`KVM <kernel-based VM (KVM)>` 拡張を持つ :term:"
+"`QEMU <Quick EMUlator (QEMU)>` ハイパーバイザーを使用します。古いハードウェア"
+"では、この設定では汎用的な QEMU ハイパーバイザーを使用します。これらの手順を"
+"少し修正するだけで、追加のコンピュートノードを用いて、お使いの環境を水平的に"
+"スケールできます。"
+
+msgid ""
+"This section describes how to install and configure the Compute service, "
+"code-named nova, on the controller node."
+msgstr ""
+"このセクションは、Compute サービス (コード名 nova) をコントローラーノードにイ"
+"ンストールし、設定する方法を説明します。"
+
+msgid ""
+"This section describes how to install and configure the Image service, code-"
+"named glance, on the controller node. For simplicity, this configuration "
+"stores images on the local file system."
+msgstr ""
+"このセクションでは、コントローラーノードに Image service (コード名 glance) を"
+"インストールして設定する方法を説明します。簡単のため、この設定ではイメージを"
+"ローカルファイルシステムに保存します。"
+
+msgid ""
+"This section describes how to install and configure the OpenStack Identity "
+"service, code-named keystone, on the controller node. For scalability "
+"purposes, this configuration deploys Fernet tokens and the Apache HTTP "
+"server to handle requests."
+msgstr ""
+"このセクションでは、コントローラーノードに OpenStack Identity サービス (コー"
+"ド名 keystone) をインストールして設定する方法を説明します。スケーラビリティー"
+"を重視し、この設定では Fernet トークンを使用し、 Apache HTTP サーバーを使って"
+"リクエストを処理します。"
+
+msgid ""
+"This section describes how to install and configure the dashboard on the "
+"controller node."
+msgstr ""
+"このセクションでは、コントローラーノードにダッシュボードをインストールおよび"
+"設定する方法を説明します。"
+
+msgid ""
+"This section explains how to configure the controller node and one compute "
+"node using the example architecture."
+msgstr ""
+"このセクションでは、サンプルアーキテクチャーを使用して、コントローラーノード"
+"および 1 つのコンピュートノードを設定する方法について説明します。"
+
+msgid ""
+"This service requires two nodes. Each node requires a minimum of one network "
+"interface. You can deploy more than two object storage nodes."
+msgstr ""
+"このサービスは 2 つのノードを必要とします。各ノードは、少なくとも 1 つのネッ"
+"トワークインターフェースを必要とします。複数のオブジェクトストレージノードを"
+"配備できます。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "To create the database, complete these steps:"
+msgstr "データベースを作成するには、これらの手順をすべて実行します。"
+
+msgid "To create the databases, complete these steps:"
+msgstr "データベースを作成するには、これらの手順をすべて実行します。"
+
+# #-#-#-#-#  ceilometer-controller-install.pot (Installation Guide 0.1)
+# #-#-#-#-#
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "To create the service credentials, complete these steps:"
+msgstr "以下の手順を実行して、サービスクレデンシャルを作成します。"
+
+msgid ""
+"To enable other nodes to connect to the chrony daemon on the controller "
+"node, add this key to the ``/etc/chrony.conf`` file:"
+msgstr ""
+"他のノードがコントローラーノードの chrony デーモンに接続できるよう、これらの"
+"項目を ``/etc/chrony.conf`` に追加します。"
+
+msgid ""
+"To enable other nodes to connect to the chrony daemon on the controller "
+"node, add this key to the ``/etc/chrony/chrony.conf`` file:"
+msgstr ""
+"他のノードがコントローラーノードの chrony デーモンに接続できるよう、これらの"
+"項目を ``/etc/chrony/chrony.conf`` に追加します。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"To launch an instance, you must at least specify the flavor, image name, "
+"network, security group, key, and instance name."
+msgstr ""
+"インスタンスを起動するために、少なくともフレーバー、イメージ名、ネットワー"
+"ク、セキュリティーグループ、キー、インスタンス名を指定する必要があります。"
+
+msgid ""
+"To minimize clutter and provide more resources for OpenStack, we recommend a "
+"minimal installation of your Linux distribution. Also, you must install a 64-"
+"bit version of your distribution on each node."
+msgstr ""
+"不要なものを最小にし、より多くのリソースを OpenStack 用に使うために、Linux "
+"ディストリビューションの最小インストールを推奨します。また、各ノードは、ディ"
+"ストリビューションの 64 ビット版をインストールしなければいけません。"
+
+msgid ""
+"To run clients as a specific project and user, you can simply load the "
+"associated client environment script prior to running them. For example:"
+msgstr ""
+"特定のプロジェクトとユーザーとしてクライアントを実行する場合には、実行する前"
+"に対応するクライアント環境スクリプトを読み込むだけです。例:"
+
+msgid ""
+"To use the VNC client with the dashboard, the browser must support HTML5 "
+"Canvas and HTML5 WebSockets."
+msgstr ""
+"ダッシュボードで VNC クライアントを使用する場合、ブラウザーが HTML5 Canvas "
+"と HTML5 WebSockets をサポートしている必要があります。"
+
+msgid ""
+"Unless you intend to use the exact configuration provided in this example "
+"architecture, you must modify the networks in this procedure to match your "
+"environment. Each node must resolve the other nodes by name in addition to "
+"IP address. For example, the ``controller`` name must resolve to "
+"``10.0.0.11``, the IP address of the management interface on the controller "
+"node."
+msgstr ""
+"このサンプルアーキテクチャーで提供される設定とまったく同じものを使用する場合"
+"を除き、お使いの環境に合わせて、この手順にあるネットワークを変更する必要があ"
+"ります。各ノードは、IP アドレスに加え、他のノードを名前解決する必要がありま"
+"す。例えば、``controller`` という名前は、コントローラーノードの管理ネットワー"
+"クの IP アドレス ``10.0.0.11`` に解決される必要があります。"
+
+msgid ""
+"Unset the temporary ``OS_AUTH_URL`` and ``OS_PASSWORD`` environment variable:"
+msgstr ""
+"一時的な環境変数 ``OS_AUTH_URL`` と ``OS_PASSWORD`` の設定を解除します。"
+
+msgid "Upgrade the packages on all nodes:"
+msgstr "すべてのノードでパッケージをアップグレードします。"
+
+msgid ""
+"Upload the image to the Image service using the :term:`QCOW2 <QEMU Copy On "
+"Write 2 (QCOW2)>` disk format, :term:`bare` container format, and public "
+"visibility so all projects can access it:"
+msgstr ""
+"ダウンロードしたイメージを、 :term:`QCOW2 <QEMU Copy On Write 2 (QCOW2)>` "
+"ディスク形式、:term:`bare` コンテナー形式、パブリック公開で Image service に"
+"アップロードします。パブリック公開を指定すると、すべてのプロジェクトがこのイ"
+"メージにアクセスできます。"
+
+# #-#-#-#-#  cinder-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-install.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-controller-node.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-controller-install.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"Use the database access client to connect to the database server as the "
+"``root`` user:"
+msgstr ""
+"データベースクライアントを使用して、データベースサーバーに ``root`` ユーザー"
+"として接続します。"
+
+msgid ""
+"Use the verification section for the networking option that you chose to "
+"deploy."
+msgstr ""
+"配備することにしたネットワークオプションに対応する動作検証のセクションに進ん"
+"でください。"
+
+msgid "Using the scripts"
+msgstr "スクリプトの使用方法"
+
+msgid "Verify access to the internet:"
+msgstr "インターネットへのアクセスを検証します。"
+
+msgid "Verify access to the provider physical network gateway:"
+msgstr "プロバイダー物理ネットワークのゲートウェイへのアクセスを検証します。"
+
+msgid "Verify access to the self-service network gateway:"
+msgstr "セルフサービスネットワークのゲートウェイへのアクセスを検証します。"
+
+msgid "Verify addition of the key pair:"
+msgstr "キーペアの追加を検証します。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  neutron-initial-networks.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Verify connectivity"
+msgstr "接続性の検証"
+
+msgid ""
+"Verify connectivity to the instance from the controller node or any host on "
+"the provider physical network:"
+msgstr ""
+"コントローラーノードまたはプロバイダー物理ネットワークにあるホストからインス"
+"タンスへの接続性を検証します。"
+
+msgid ""
+"Verify connectivity to the instance via floating IP address from the "
+"controller node or any host on the provider physical network:"
+msgstr ""
+"コントローラーノードまたはプロバイダー物理ネットワークにあるホストから、 "
+"Floating IP アドレス経由でのインスタンスへの接続性を検証します。"
+
+# #-#-#-#-#  basics-ntp.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  cinder-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  dashboard-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  glance-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  heat-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  keystone-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  nova-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  swift-verify.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "Verify operation"
+msgstr "動作検証"
+
+msgid "Verify operation of the Block Storage service."
+msgstr "Block Storage サービスの動作を検証します。"
+
+msgid "Verify operation of the Compute service."
+msgstr "Compute サービスの動作を検証します。"
+
+msgid ""
+"Verify operation of the Identity service before installing other services."
+msgstr ""
+"他のサービスをインストールする前に Identity サービスの動作を検証します。"
+
+msgid ""
+"Verify operation of the Image service using `CirrOS <http://launchpad.net/"
+"cirros>`__, a small Linux image that helps you test your OpenStack "
+"deployment."
+msgstr ""
+"`CirrOS <http://launchpad.net/cirros>`__ を使用して、Image service の動作を検"
+"証します。 Cirros は、OpenStack 環境のテストに役立つ軽量な Linux イメージで"
+"す。"
+
+msgid "Verify operation of the dashboard."
+msgstr "ダッシュボードの動作を検証します。"
+
+msgid ""
+"We recommend disabling EPEL when using RDO packages due to updates in EPEL "
+"breaking backwards compatibility. Or, preferably pin package versions using "
+"the ``yum-versionlock`` plugin."
+msgstr ""
+"RDO パッケージを使用する場合には EPEL を無効にすることを推奨します。 EPEL の"
+"アップデートには後方互換性がないものがあるからです。もしくは、できれば、 "
+"``yum-versionlock`` プラグインを使ってパッケージのバージョンを固定してくださ"
+"い。"
+
+msgid ""
+"We recommend that you verify NTP synchronization before proceeding further. "
+"Some nodes, particularly those that reference the controller node, can take "
+"several minutes to synchronize."
+msgstr ""
+"次に進む前に、NTP 同期について検証することを推奨します。いくつかのノード、と"
+"くにコントローラーノードを参照するノードは、同期に数分かかる可能性がありま"
+"す。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"We recommend that you verify network connectivity to the Internet and among "
+"the nodes before proceeding further."
+msgstr ""
+"次に進む前に、インターネットへの接続性とノード間の通信を検証することを推奨し"
+"ます。"
+
+msgid ""
+"We recommend that you verify operation and fix any issues before proceeding. "
+"The following steps use the IP address ranges from the network and subnet "
+"creation examples."
+msgstr ""
+"この先に進む前に、動作を検証して、問題をすべて解決しておくことを推奨します。"
+"以下の手順は、ネットワークとサブネットの作成例にある IP アドレス範囲を使用し"
+"ています。"
+
+msgid ""
+"When using RHEL, it is assumed that you have registered your system using "
+"Red Hat Subscription Management and that you have the ``rhel-7-server-rpms`` "
+"repository enabled by default."
+msgstr ""
+"RHEL を使用する場合、お使いのシステムが Red Hat Subscription Management に登"
+"録されていること、デフォルトで ``rhel-7-server-rpms``リポジトリーが有効化され"
+"ていることを仮定しています。"
+
+# #-#-#-#-#  launch-instance-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  launch-instance-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid "You can also reference a flavor by ID."
+msgstr "ID でフレーバーを指定することもできます。"
+
+msgid ""
+"You can deploy more than one block storage node. Each node requires a "
+"minimum of one network interface."
+msgstr ""
+"複数のブロックストレージノードを配備できます。各ノードは少なくとも 1 つのネッ"
+"トワークインターフェースを持つ必要があります。"
+
+msgid ""
+"You can deploy more than one compute node. Each node requires a minimum of "
+"two network interfaces."
+msgstr ""
+"複数のコンピュートノードを配備できます。各ノードは少なくとも 2 つのネットワー"
+"クインターフェースを持つ必要があります。"
+
+msgid ""
+"You can deploy the Networking service using one of two architectures "
+"represented by options 1 and 2."
+msgstr ""
+"Networking サービスは、オプション 1 と 2 の 2 つのアーキテクチャーのいずれか"
+"を使ってデプロイできます。"
+
+# #-#-#-#-#  basics-networking-neutron.pot (Installation Guide 0.1)  #-#-#-#-#
+# #-#-#-#-#  basics-networking-nova.pot (Installation Guide 0.1)  #-#-#-#-#
+msgid ""
+"You can modify these ranges and gateways to work with your particular "
+"network infrastructure."
+msgstr ""
+"これらのアドレス範囲とゲートウェイを変更して、お使いのネットワーク環境に合わ"
+"せることができます。"
+
+msgid "You can repeat this procedure to create additional projects and users."
+msgstr "この手順を繰り返して、追加のプロジェクトとユーザーを作成できます。"
+
+msgid ""
+"You must :ref:`create the provider network <launch-instance-networks-"
+"provider>` before the self-service network."
+msgstr ""
+"セルフサービスネットワークの前に :ref:`プロバイダーネットワークを作成する "
+"<launch-instance-networks-provider>` 必要があります。"
+
+msgid ""
+"You must :ref:`install and configure a storage node <cinder-storage>` prior "
+"to installing and configuring the backup service."
+msgstr ""
+"バックアップサービスのインストールと設定を行う前に、 :ref:`ストレージノードの"
+"インストールと設定 <cinder-storage>` を行う必要があります。"
+
+msgid ""
+"You must create a file system on the device and mount it to use the volume."
+msgstr ""
+"ボリュームを使用するためには、このデバイスにファイルシステムを作成して、マウ"
+"ントする必要があります。"
+
+msgid ""
+"You must use an account with administrative privileges to configure each "
+"node. Either run the commands as the ``root`` user or configure the ``sudo`` "
+"utility."
+msgstr ""
+"各ノードを設定するために、管理権限を持つアカウントを使用する必要があります。"
+"``root`` ユーザーとしてコマンドを実行するか、``sudo`` ユーティリティーを設定"
+"してください。"
+
+msgid ""
+"You should install Chrony, an implementation of :term:`NTP <Network Time "
+"Protocol (NTP)>`, to properly synchronize services among nodes. We recommend "
+"that you configure the controller node to reference more accurate (lower "
+"stratum) servers and other nodes to reference the controller node."
+msgstr ""
+"サービスをノード間で正しく同期するために、:term:`NTP <Network Time Protocol "
+"(NTP)>` を実装している Chrony をインストールすべきです。コントローラーノード"
+"をできる限り正確な（低ストラタム値）参照サーバーに設定し、他のノードからコン"
+"トローラーノードを参照するよう設定することを推奨します。"
+
+msgid ""
+"Your OpenStack environment now includes Block Storage. You can :doc:`launch "
+"an instance <launch-instance>` or add more services to your environment in "
+"the following chapters."
+msgstr ""
+"これで OpenStack 環境に Block Storage が追加されました。:doc:`インスタンスを"
+"起動 <launch-instance>` できますし、以降の章に記載されているサービスを環境に"
+"追加することもできます。"
+
+msgid ""
+"Your OpenStack environment now includes the core components necessary to "
+"launch a basic instance. You can :ref:`launch-instance` or add more "
+"OpenStack services to your environment."
+msgstr ""
+"これで、基本的なインスタンスを起動するために必要なコンポーネントが OpenStack "
+"環境に追加されました。:ref:`launch-instance` ができますし、さらに OpenStack "
+"サービスを環境に追加することもできます。"
+
+msgid ""
+"Your OpenStack environment now includes the dashboard. You can :ref:`launch-"
+"instance` or add more services to your environment."
+msgstr ""
+"OpenStack 環境にダッシュボードが追加されました。:ref:`launch-instance` を行え"
+"ます。以降の章に記載されているサービスを環境に追加できます。"
+
+msgid ""
+"Your distribution does not enable a restrictive :term:`firewall` by default. "
+"For more information about securing your environment, refer to the "
+"`OpenStack Security Guide <https://docs.openstack.org/security-guide/>`_."
+msgstr ""
+"お使いのディストリビューションでは、 :term:`ファイアウォール <firewall>` が有"
+"効になっておらず、通信が制限されていません。お使いの環境のセキュリティーを向"
+"上させる方法についての詳細は `OpenStack セキュリティーガイド <https://docs."
+"openstack.org/ja/security-guide/>`_ を参照してください。"
+
+msgid ""
+"Your distribution enables a restrictive :term:`firewall` by default. During "
+"the installation process, certain steps will fail unless you alter or "
+"disable the firewall. For more information about securing your environment, "
+"refer to the `OpenStack Security Guide <https://docs.openstack.org/security-"
+"guide/>`_."
+msgstr ""
+"お使いのディストリビューションでは、デフォルトで :term:`ファイアウォール "
+"<firewall>` が有効になっており、限られたものだけが許可されています。ファイア"
+"ウォールの設定を変更するか、無効にしていなければ、インストール中に、特定の手"
+"順が失敗します。お使いの環境のセキュリティーを向上させる方法についての詳細は "
+"`OpenStack セキュリティーガイド <https://docs.openstack.org/ja/security-"
+"guide/>`_ を参照してください。"
+
+msgid ""
+"Your hosts must contain the latest versions of base installation packages "
+"available for your distribution before proceeding further."
+msgstr ""
+"この先に進む前に、お使いのディストリビューションの基本インストールパッケージ"
+"を最新バージョンに更新する必要があります。"
+
+msgid "``ADMIN_PASS``"
+msgstr "``ADMIN_PASS``"
+
+msgid ""
+"``ALLOWED_HOSTS`` can also be ``['*']`` to accept all hosts. This may be "
+"useful for development work, but is potentially insecure and should not be "
+"used in production. See `Django documentation <https://docs.djangoproject."
+"com/en/dev/ref/settings/#allowed-hosts>`_ for further information."
+msgstr ""
+"``ALLOWED_HOSTS`` は、すべてのホストを受け付けるために ``['*']`` にできます。"
+"これは、開発用途に有用かもしれません。潜在的なセキュリティ問題があるため、本"
+"番環境では使用すべきではありません。詳細は `Django documentation <https://"
+"docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts>`_ を参照してくださ"
+"い。"
+
+msgid ""
+"``ALLOWED_HOSTS`` can also be ``['*']`` to accept all hosts. This may be "
+"useful for development work, but is potentially insecure and should not be "
+"used in production. See the `Django documentation <https://docs."
+"djangoproject.com/en/dev/ref/settings/#allowed-hosts>`_ for further "
+"information."
+msgstr ""
+"``ALLOWED_HOSTS`` は、すべてのホストを受け付けるために ``['*']`` にできます。"
+"これは、開発用途に有用かもしれません。潜在的なセキュリティ問題があるため、本"
+"番環境では使用すべきではありません。詳細は `Django documentation <https://"
+"docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts>`_ を参照してくださ"
+"い。"
+
+msgid "``CINDER_DBPASS``"
+msgstr "``CINDER_DBPASS``"
+
+msgid "``CINDER_PASS``"
+msgstr "``CINDER_PASS``"
+
+msgid "``DASH_DBPASS``"
+msgstr "``DASH_DBPASS``"
+
+msgid "``DEMO_PASS``"
+msgstr "``DEMO_PASS``"
+
+msgid "``GLANCE_DBPASS``"
+msgstr "``GLANCE_DBPASS``"
+
+msgid "``GLANCE_PASS``"
+msgstr "``GLANCE_PASS``"
+
+msgid "``KEYSTONE_DBPASS``"
+msgstr "``KEYSTONE_DBPASS``"
+
+msgid "``METADATA_SECRET``"
+msgstr "``METADATA_SECRET``"
+
+msgid "``NEUTRON_DBPASS``"
+msgstr "``NEUTRON_DBPASS``"
+
+msgid "``NEUTRON_PASS``"
+msgstr "``NEUTRON_PASS``"
+
+msgid "``NOVA_DBPASS``"
+msgstr "``NOVA_DBPASS``"
+
+msgid "``NOVA_PASS``"
+msgstr "``NOVA_PASS``"
+
+msgid "``RABBIT_PASS``"
+msgstr "``RABBIT_PASS``"
+
+msgid "``linuxbridge_agent.ini``:"
+msgstr "``linuxbridge_agent.ini``:"
+
+msgid "``ml2_conf.ini``:"
+msgstr "``ml2_conf.ini``:"
+
+msgid ""
+"``nova-api-metadata`` is included in the ``nova-api`` package, and can be "
+"selected through debconf."
+msgstr ""
+"``nova-api-metadata`` は ``nova-api`` パッケージに含まれており、 debconf 経由"
+"で選択できます。"

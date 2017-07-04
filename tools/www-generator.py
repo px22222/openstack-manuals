@@ -13,12 +13,15 @@
 # under the License.
 
 import argparse
+import glob
 import logging
 import os
 import sys
 
 from bs4 import BeautifulSoup
 import jinja2
+import jsonschema
+import yaml
 
 
 def initialize_logging(debug, verbose):
@@ -59,6 +62,36 @@ def main():
     args = parse_command_line_arguments()
     logger = initialize_logging(args.debug, args.verbose)
 
+    # Load project data. Start by setting up a JSONSchema validator,
+    # then finding all of the other YAML files.
+    project_data = {}
+    validator = None
+    fail = False
+    project_schema_filename = os.path.join(
+        args.source_directory,
+        'project-data',
+        'schema.yaml',
+    )
+    with open(project_schema_filename, 'r') as f:
+        project_schema = yaml.safe_load(f.read())
+        validator = jsonschema.Draft4Validator(project_schema)
+    for filename in glob.glob(
+            os.path.join(args.source_directory, 'project-data', '*.yaml')):
+        if filename.endswith('schema.yaml'):
+            continue
+        series, _ = os.path.splitext(os.path.basename(filename))
+        logger.info('loading %s project data from %s', series, filename)
+        with open(filename, 'r') as f:
+            data = yaml.safe_load(f.read())
+        if validator:
+            for error in validator.iter_errors(data):
+                logger.error(str(error))
+                fail = True
+            if fail:
+                raise ValueError('invalid input in %s' % filename)
+        project_data[series] = data
+
+    # Set up jinja to discover the templates.
     try:
         loader = jinja2.FileSystemLoader(args.source_directory)
         environment = jinja2.Environment(loader=loader)
@@ -66,27 +99,31 @@ def main():
         logger.error("initialising template environment failed: %s" % e)
         return 1
 
+    # Render the templates.
     for templateFile in environment.list_templates():
-        if not templateFile.endswith('.html'):
+        if not (templateFile.endswith('.html')
+                or templateFile.endswith('.htaccess')):
+            logger.info('ignoring %s', templateFile)
             continue
 
-        logger.info("generating %s" % templateFile)
+        logger.info("generating %s for %s", templateFile, series)
 
         try:
             template = environment.get_template(templateFile)
         except Exception as e:
             logger.error("parsing template %s failed: %s" %
                          (templateFile, e))
-            continue
+            raise
 
         try:
-            output = template.render()
-            soup = BeautifulSoup(output)
-            output = soup.prettify()
+            output = template.render(PROJECT_DATA=project_data)
+            if templateFile.endswith('.html'):
+                soup = BeautifulSoup(output, "lxml")
+                output = soup.prettify()
         except Exception as e:
             logger.error("rendering template %s failed: %s" %
                          (templateFile, e))
-            continue
+            raise
 
         try:
             target_directory = os.path.join(args.output_directory,

@@ -1,0 +1,25 @@
+---
+type: array
+items:
+  type: object
+  additionalProperties: false
+  required:
+    - name
+    - service
+    - type
+  properties:
+    name:
+      type: string
+    service:
+      type: string
+    service_type:
+      type: string
+    type:
+      type: string
+      enum: ["service", "client", "library", "other"]
+    description:
+      type: string
+    has_install_guide:
+      type: boolean
+    has_api_guide:
+      type: boolean

@@ -19,59 +19,35 @@ if [ -z "$PROJECT_DIR" ] ; then
     exit 1
 fi
 
+function copy_rst_trans {
+    target=$1
+    # Copy over some RST files
+    mkdir -p $PROJECT_DIR/$target/source/locale
+    for lang in ja ; do
+        TARGET=$PROJECT_DIR/$target/source/locale/$lang/LC_MESSAGES
+        mkdir -p $TARGET
+        cp doc/common/source/locale/$lang/LC_MESSAGES/common.po \
+            $TARGET
+    done
+    (cd $PROJECT_DIR; git add $target/source/locale/)
+}
+
 function copy_rst {
     target=$1
     # Copy over some RST files
     mkdir -p $PROJECT_DIR/$target
-    tools/glossary2rst.py $PROJECT_DIR/$target/glossary.rst
 
-    for filename in doc/user-guides/source/common/app_support.rst; do
-        cp $filename $PROJECT_DIR/$target
+    for filename in app-support.rst conventions.rst glossary.rst; do
+        cp doc/common/$filename $PROJECT_DIR/$target
     done
     (cd $PROJECT_DIR; git add $target)
 }
 
 
-function copy_glossary_xml {
-    GLOSSARY_SUB_DIR=$1
-    ENT_DIR=$2
-    CHECK_MARK_DIR=$3
-
-    GLOSSARY_DIR="$PROJECT_DIR/$GLOSSARY_SUB_DIR"
-
-    cp doc/glossary/glossary-terms.xml $GLOSSARY_DIR/
-    # Copy only Japanese and zh_CN translations since ha-guide,
-    # security-guide, and operations-guide are only translated to Japanese
-    # currently while the ha-guide is additionally translated to zh_CN.
-    # Training-guides is not translated at all.
-    cp doc/glossary/locale/{ja,zh_CN}.po $GLOSSARY_DIR/locale/
-    sed -i -e "s|\"../common/entities/openstack.ent\"|\"../$ENT_DIR/openstack.ent\"|" \
-        $GLOSSARY_DIR/glossary-terms.xml
-    (cd $PROJECT_DIR; git add $GLOSSARY_SUB_DIR)
-
-    # Sync entitites file
-    cp doc/common/entities/openstack.ent $GLOSSARY_DIR/../$ENT_DIR/
-    sed -i -e "s|imagedata fileref=\"../common/figures|imagedata fileref=\"$CHECK_MARK_DIR|" \
-        $GLOSSARY_DIR/../$ENT_DIR/openstack.ent
-
-    # Add files
-    (cd $PROJECT_DIR; git add $GLOSSARY_SUB_DIR \
-        $GLOSSARY_SUB_DIR/../$ENT_DIR/openstack.ent)
-}
-
 case "$PROJECT_DIR" in
-    api-site)
-        copy_rst firstapp/source/imported
-        ;;
-    ha-guide)
-        copy_rst doc/ha-guide/source/imported
-        copy_glossary_xml "doc/glossary" "high-availability-guide" "figures"
-        ;;
-    operations-guide)
-        copy_glossary_xml "doc/glossary" "openstack-ops" "figures"
-        ;;
     security-doc)
-        copy_glossary_xml "glossary" "security-guide" "static"
+        copy_rst common
+        copy_rst_trans common
         ;;
     *)
         echo "$PROJECT_DIR not handled"

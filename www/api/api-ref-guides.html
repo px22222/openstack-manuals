@@ -1,3 +1,6 @@
+{% set series = 'latest' %}
+{% set projects = PROJECT_DATA[series] %}
+
 {% set scriptdir = '../common/js/' %}
 {% set cssdir = '../common/css/' %}
 {% extends "templates/base.tmpl" %}
@@ -28,34 +31,28 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="docs-link-sections">
                         <h3><i class="fa fa-book"></i> API References</h3>
-                        <a href="http://developer.openstack.org/api-ref.html">API Complete Reference (HTML)</a>
-                        <a href="http://developer.openstack.org/api-ref-guides/bk-api-ref.pdf">API Complete Reference (PDF)</a>
-                        <a href="http://developer.openstack.org/api-ref-blockstorage-v2.html">Block Storage API v2.0 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-blockstorage-v1.html">Block Storage API v1.0 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-compute-v2.html">Compute API v2 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-identity-v3.html">Identity API v3 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-identity-v2.html">Identity API v2.0 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-networking-v2.html">Networking API v2.0 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-image-v2.html">Image Service API v2 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-image-v1.html">Image Service API v1 Reference</a>
-                        <a href="http://developer.openstack.org/api-ref-objectstorage-v1.html">Object Storage API v1 Reference</a>
+                        <a href="https://developer.openstack.org/api-ref.html">API Complete Reference</a><br/>
+{% for project in projects|sort(attribute='service') %}
+{% if project.has_api_guide %}
+                        <a href="https://developer.openstack.org/api-ref/{{project.service_type}}/">{{project.service}} API Reference ({{project.name}})</a><br/>
+{% endif %}
+{% endfor %}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="docs-link-sections">
                         <h3><i class="fa fa-cloud"></i> User Guides</h3>
-                        <a href="/api/quick-start/content/">API Quick Start</a>
-                        <a href="/user-guide/">End User Guide (includes Python SDK)</a>
-                        <a href="/user-guide-admin/">Admin User Guide</a>
-                        <a href="/cli-reference/content/">Command-Line Interface Reference</a>
-                        <a href="http://developer.openstack.org">Open source software for application development</a>
+                        <a href="https://developer.openstack.org/api-guide/quick-start/">API Guide</a><br/>
+                        <a href="/user-guide/">OpenStack End User Guide (includes Python SDK)</a><br/>
+                        <a href="/cli-reference/">Command-Line Interface Reference</a><br/>
+                        <a href="https://developer.openstack.org">Open source software for application development</a><br/>
                     </div>
                 </div>
             </div>
             <div class="row docs-contribute-wrapper">
                 <div class="col-lg-12">
                     <p>Documentation treated like code, powered by the community - interested?</p>
-                    <a href="https://wiki.openstack.org/wiki/Documentation/HowTo" class="overview-btn contribute-btn">How To Contribute <i class="fa fa-chevron-right"></i></a>
+                    <a href="/contributor-guide/" class="overview-btn contribute-btn">How To Contribute <i class="fa fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>

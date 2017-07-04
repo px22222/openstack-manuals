@@ -6,11 +6,15 @@
 target/
 /publish-docs/
 /www/output/
-/generated/
-/doc/user-guides/build-admin/
+/doc/install-guide/build-rdo/
+/doc/install-guide/build-obs/
+/doc/install-guide/build-ubuntu/
+/doc/install-guide/build-debian/
+/doc/install-guide-debconf/build-debian/
+.doctrees
 build/
 /build-*.log.gz
-glossary.rst
+*.mo
 
 # Python compiled files
 *.pyc
@@ -26,5 +30,6 @@ boxes/*
 # Editors
 *~
 .*.swp
+.*.swo
 .bak
 /.project

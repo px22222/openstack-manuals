@@ -1,12 +1,21 @@
 amt AMT
+audit audit
+cisco_ucs Cisco UCS
 deploy deploy
 dhcp DHCP
-discoverd discoverd
 disk_partitioner disk partitioner
+drac DRAC
+iboot iBoot Web Power Switch
 ilo iLO
+inspector inspector
 irmc iRMC
+iscsi iSCSI
 keystone keystone
+metrics metrics
+metrics_statsd statsd back-end metrics
+oneview OneView
 seamicro SeaMicro
+service_catalog service catalog
 snmp SNMP
 ssh SSH
 pxe PXE
